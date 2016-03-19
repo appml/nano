@@ -1,24 +1,24 @@
 <resources>
     <string name="app_name">neutriNote</string>
-    <string name="browser_widget_name">neutriNote浏览器</string>
-    <string name="backup_service_name">neutriNote备份服务</string>
+    <string name="browser_widget_name">neutriNote 浏览器</string>
+    <string name="backup_service_name">neutriNote 备份服务</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">设置</string>
 
-    <string name="drawer_open">打开导航抽屉</string>
-    <string name="drawer_close">关闭导航抽屉</string>
+    <string name="drawer_open">打开抽屉导航</string>
+    <string name="drawer_close">关闭抽屉导航</string>
 
     <string name="drawer_header_default">neutriNote</string>
 
-    <string name="drawer_menu_custom_filters">自定义过滤</string>
-    <string name="drawer_menu_modified_after">自从..前编辑</string>
-    <string name="drawer_menu_accessed_recently">自从...前访问</string>
-    <string name="drawer_menu_modified_nearby">附近编辑</string>
+    <string name="drawer_menu_custom_filters">自定义过滤器</string>
+    <string name="drawer_menu_modified_after">自从...修改</string>
+    <string name="drawer_menu_accessed_recently">自从...访问</string>
+    <string name="drawer_menu_modified_nearby">附近修改</string>
     <string name="drawer_menu_metadata">元数据</string>
 
-    <string name="drawer_menu_account_short">账号</string>
-    <string name="drawer_menu_account_long">你的账号</string>
+    <string name="drawer_menu_account_short">账户</string>
+    <string name="drawer_menu_account_long">你的账户</string>
 
     <string name="drawer_menu_about">关于</string>
     <string name="drawer_menu_help">帮助</string>
@@ -28,27 +28,27 @@
     <string name="drawer_menu_restore_app_data">恢复应用数据</string>
 
     <string name="menu_add">新建</string>
-    <string name="menu_sort">分类</string>
-    <string name="menu_style">类型</string>
+    <string name="menu_sort">排序</string>
+    <string name="menu_style">样式</string>
     <string name="menu_search">搜索</string>
     <string name="menu_advanced_search">高级搜索</string>
-    <string name="menu_clear_search_history">清除搜索记录</string>
-    <string name="menu_clear_location_data">消除位置信息</string>
+    <string name="menu_clear_search_history">清除搜索历史</string>
+    <string name="menu_clear_location_data">清除位置数据</string>
     <string name="menu_delete">删除</string>
     <string name="menu_metadata">元数据</string>
     <string name="menu_show_map">在地图中显示</string>
-    <string name="menu_append_clipboard">软件剪贴板</string>
+    <string name="menu_append_clipboard">附加剪切板数据</string>
     <string name="menu_import_files">导入文件</string>
     <string name="menu_export_files">导出文件</string>
 
-    <string name="menu_sort_by_title">按标题分类</string>
-    <string name="menu_sort_by_date">按日期分类</string>
+    <string name="menu_sort_by_title">按标题排序</string>
+    <string name="menu_sort_by_date">按日期排序</string>
 
     <string name="menu_toggle_title">切换标题</string>
-    <string name="menu_markdown_view">降序视图</string>
-    <string name="menu_paste_calendar">粘贴到日期</string>
+    <string name="menu_markdown_view">Markdown视图</string>
+    <string name="menu_paste_calendar">粘贴到日历</string>
     <string name="menu_full_screen">全屏</string>
-    <string name="menu_clear_cache">清理缓存</string>
+    <string name="menu_clear_cache">清除缓存</string>
     <string name="menu_export">导出</string>
     <string name="menu_print">打印</string>
 
@@ -56,187 +56,187 @@
 
     <string name="menu_save_exit">保存并退出</string>
     <string name="menu_save">保存</string>
-    <string name="menu_revert">恢复</string>
+    <string name="menu_revert">撤销</string>
     <string name="menu_share">分享</string>
 
-    <string name="menu_edit_tools">工具</string>
-    <string name="menu_markdown_symbols">标记</string>
+    <string name="menu_edit_tools">工具箱</string>
+    <string name="menu_markdown_symbols">Markdown符号</string>
 
-    <string name="menu_style_font_family">字体类型</string>
+    <string name="menu_style_font_family">字体</string>
     <string name="menu_style_font_size">字体大小</string>
     <string name="menu_style_margin">边距</string>
     <string name="menu_style_theme">夜间模式</string>
 
     <string name="label_title">标题</string>
     <string name="label_content">内容</string>
-    <string name="label_share">分享至</string>
+    <string name="label_share">分享到</string>
 
-    <string name="status_manager_created">Manager created</string>
-    <string name="status_initializing">初始化中...</string>
-    <string name="status_opening">正在打开\u0020</string>
-    <string name="status_rescanning">重新扫描...</string>
+    <string name="status_manager_created">Manager已创建</string>
+    <string name="status_initializing">正在初始化...</string>
+    <string name="status_opening">打开中...\u0020</string>
+    <string name="status_rescanning">重新扫描中...</string>
     <string name="status_sync_completed">同步完成</string>
     <string name="status_import_completed">导入完成</string>
-    <string name="status_synchronized">同步中</string>
-    <string name="status_canceled">取消</string>
+    <string name="status_synchronized">已同步</string>
+    <string name="status_canceled">已取消</string>
 
-    <string name="status_app_data_restoring">正在恢复应用数据请稍后</string>
-    <string name="status_app_data_restored">应用数据已恢复完毕，请重启软件</string>
-    <string name="status_app_data_backing_up">正在保存应用数据，请稍后</string>
-    <string name="status_app_data_backup">应用数据保存完毕</string>
+    <string name="status_app_data_restoring">正在恢复应用数据,请稍后...</string>
+    <string name="status_app_data_restored">数据恢复完成,请重启应用</string>
+    <string name="status_app_data_backing_up">正在备份应用数据,请稍后</string>
+    <string name="status_app_data_backup">应用数据备份完成</string>
 
-    <string name="status_no_data">没有数据</string>
-    <string name="status_no_location_data">没有位置信息</string>
-    <string name="status_no_status">没有信息</string>
-    <string name="status_no_change">没有变化</string>
-    <string name="status_no_note">无任何笔记</string>
-    <string name="status_empty">¯\\_(ツ)_/¯\u000ANo data.</string>
+    <string name="status_no_data">无数据.</string>
+    <string name="status_no_location_data">没有位置信息.</string>
+    <string name="status_no_status">没有状态.</string>
+    <string name="status_no_change">没有改变.</string>
+    <string name="status_no_note">没有找到笔记.</string>
+    <string name="status_empty">¯\\_(ツ)_/¯\u000A没有数据.</string>
 
-    <string name="status_more_items">更多</string>
-    <string name="status_imported_count">\u0020item(s) 从\u0020中导入</string>
+    <string name="status_more_items">更多...</string>
+    <string name="status_imported_count">\u0020项目 从\u0020 导入的</string>
     <string name="status_count">\u0020item(s)\u0020</string>
-    <string name="status_word_count">\u0020word(s)</string>
+    <string name="status_word_count">\u0020个字</string>
 
     <string name="status_modified_after">\u0020后修改</string>
     <string name="status_accessed_after">\u0020后访问</string>
-    <string name="status_modified_nearby">\u0020附近修改</string>
+    <string name="status_modified_nearby">附近修改\u0020</string>
 
     <string name="status_hit_count">数量:\u0020</string>
     <string name="status_hit_in_title">在标题</string>
     <string name="status_no_hit_found">没有找到</string>
     <string name="status_no_search_conducted">没有进行搜索</string>
-    <string name="status_no_go_back">不能继续回退</string>
-    <string name="status_no_go_forward">不能继续前进</string>
+    <string name="status_no_go_back">无法再向前.</string>
+    <string name="status_no_go_forward">无法再向后.</string>
 
-    <string name="status_deleted_remotely">\u0020删除.</string>
-    <string name="status_added_remotely">\u0020增加.</string>
-    <string name="status_updated_remotely">\u0020更新.</string>
+    <string name="status_deleted_remotely">\u0020已删除.</string>
+    <string name="status_added_remotely">\u0020已添加.</string>
+    <string name="status_updated_remotely">\u0020已更新.</string>
 
-    <string name="status_items_deleted">\u0020item(s) 删除.</string>
-    <string name="status_items_updated">\u0020item(s) 更新.</string>
+    <string name="status_items_deleted">已删除\u0020项.</string>
+    <string name="status_items_updated">已更新\u0020项.</string>
 
-    <string name="status_exported">导出至\u0020</string>
+    <string name="status_exported">已导出到\u0020</string>
 
-    <string name="status_back_to">回到\u0020</string>
-    <string name="status_changes_left">剩下\u0020change(s) </string>
+    <string name="status_back_to">退回到\u0020</string>
+    <string name="status_changes_left">\u0020change(s) left</string>
 
-    <string name="status_encrypted">编码完毕.</string>
-    <string name="status_decrypted">解码完毕.</string>
+    <string name="status_encrypted">编码完成.</string>
+    <string name="status_decrypted">解码完成.</string>
     <string name="status_encrypting">正在编码...</string>
     <string name="status_decrypting">正在解码...</string>
-    <string name="status_encrypting_detailed">编码正在进行，请稍后...</string>
-    <string name="status_decrypting_detailed">解码正在进行，请稍后...</string>
+    <string name="status_encrypting_detailed">正在编码,请稍后...</string>
+    <string name="status_decrypting_detailed">正在解码,请稍后...</string>
 
-    <string name="status_reverted">\u0020已还原</string>
+    <string name="status_reverted">\u0020已恢复.</string>
 
-    <string name="status_notes_exported">\u0020笔记导出至\u0020</string>
+    <string name="status_notes_exported">\u0020个笔记已导出到\u0020</string>
 
     <string name="status_auto_backup">自动备份</string>
     <string name="status_auto_backup_in_progress">正在备份</string>
-    <string name="status_auto_backup_completed">备份完毕于</string>
-    <string name="status_auto_backup_disabled">禁止自动备份.</string>
+    <string name="status_auto_backup_completed">备份完成</string>
+    <string name="status_auto_backup_disabled">已禁用自动备份.</string>
 
-    <string name="status_search_history_cleared">已清空搜索历史.</string>
+    <string name="status_search_history_cleared">已清除搜索历史.</string>
     <string name="status_location_data_cleared">已清除位置信息.</string>
 
-    <string name="status_storage_permission_granted">已获取存储权限，请重启软件.</string>
-    <string name="status_location_permission_granted">已获取位置权限，请重启软件.</string>
-    <string name="status_camera_permission_granted">已获取使用相机的权限</string>
-    <string name="status_storage_permission_denied">存储权限被拒绝。请准予设备设置存储访问和重新启动neutriNote以避免数据丢失。</string>
-    <string name="status_location_permission_denied">访问位置的权限被拒绝。位置功能将无法无法正常工作。</string>
-    <string name="status_camera_permission_denied">使用相机的权限被拒绝，扫描条码的功能将无法正常使用</string>
+    <string name="status_storage_permission_granted">已授权访问储存设备,请重启应用.</string>
+    <string name="status_location_permission_granted">已授权访问位置信息,请重启应用.</string>
+    <string name="status_camera_permission_granted">已授权访问相机.</string>
 
-    <string name="status_shortcut_added">扩展已准备好并可以使用.</string>
+    <string name="status_storage_permission_denied">没有权限访问储存设备,请从系统设置当中授权应用访问储存设备,并且重启neutriNote来避免丢失数据.</string>
+    <string name="status_location_permission_denied">没有权限访问位置信息,位置功能不可用.</string>
+    <string name="status_camera_permission_denied">没有权限访问相机.条码扫描等功能已禁用.</string>
 
-    <string name="status_restart_app">请重启neutriNote.</string>
+    <string name="status_shortcut_added">这个快捷方式已准备好.</string>
+
+    <string name="status_restart_app">请重启 neutriNote.</string>
 
     <string name="widget_empty_view_text">没有记录</string>
-    <string name="status_empty_clipboard">剪贴板无内容</string>
+    <string name="status_empty_clipboard">剪贴板为空.</string>
 
-    <string name="info_select_one">点击圆圈选中</string>
+    <string name="info_select_one">点击圆圈来选择.</string>
 
-    <string name="info_cancel_encrypt">编码不安全，操作取消.</string>
-    <string name="info_cancel_decrypt">解码不安全，操作取消.</string>
+    <string name="info_cancel_encrypt">编码不安全,操作已取消.</string>
+    <string name="info_cancel_decrypt">解码不安全,操作已取消.</string>
 
-    <string name="info_drawing_best_viewing_font">最佳预览Monospace字体 (12 pt).</string>
+    <string name="info_drawing_best_viewing_font">用Monospace字体(12pt大小)来预览效果最好.</string>
 
-    <string name="info_local_images_only">此按钮仅处理本地图片(公测).</string>
+    <string name="info_local_images_only">这个按钮仅仅处理本地图片(测试中).</string>
 
     <string name="info_cache_cleared">缓存已清理.</string>
 
-    <string name="warn_markdown_cursor_position">请移开光标以正确渲染标记.</string>
-    <string name="warn_no_selected_word">请选中一些内容.</string>
-    <string name="warn_no_selected_expression">请选中一个表达式.</string>
+    <string name="warn_markdown_cursor_position">从Markdown符号上移开光标来正确渲染.</string>
+    <string name="warn_no_selected_word">请选择一些文字.</string>
+    <string name="warn_no_selected_expression">请选择一个表达式.</string>
+    <string name="warn_shortcut_disabled">文本拓展不能在这个内容当中使用.</string>
 
-    <string name="warn_shortcut_disabled">文本扩展不能在这个内容中使用.</string>
-
-    <string name="error_database_setup">数据库设置失败.</string>
+    <string name="error_database_setup">数据库设置错误.</string>
     <string name="error_server">服务器错误.</string>
-    <string name="error_network">没有网络.</string>
-    <string name="error_json">JSON 错误.</string>
-    <string name="error_resource_not_found">无法找到请求资源.</string>
+    <string name="error_network">无网络.</string>
+    <string name="error_json">JSON错误.</string>
+    <string name="error_resource_not_found">请求的资源未找到.</string>
     <string name="error_unexpected">意外错误.</string>
-    <string name="error_login">无法登陆，状态为 </string>
+    <string name="error_login">登陆失败,状态: </string>
     <string name="error_empty_title">请输入一个标题.</string>
 
-    <string name="error_app_data_not_found">无法找到应用数据.</string>
+    <string name="error_app_data_not_found">应用数据未找到.</string>
     <string name="error_backup">备份错误.</string>
 
-    <string name="error_invalid_local_storage_path">无效的本地存储路径.</string>
-    <string name="error_empty_local_repo_path">请设置本地存储路径.</string>
-    <string name="error_create_path">\u0020无法生成.</string>
+    <string name="error_invalid_local_storage_path">储存路径不可用.</string>
+    <string name="error_empty_local_repo_path">请设置一个本地仓库路径.</string>
+    <string name="error_create_path">无法创建\u0020</string>
 
-    <string name="error_invalid_title">非法标题.</string>
-    <string name="error_invalid_file_size">文件过大 (超过 300 MB).</string>
+    <string name="error_invalid_title">标题不可用.</string>
+    <string name="error_invalid_file_size">文件大小不可用(超过300MB).</string>
 
-    <string name="error_no_writable_external_storage">没有写入外部存储.</string>
-    <string name="error_no_readable_external_storage">没有可读的外部存储.</string>
+    <string name="error_no_writable_external_storage">无法写入外部储存设备.</string>
+    <string name="error_no_readable_external_storage">无法读取外部储存设备.</string>
 
-    <string name="error_no_camera">找不到相机.</string>
-    <string name="error_no_calendar_app">找不到日历.</string>
+    <string name="error_no_camera">没有找到相机.</string>
+    <string name="error_no_calendar_app">没有找到日历应用.</string>
 
-    <string name="error_no_shortcuts">没有建立快捷方式，请看文档以获取指引.</string>
+    <string name="error_no_shortcuts">没有设置快捷方式,请参阅文档获取帮助.</string>
     <string name="error_undefined_shortcut">未定义的快捷方式.</string>
 
-    <string name="error_undo">不能撤销.</string>
-    <string name="error_redo">不能重做.</string>
+    <string name="error_undo">无法撤销.</string>
+    <string name="error_redo">无法重做.</string>
 
-    <string name="error_invalid_filters">非法过滤.</string>
-    <string name="error_location_unknown">未知位置.</string>
+    <string name="error_invalid_filters">无效的过滤器.</string>
+    <string name="error_location_unknown">未知的位置.</string>
 
-    <string name="error_missing_colordict">没有找到ColorDict.</string>
+    <string name="error_missing_colordict">无法找到ColorDict.</string>
     <string name="error_calculation">计算错误.</string>
 
-    <string name="rationale_storage_read_permission">在下一页中，你会被要求给予neutriNote访问设备的存储。neutriNote所需的权限是合理的</string>
+    <string name="rationale_storage_read_permission">在下一页中，你会被要求给予neutriNote访问设备存储的权限.neutriNote需要这些权限来正常工作.</string>
     <string name="rationale_storage_write_permission"></string>
-    <string name="rationale_location_permission">在接下来的屏幕上，你会被要求给予neutriNote访问你的位置。该权限将覆盖 neutriNote\u0027s 位置设置</string>
-    <string name="rationale_camera_permission">在下一页中，你会被要求给予neutriNote使用相机的权限</string>
+    <string name="rationale_location_permission">在下一页中，你会被要求给予neutriNote访问位置信息的权限.该权限覆盖neutriNote的位置设置.</string>
+    <string name="rationale_camera_permission">在下一页中，你会被要求给予neutriNote访问相机的权限.</string>
 
     <string name="admin_pref">管理</string>
-    <string name="pref_local_repo_path_title">本地库路径</string>
-    <string name="pref_local_repo_path_summary">指定本地资源库路径。一旦设定，请参阅帮助文件，如果回购需要搬迁。不要直接修改回购</string>
+    <string name="pref_local_repo_path_title">本地仓库路径</string>
+    <string name="pref_local_repo_path_summary">指定本地仓库路径. 一旦指定,如果需要重新设定仓库路径,请参考帮助文件. 不要直接修改仓库.</string>
     <string name="pref_local_repo_path_default"></string>
 
     <string name="pref_incremental_backup_title">增量备份</string>
-    <string name="pref_incremental_backup_summary">自动保存增量备份至 \u0022neutrinote_export\u0022 每几个小时</string>
+    <string name="pref_incremental_backup_summary">每几个小时自动保存增量文件到\u0022neutrinote_export\u0022.</string>
     <string name="pref_incremnental_backup_default">失败</string>
 
     <string name="pref_auto_save_title">自动保存</string>
-    <string name="pref_auto_save_summary">开启自动保存</string>
+    <string name="pref_auto_save_summary">启用自动保存.</string>
     <string name="pref_auto_save_default"></string>
 
     <string name="pref_location_aware_title">位置感知</string>
-    <string name="pref_location_aware_summary">笔记保持位置</string>
+    <string name="pref_location_aware_summary">储存笔记位置.</string>
     <string name="pref_location_aware_default"></string>
 
     <string name="ui_pref">用户界面</string>
-    <string name="pref_custom_filter_title">自定义过滤</string>
-    <string name="pref_custom_filter_summary">指定过滤器，用分号隔开。 neutriNote将推出的第一个过滤器。</string>
+    <string name="pref_custom_filter_title">自定义过滤器</string>
+    <string name="pref_custom_filter_summary">指定过滤器,用英文状态分号分隔. neutriNote会加载第一个过滤器S.</string>
     <string name="pref_custom_filter_default">all;starred;A;B;C;D;E;F;G;H;I;J;K;L;M;N;O;P;Q;R;S;T;U;V;W;X;Y;Z</string>
 
-    <string name="style_pref">造型</string>
+    <string name="style_pref">样式</string>
     <string name="pref_theme_title">主题</string>
-    <string name="pref_theme_summary">指定一个主题</string>
+    <string name="pref_theme_summary">指定主题.</string>
     <string name="pref_theme_default">白天</string>
     <string-array name="pref_theme_names">
         <item>Day</item>
@@ -247,191 +247,191 @@
         <item>night</item>
     </string-array>
 
-    <string name="pref_lux_title">环境光（实验性功能）</string>
-    <string name="pref_lux_summary">色温自适应环境光（颜色在Markdown模式下不受影响）。要求有自动主题插件。</string>
+    <string name="pref_lux_title">环境光源(实验性功能)</string>
+    <string name="pref_lux_summary">色温自适应环境光(颜色在Markdown模式下不受影响).要求有自动主题插件.</string>
     <string name="pref_lux_default"></string>
 
     <string name="advanced_pref">高级</string>
-    <string name="pref_lazy_update_title">缓慢更新</string>
-    <string name="pref_lazy_update_summary">合并更改之前提交，以节省电池</string>
+    <string name="pref_lazy_update_title">懒惰更新</string>
+    <string name="pref_lazy_update_summary">提交之前合并更改来节省电量</string>
     <string name="pref_lazy_update_default"></string>
 
-    <string name="pref_math_url_title">Mathematics</string>
-    <string name="pref_math_url_summary">通过提供服务器使用自己的解析器\u0027s 地址.  留空以使用MathJax（默认）</string>
+    <string name="pref_math_url_title">数学</string>
+    <string name="pref_math_url_summary">使用自己提供的解析服务器地址\u0027s. 留空来使用MathJax(默认).</string>
     <string name="pref_math_url_default">https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML</string>
 
     <string name="pref_copy_attachments_to_repo_title">添加图片</string>
-    <string name="pref_copy_attachments_to_repo_summary">自动复制插入的图像至本地存储.</string>
+    <string name="pref_copy_attachments_to_repo_summary">总是把插入的图片保存到本地储存.</string>
     <string name="pref_copy_attachments_to_repo_default"></string>
 
     <string name="pref_show_hidden_title">显示隐藏</string>
-    <string name="pref_show_hidden_summary">显示隐藏笔记（任何带有\u223c作为前缀的笔记，包括系统文件）。</string>
+    <string name="pref_show_hidden_summary">显示隐藏的笔记(任何用 \u223c 作为标题前缀的笔记).</string>
     <string name="pref_show_hidden_default"></string>
 
     <string name="support_pref">支持</string>
-    <string name="pref_support_title">有疑问?</string>
-    <string name="pref_support_summary">联系开发者</string>
-    <string name="pref_support_extensions">扩展</string>
+    <string name="pref_support_title">有问题?</string>
+    <string name="pref_support_summary">联系开发者.</string>
+    <string name="pref_support_extensions">拓展</string>
 
     <string name="support_email_subject">neutriNote Bug Report</string>
     <string name="support_email_body">Details of the problem:</string>
 
-    <string name="pref_play_store_link_title">推荐 neutriNote</string>
-    <string name="pref_play_store_link_summary">分享至有需要的朋友.</string>
+    <string name="pref_play_store_link_title">评价neutriNote</string>
+    <string name="pref_play_store_link_summary">分享给有需要的朋友.</string>
     <string name="pref_play_store_link_url">market://details?id=com.appmindlab.nano</string>
 
     <string name="pref_connector_title">Dropbox Connector</string>
-    <string name="pref_connector_summary">An extension for 2-way Dropbox sync.</string>
+    <string name="pref_connector_summary">两种DropBox同步方式的插件.</string>
     <string name="pref_connector_url">market://details?id=com.appmindlab.connector</string>
 
-    <string name="pref_play_store_catalog_title">附加组件</string>
-    <string name="pref_play_store_catalog_summary">获取附加组件，2种与Dropbox同步的方式</string>
+    <string name="pref_play_store_catalog_title">插件</string>
+    <string name="pref_play_store_catalog_summary">获取附加组件.例如两种DropBox同步方式.</string>
     <string name="pref_play_store_catalog_url">market://search?q=pub:AppML</string>
 
     <string name="pref_product_news_link_title">产品新闻</string>
-    <string name="pref_product_news_link_summary">公告与更新</string>
+    <string name="pref_product_news_link_summary">公共与更新.</string>
     <string name="pref_product_news_link_url">http://plus.google.com/communities/117565395761503074053</string>
 
-    <string name="dialog_home_title">未保存修改</string>
+    <string name="dialog_home_title">未保存的改动</string>
     <string name="dialog_home_message">现在保存?</string>
     <string name="dialog_home_ok">保存</string>
     <string name="dialog_home_cancel">丢弃</string>
 
     <string name="dialog_save_title">保存</string>
-    <string name="dialog_save_message">你希望怎样保存?</string>
-    <string name="dialog_save_quit">Save\u0020\u002d\u003e\u0020Exit</string>
-    <string name="dialog_save_edit">Save\u0020\u002d\u003e\u0020Edit</string>
+    <string name="dialog_save_message">你想如何保存?</string>
+    <string name="dialog_save_quit">保存\u0020\u002d\u003e\u0020退出</string>
+    <string name="dialog_save_edit">保存\u0020\u002d\u003e\u0020编辑</string>
 
     <string name="dialog_revert_title">还原更改</string>
-    <string name="dialog_revert_message">还原更改至最后版本?</string>
+    <string name="dialog_revert_message">确认还原到上一个版本?</string>
     <string name="dialog_revert_ok">还原</string>
     <string name="dialog_revert_cancel">不要还原</string>
 
-    <string name="dialog_reload_title">发现远程修改</string>
-    <string name="dialog_reload_message">你希望重新加载吗?</string>
+    <string name="dialog_reload_title">检查到远程修改</string>
+    <string name="dialog_reload_message">你想重新加载吗?</string>
     <string name="dialog_reload_ok">是</string>
     <string name="dialog_reload_cancel">不</string>
 
-    <string name="dialog_font_family_title">选择一种字体</string>
-    <string name="dialog_font_family_message">选择</string>
-    <string name="dialog_font_family_ok">好的</string>
+    <string name="dialog_font_family_title">选择一个字体</string>
+    <string name="dialog_font_family_message">选择一个</string>
+    <string name="dialog_font_family_ok">确认</string>
     <string name="dialog_font_family_cancel">取消</string>
 
     <string name="dialog_font_size_title">选择字体大小</string>
-    <string name="dialog_font_size_message">选择</string>
-    <string name="dialog_font_size_ok">好的</string>
+    <string name="dialog_font_size_message">选择一个</string>
+    <string name="dialog_font_size_ok">确认</string>
     <string name="dialog_font_size_cancel">取消</string>
 
-    <string name="dialog_margin_title">请选择一种边距大小</string>
-    <string name="dialog_margin_message">选择</string>
-    <string name="dialog_margin_ok">好的</string>
+    <string name="dialog_margin_title">选择字体边距</string>
+    <string name="dialog_margin_message">选择一个</string>
+    <string name="dialog_margin_ok">确认</string>
     <string name="dialog_margin_cancel">取消</string>
 
     <string name="hint_search">搜索...</string>
-    <string name="hint_replace">替代为...</string>
+    <string name="hint_replace">替换...</string>
     <string name="hint_title">标题</string>
     <string name="hint_content">内容</string>
-    <string name="hint_folder_name">请输入文件夹名字</string>
-    <string name="hint_file_name">请输入文件名字</string>
+    <string name="hint_folder_name">在此输入文件夹名字</string>
+    <string name="hint_file_name">在此输入文件名字</string>
 
-    <string name="dialog_sort_title">分类由</string>
-    <string name="dialog_sort_message">选择一个分类的方法</string>
-    <string name="dialog_sort_ok">分类</string>
+    <string name="dialog_sort_title">排序方式</string>
+    <string name="dialog_sort_message">选择一个排序方式.</string>
+    <string name="dialog_sort_ok">排序</string>
     <string name="dialog_sort_cancel">取消</string>
 
-    <string name="dialog_hits_navigation_title">符合的清单</string>
-    <string name="dialog_hits_naviagtion_message">选择一个地点：</string>
-    <string name="dialog_hits_navigation_ok">去到</string>
+    <string name="dialog_hits_navigation_title">匹配到的搜索</string>
+    <string name="dialog_hits_naviagtion_message">选择一个位置:</string>
+    <string name="dialog_hits_navigation_ok">跳转</string>
     <string name="dialog_hits_navigation_cancel">取消</string>
-    <string name="dialog_hits_navigation_neutral">清空搜索</string>
+    <string name="dialog_hits_navigation_neutral">清除搜索</string>
 
-    <string name="dialog_duplicates_title">找到至少一个记录与同一个标题</string>
-    <string name="dialog_duplicates_message">重写?</string>
-    <string name="dialog_duplicates_ok">重写</string>
+    <string name="dialog_duplicates_title">同样的标题找到至少一个记录</string>
+    <string name="dialog_duplicates_message">覆盖?</string>
+    <string name="dialog_duplicates_ok">覆盖</string>
     <string name="dialog_duplicates_cancel">取消</string>
 
     <string name="dialog_boolean_search_title">高级搜索</string>
-    <string name="dialog_boolean_search_message">每一项用逗号分开</string>
-    <string name="dialog_boolean_search_ok">所有单词</string>
-    <string name="dialog_boolean_search_neutral">任何单词</string>
+    <string name="dialog_boolean_search_message">用逗号分隔每一项</string>
+    <string name="dialog_boolean_search_ok">全部文字</string>
+    <string name="dialog_boolean_search_neutral">任何文字</string>
     <string name="dialog_boolean_search_cancel">取消</string>
 
     <string-array name="sort_methods">
-        <item>标题</item>
-        <item>日期</item>
+        <item>Title</item>
+        <item>Date</item>
     </string-array>
 
     <string name="dialog_directory_chooser_new_directory_title">新文件夹名字</string>
     <string name="dialog_directory_chooser_new_directory_button">新建文件夹</string>
     <string name="dialog_directory_chooser_ok">确认</string>
     <string name="dialog_directory_chooser_cancel">取消</string>
-    <string name="dialog_directory_chooser_selected_folder">选择:\u0020</string>
+    <string name="dialog_directory_chooser_selected_folder">已选择:\u0020</string>
 
     <string name="dialog_encrypt_decrypt_title">编码/解码</string>
-    <string name="dialog_encrypt_decrypt_message">扰频书内容（这是不加密，不应该用于保护敏感数据）</string>
+    <string name="dialog_encrypt_decrypt_message">混淆笔记内容 (这并不是加密,所以请不要用来保护敏感数据).</string>
     <string name="dialog_encrypt_decrypt_ok">编码</string>
     <string name="dialog_encrypt_decrypt_cancel">取消</string>
     <string name="dialog_encrypt_decrypt_neutral">解码</string>
 
     <string name="dialog_metadata_title">编辑元数据</string>
-    <string name="dialog_metadata_message">指定元数据 (\u0022:\u0022 or newline characters will be omitted).</string>
+    <string name="dialog_metadata_message">指定元数据 (\u0022:\u0022 或者换号符将被忽略).</string>
     <string name="dialog_metadata_ok">设置</string>
     <string name="dialog_metadata_cancel">取消</string>
 
-    <string name="dialog_metadata_search_title">通过元数据筛选</string>
-    <string name="dialog_metadata_search_message">通过元数据筛选笔记</string>
+    <string name="dialog_metadata_search_title">用元数据筛选</string>
+    <string name="dialog_metadata_search_message">用元数据筛选笔记</string>
     <string name="dialog_metadata_search_ok">筛选</string>
     <string name="dialog_metadata_search_neutral">浏览</string>
     <string name="dialog_metadata_search_cancel">取消</string>
 
-    <string name="dialog_custom_filters_title">自定义筛选</string>
-    <string name="dialog_custom_filters_message">从自定义中筛选笔记</string>
+    <string name="dialog_custom_filters_title">自定义过滤器</string>
+    <string name="dialog_custom_filters_message">用自定义的过滤器筛选</string>
     <string name="dialog_custom_filters_ok">筛选</string>
     <string name="dialog_custom_filters_cancel">取消</string>
 
     <string name="dialog_export_title">导出为</string>
-    <string name="dialog_export_message">选择一种文件类型</string>
+    <string name="dialog_export_message">设置文件格式.</string>
     <string name="dialog_export_ok">导出</string>
     <string name="dialog_export_cancel">取消</string>
 
     <string name="dialog_sd_backup_title">导出笔记</string>
-    <string name="dialog_sd_backup_message">导出至此?</string>
+    <string name="dialog_sd_backup_message">导出到这里?</string>
     <string name="dialog_sd_backup_ok">导出</string>
     <string name="dialog_sd_backup_cancel">取消</string>
 
     <string name="dialog_about_title">关于</string>
-    <string name="dialog_about_ok">确定</string>
-    <string name="dialog_usage_title">使用情况</string>
-    <string name="dialog_usage_ok">确定</string>
+    <string name="dialog_about_ok">确认</string>
+    <string name="dialog_usage_title">用法</string>
+    <string name="dialog_usage_ok">确认</string>
 
-    <string name="dialog_empty_local_repo_title">Local Repository Setup</string>
-    <string name="dialog_empty_local_repo_message">By creating a local repository, your notes will automatically be mirrored as files.  The repository would also make syncing with P2P or cloud providers easier.</string>
-    <string name="dialog_empty_local_repo_ok">配置</string>
+    <string name="dialog_empty_local_repo_title">本地仓库设置</string>
+    <string name="dialog_empty_local_repo_message">通过创建一个本地仓库,你的笔记将会以文件的形式自动储存到仓库. 这个本地仓库也可以用P2P或者云服务来方便的同步.</string>
+    <string name="dialog_empty_local_repo_ok">确认</string>
     <string name="dialog_empty_local_repo_cancel">退出</string>
 
-    <string name="dialog_show_map_title">找到我的笔记</string>
-    <string name="dialog_show_map_message">最后修改位置</string>
-    <string name="dialog_show_map_ok">完成</string>
+    <string name="dialog_show_map_title">查找我的笔记</string>
+    <string name="dialog_show_map_message">上一次修改的位置</string>
+    <string name="dialog_show_map_ok">确认</string>
 
-    <string name="dialog_draw_title">Sketch</string>
+    <string name="dialog_draw_title">草稿</string>
     <string name="dialog_draw_message"></string>
     <string name="dialog_draw_ok">粘贴</string>
     <string name="dialog_draw_cancel">丢弃</string>
 
-    <string name="dialog_add_shortcut_title">添加快捷方式</string>
-    <string name="dialog_add_shortcut_hint">\u0020指派文本扩展至</string>
+    <string name="dialog_add_shortcut_title">新建快捷方式</string>
+    <string name="dialog_add_shortcut_hint">\u0020as the shortcut for</string>
     <string name="dialog_add_shortcut_ok">设置</string>
-    <string name="dialog_add_shortcut_cancel">丢弃</string>
+    <string name="dialog_add_shortcut_cancel">取消</string>
 
     <string name="dialog_show_shortcuts_title">快捷方式</string>
     <string name="dialog_show_shortcuts_not_found">没有找到</string>
-    <string name="dialog_show_shortcuts_ok">好的</string>
+    <string name="dialog_show_shortcuts_ok">确认</string>
 
     <string name="snack_bar_button_undo">撤销</string>
     <string name="snack_bar_button_done">完成</string>
     <string name="snack_bar_button_paste">粘贴</string>
 
-    <string name="button_ok">确定</string>
+    <string name="button_ok">确认</string>
     <string name="button_cancel">取消</string>
 
     <string name="button_indent">\u2192</string>
@@ -474,15 +474,15 @@
     <string name="button_redo_description">重做</string>
 
     <string name="button_markdown">\uF121</string>
-    <string name="button_markdown_description">记录符号</string>
+    <string name="button_markdown_description">Markdown符号</string>
 
     <string name="button_timestamp">\uF017</string>
     <string name="button_timestamp_description">插入时间戳</string>
     <string name="button_datestamp">\uF073</string>
-    <string name="button_datestamp_description">插入日期戳</string>
+    <string name="button_datestamp_description">插入日期</string>
 
     <string name="button_locationstamp">\uF041</string>
-    <string name="button_locationstamp_description">插入位置标记</string>
+    <string name="button_locationstamp_description">插入位置</string>
 
     <string name="button_draw">\uF1FC</string>
     <string name="button_draw_description">绘制</string>
@@ -490,14 +490,14 @@
     <string name="button_search">\uF002</string>
     <string name="button_search_description">搜索</string>
     <string name="button_replace">\uF0EC</string>
-    <string name="button_replace_description">代替</string>
+    <string name="button_replace_description">替换</string>
     <string name="button_text_expand">\uF035</string>
-    <string name="button_text_expand_description">文本展开</string>
+    <string name="button_text_expand_description">展开文本</string>
     <string name="button_next">\uF063</string>
-    <string name="button_next_description">找到下一个</string>
+    <string name="button_next_description">查找下一个</string>
 
     <string name="button_barcode">\uF02A</string>
-    <string name="button_barcode_description">获取条码</string>
+    <string name="button_barcode_description">获取条形码</string>
     <string name="button_image">\uF03E</string>
     <string name="button_image_description">插入图片</string>
 
@@ -506,7 +506,7 @@
     <string name="button_calculate">\uF1EC</string>
     <string name="button_calculate_description">计算</string>
     <string name="button_web_search">\uF0AC</string>
-    <string name="button_web_search_description">网络搜索</string>
+    <string name="button_web_search_description">在网络上搜索</string>
 
     <string name="button_top">\uF062</string>
     <string name="button_top_description">顶部</string>
@@ -514,23 +514,23 @@
     <string name="button_bottom_description">底部</string>
 
     <string name="button_clear">\uF1F8</string>
-    <string name="button_clear_description">清空</string>
+    <string name="button_clear_description">清除</string>
 
-    <string name="message_undobar">删除.</string>
+    <string name="message_undobar">已删除.</string>
 
     <string name="message_ignore_case">忽略大小写?</string>
-    <string name="message_glob">UNIX模式（区分大小写）</string>
+    <string name="message_glob">UNIX pattern (区分大小写)</string>
 
-    <string name="message_export_notes_folder">导出至\u0020</string>
-    <string name="message_import_notes_folder">导出笔记 (.txt) 从下列文件夹:\n\n(注意: 存在的数据将会被重写)</string>
+    <string name="message_export_notes_folder">导出到\u0020</string>
+    <string name="message_import_notes_folder">从下列目录中导入笔记(.txt) \n\n (注意,已存在的笔记将会被覆盖) </string>
 
-    <string name="message_auto_backup_log">最后一次自动保存:\u0020</string>
-    <string name="message_auto_backup_log_empty">空的备份日志</string>
+    <string name="message_auto_backup_log">上一次自动备份:\u0020</string>
+    <string name="message_auto_backup_log_empty">无备份日志.</string>
 
-    <string name="message_sync_log">最后一次同步:\u0020</string>
-    <string name="message_sync_log_empty">空的同步日志</string>
+    <string name="message_sync_log">上一次同步:\u0020</string>
+    <string name="message_sync_log_empty">无同步日志.</string>
 
-    <string name="message_storage_usage">设备的存储使用情况 (数据):\u0020</string>
+    <string name="message_storage_usage">储存使用情况(仅数据):\u0020</string>
 
     <string name="word_count">W</string>
     <string name="file_size">S</string>
