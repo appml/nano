@@ -485,7 +485,7 @@
     <string name="button_locationstamp_description">Insert Location Stamp</string>
 
     <string name="button_draw">\uF1FC</string>
-    <string name="button_draw_description">Draw</string>
+    <string name="button_draw_description">Sketch</string>
 
     <string name="button_search">\uF002</string>
     <string name="button_search_description">Search</string>
