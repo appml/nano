@@ -1,0 +1,682 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>neutriNote by appml</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/appml/nano">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/appml/nano/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/appml/nano/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>neutriNote</h1>
+          <p></p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/appml">appml</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h2>
+<a id="neutrinote-user-guide" class="anchor" href="#neutrinote-user-guide" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>neutriNote User Guide</h2>
+
+<ol>
+<li><a href="#started">Getting Started</a></li>
+<li><a href="#backup">Backup and Restore</a></li>
+<li><a href="#search">Search Tools</a></li>
+<li>
+<a href="#advanced">Advanced Features</a>
+
+<ul>
+<li><a href="#metadata">Metadata</a></li>
+<li><a href="#md">Markdown</a></li>
+<li><a href="#automation">Automation</a></li>
+<li><a href="#textexpansion">Text Expansion</a></li>
+<li><a href="#voicememo">Voice Memo</a></li>
+<li><a href="#externalfonts">External Fonts</a></li>
+<li><a href="#ambientglow">Ambient Glow</a></li>
+<li><a href="#keyboard">Keyboard</a></li>
+<li><a href="#gestures">Gestures</a></li>
+<li><a href="#hacks">Hacks</a></li>
+<li><a href="#snooze">Snooze</a></li>
+<li><a href="#misc">Misc.</a></li>
+<li>
+<a href="#examples">Examples</a> </li>
+</ul>
+</li>
+<li><a href="#performance">Performance</a></li>
+<li><a href="#issues">Known Issues</a></li>
+<li><a href="#faq">FAQs</a></li>
+<li><a href="#privacy">Privacy Policy</a></li>
+<li><a href="#todo">TODO</a></li>
+<li><a href="#about">About</a></li>
+</ol>
+
+<h3>
+<a id="getting-started" class="anchor" href="#getting-started" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a name="started">Getting Started</a>
+</h3>
+
+<p>Thank you for choosing <strong>neutriNote</strong>.  </p>
+
+<p>Right after installation, be sure to follow the onscreen instruction and choose a location for <strong>Local Repository</strong>.  </p>
+
+<p>If your repository is empty, you may add notes right away.  </p>
+
+<p>If you have installed <strong>neutriNote</strong> previously, you may pick the repository already on your device.  </p>
+
+<p>If you have settings backed up from your previous installation, you may also choose <a href="https://www.dropbox.com/s/nveejx2dn1pdbqi/navigation_drawer.png?dl=0," title="Backup/Restore App Data">Restore App Data</a> to restore settings.</p>
+
+<p>To enable sync is easy, either install a third party app like <a href="https://play.google.com/store/apps/details?id=com.nutomic.syncthingandroid&amp;hl=en">Syncthing</a> and register your repository with it or get <a href="https://play.google.com/store/apps/details?id=com.appmindlab.connector">neutriNote Connector</a> -- a Dropbox adapter designed just for 
+<strong>neutriNote</strong>.  </p>
+
+<p>Even without add-ons, <strong>neutriNote</strong> is ready for use.  Explore around to discover many features that would make <strong>neutriNote</strong> a highly integrated part of your note taking experience (for example, long tap metadata label to retrieve notes sharing <a href="https://www.dropbox.com/s/tqa3h774xrn49zd/metadata_long_click.png?dl=0">similar</a> label and tap the local find icon in the edit screen to jump to the next match).  To extend it into a tool for personal information management, please do take a moment to go over the following sections.  New users may also want to check out <a href="#backup">Backup and Restore</a> for ways to preserve note data beyond the sync mechanism.</p>
+
+<p><strong>IMPORTANT</strong>: from v1.3.1, <strong>neutriNote</strong> supports <strong>Runtime Permissions</strong> in Android Marshmallow devices.  Be sure to grant <strong>neutriNote</strong> permission to access external storage for its <strong>Local Repository</strong> to work properly.  To enable previously denied permissions, go to <strong>neutriNote</strong>'s <strong>App Info</strong> under Android, renable the permissions and restart the app.</p>
+
+<h4>
+<a id="backup-and-restore" class="anchor" href="#backup-and-restore" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a name="backup">Backup and Restore</a>
+</h4>
+
+<p>If you have already activated <strong>Local Repository</strong>, your notes will be sync seamlessly to the repository.  You can replicate your notes remotely by sharing the folder with third party apps such as <a href="https://play.google.com/store/apps/details?id=com.nutomic.syncthingandroid&amp;hl=en">Syncthing</a>.  <strong>IMPORTANT</strong>: Do NOT use stale repositories since they could be out of sync.  Always use the method described in the <a href="#started">Getting Started</a> section from above to initialize and assign repositories.</p>
+
+<p><strong>Incremental Backup</strong> is another way to copy your notes in non-intrusive fashion. To enable, simply do so from Settings.  Then your notes and app settings will be backed up incrementally at least once daily to a internal storage folder called <em>neutrinote_export</em>.  Note: exported app settings data are stored in regular notes with prefix <em>.neutrinote</em> so that they can be sync no differently from other notes.</p>
+
+<p>For more demanding scenarios, check out <a href="https://play.google.com/store/apps/details?id=com.appmindlab.backupplus">neutriNote Backup+</a>.</p>
+
+<h4>
+<a id="search-tools" class="anchor" href="#search-tools" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a name="search">Search Tools</a>
+</h4>
+
+<p>While notes can be retrieved based on modified time, accessed time, and location as providied by the user interface, <strong>neutriNote</strong> supports high precision text based search and <a href="http://en.m.wikipedia.org/wiki/Glob_(programming)">regular expression</a>.  The syntax below are also highly reusable when they are included as part of the preset filters (under Settings).</p>
+
+<p><strong>Search by Fields</strong> It is possible to restrict search to a specified field.  For example, at the main search bar over the note list, search can be limited to titles by using the prefix <code>title:</code> in the search string.  A search string like<code>title:log</code> will return all notes with the substring <code>log</code> in the titles.</p>
+
+<p>Search can also be limited to metadata by using the prefix <em>meta:</em> in the search string.  A search string such as <em>meta:personal</em> will return all notes with the substring <em>personal</em> in the metadata (likewise <em>meta:</em> will return notes without metadata). It is also possible to use <a href="http://en.m.wikipedia.org/wiki/Glob_(programming)">regular expression</a> in metadata search,  simply use the prefix <em>metareg:</em> in the search string. </p>
+
+<p>To ensure metadata match when conducting multi-term search, one may use the following syntax at the main search bar: <code>join:term1,term2,term3</code> and so on.  Doing so will ensure at least one of the terms can be found in the metadata for each search hit. Such syntax can be used to simulate search within metadata/tags.</p>
+
+<p>To search for multiple terms, the easiest way is to use <strong>Advanced Search</strong>.  You can also specify boolean search queries with syntax like <code>and:term1,term2,term3,...,termN</code> to find notes containing all the terms (<code>or:term1,term2,term3,..,termN</code> to find notes containing one of the terms). </p>
+
+<p><strong>Custom Filters</strong> The power of the above syntax lies in that it can also be included in preset search filters so that users can easily deploy.  Custom filters can be specified in <a href="https://www.dropbox.com/s/cfve8rfp4yysro8/custom_filters.png?dl=0">Settings</a> delimited by semi-colons.  They are defaulted to be:</p>
+
+<pre><code>all;starred;A;B;C;D;E;F;G;H;I;J;K;L;M;N;O;P;Q;R;S;T;U;V;W;X;Y;Z
+</code></pre>
+
+<p><strong>all</strong> is reserved for retrieving all notes, and <strong>starred</strong> reserved for retrieving starred notes. Single character filters are reserved for retrieving notes with titles beginning with said alphabets.</p>
+
+<p>For searching within notes, <strong>neutriNote</strong> recognizes basic <a href="http://www.erudil.com/preqr.pdf">Perl</a> style patterns: <code>\d</code> for digits, <code>\s</code> for whitespace, etc.  </p>
+
+<h3>
+<a id="advanced-features" class="anchor" href="#advanced-features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a name="advanced">Advanced Features</a>
+</h3>
+
+<h3>
+<a id="metadata" class="anchor" href="#metadata" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a name="metadata">Metadata</a>
+</h3>
+
+<p>Metadata are general purpose text strings that exist outside note data.  They are searchable and can be used as tags.</p>
+
+<h3>
+<a id="markdown" class="anchor" href="#markdown" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a name="md">Markdown</a>
+</h3>
+
+<p><strong>neutriNote</strong> supports <a href="http://michelf.ca/projects/php-markdown/extra/">PHP Markdown Extra</a> and LaTeX style mathematical expressions.  The easiest way to enter mathematical expressions is to wrap them in <code>$$</code>.  For inline math, use <code>\\(...\\)</code> as in the example below:</p>
+
+<pre><code>This expression \\(\sqrt{3x-1}+(1+x)^2\\) is an example of an inline equation.
+</code></pre>
+
+<p>To create in-document anchors/footnotes in PHP Markdown, use link syntax as in the following example:</p>
+
+<pre><code># heading 1 {#header1}
+
+## heading 2
+
+* item 1:
+    + sub item *1.1*
+    + sub item *1.2*
+* item 2
+    + sub item *2.1*
+    + sub item *2.2*
+    + sub item 
+    + [Link back to header 1](#header1)
+</code></pre>
+
+<p>To allow table of contents to be generated automatically, add a placeholder <code>&lt;span id='toc' /&gt;</code>, tag each paragraph header with a unique ID by following the convention of PHP Markdown special attributes such as<code>{#id}</code>.  Try the example below:</p>
+
+<pre><code>Table of Contents
+=================
+
+&lt;span id='toc' /&gt;
+
+## Header 1 {#header1}
+    * Your paragraph here...
+
+## Header 2 {#header2}
+    * Your paragraph here...
+
+## Header 3 {#header3}
+    * Your paragraph here...
+</code></pre>
+
+<p>To create link between notes, simply use one of the following syntax (<code>%20</code> denotes space):</p>
+
+<pre><code>[My File](file:///sdcard/neutriNote/my_file.txt)
+
+[My File](./my_file.txt)
+
+[My File](my_file.txt)
+
+[GTD](get%20things%20done.txt)
+</code></pre>
+
+<p>Linking to an image under local repository, simply do:</p>
+
+<pre><code>![My Image](my_image.jpg)
+</code></pre>
+
+<p>Linking to notes from other apps that support hyperlinks, simply prefix note names with <code>http://neutriNote.io</code>.  For example:</p>
+
+<pre><code>http://neutriNote.io/my_diary
+
+http://neutriNote.io/my_diary?search=first%20headquarter%20visit
+
+</code></pre>
+
+<ul>
+<li>
+<p>There is a conflict between Markdown italic symbol and LaTeX subscript symbol.  To workaround this problem, either escape the subscript symbols or wrap the expression in script block.  For example, instead of doing this:</p>
+
+<p><code>$$k_{n+1} = n^2 + k_n^2 - k_{n-1}$$</code></p>
+
+<p>do this:</p>
+
+<p><code>$$k\_{n+1} = n^2 + k\_n^2 - k\_{n-1}$$</code></p>
+
+<p>Or use script block with the desired type like this:</p>
+</li>
+</ul>
+
+<pre><code>&lt;script type="math/tex"&gt;k_{n+1} = n^2 + k_n^2 - k_{n-1}&lt;/script&gt;
+</code></pre>
+
+<p>It's easy to customize the style of Markdown with popular inline CSS.  For more extensive styling needs, you can "swap out" built-in styling by declaring your CSS in  <code>~neutrinote_styles.txt</code>.  If your style is based off an existing Markdown theme, this process is pretty much effortless.  For example, to <strong>solarize</strong> your Markdown, simply copy and paste the following two lines into <code>~neutrinote_styles.txt</code>.</p>
+
+<pre><code>&lt;link href="http://thomasf.github.io/solarized-css/solarized-light.min.css" rel="stylesheet"&gt;&lt;/link&gt;
+&lt;script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"&gt;&lt;/script&gt;
+</code></pre>
+
+<h3>
+<a id="examples" class="anchor" href="#examples" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a name="examples">Examples</a>
+</h3>
+
+<p>An example of how <strong>neutriNote</strong>'s rendering component could be used to plot a graph using <a href="http://jsxgraph.uni-bayreuth.de/wp/examples/">JSXGraph</a>:</p>
+
+<pre><code>&lt;div id="box" class="box" style="width:500px; height:500px;"&gt;&lt;/div&gt;
+&lt;head&gt;
+&lt;script type='text/javascript' src='http://cdnjs.cloudflare.com/ajax/libs/jsxgraph/0.98/jsxgraphcore.js'&gt;&lt;/script&gt;
+&lt;script type='text/javascript'&gt;
+ var b = JXG.JSXGraph.initBoard('box', {boundingbox: [-10, 10, 10, -10], axis:true});
+b.create('functiongraph', [function(x){return Math.sin(x);},-Math.PI,2*Math.PI]);
+&lt;/script&gt;
+&lt;/head&gt;
+</code></pre>
+
+<p>An example of how <strong>neutriNote</strong>'s rendering component could be used to draw a simple shape:</p>
+
+<pre><code>&lt;canvas id="example" width="200" height="200"&gt;
+&lt;/canvas&gt;
+
+&lt;head&gt;
+&lt;script&gt;
+var example = document.getElementById('example');
+var context = example.getContext('2d');
+context.fillStyle = 'red';
+context.fillRect(30, 30, 50, 50);
+&lt;/script&gt;  
+&lt;/head&gt;
+</code></pre>
+
+<p>Draw a simple diagram in plain text is easy using <a href="http://yuml.me/diagram/scruffy/class/samples">yUML</a>.  Try this (note the single ticks):</p>
+
+<pre><code>&lt;img src="http://yuml.me/diagram/scruffy/usecase/[Cms Admin]^[User], [Customer]^[User], [Agent]^[User]" &gt;
+
+&lt;img src="http://yuml.me/diagram/nofunky/class/`[Customer]-&gt;[Billing Address]`"&gt;
+</code></pre>
+
+<h3>
+<a id="automation" class="anchor" href="#automation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a name="automation">Automation</a>
+</h3>
+
+<p><strong>neutriNote</strong> can be easily automated using Tasker.  For example, <strong>neutriNote</strong>'s theme can be set according to light level with the use of (<a href="https://play.google.com/store/apps/details?id=com.appmindlab.autotheme">neutriNote Auto Theme</a>) with these steps:</p>
+
+<ol>
+<li>Create a <em>new</em> task in Tasker.</li>
+<li>Add a <em>new</em> action, choose <strong>App</strong> from <strong>Select Action Category</strong>.</li>
+<li>Choose the extension just downloaded from the app selection screen. </li>
+<li>Now the task is created and ready for use in any of your profiles.  For example, create a new profile that will be triggered when the display is on (add a new profile, then choose <strong>State</strong> -&gt; pick <strong>Display</strong>) to launch the task.  Now each time the screen is turned on, <strong>neutriNote</strong> will automatically select a theme based on the current light level.</li>
+</ol>
+
+<p>Steps above apply to <a href="https://play.google.com/store/apps/details?id=com.appmindlab.backupplus">neutriNote Backup+</a> as well.</p>
+
+<p>For users who are interested in keeping clipboard history, simply create a profile to monitor the setting of Tasker's <code>%CLIP</code> variable, then add the following task (replace the path with that of your <strong>Local Repository</strong>):</p>
+
+<pre><code>A1: Variable Set [ Name:%NEWLINE To:Do Maths:Off Append:Off ] 
+A2: Write File [ File:neutriNote/clipboard_events.txt Text:## %DATE %TIME %NEWLINE %CLIP %NEWLINE Append:On Add Newline:On ] If [ %clip neq %clip_prev ]
+A3: Variable Set [ Name:%clip_prev To:%CLIP Do Maths:Off Append:Off ] 
+</code></pre>
+
+<h3>
+<a id="text-expansion" class="anchor" href="#text-expansion" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a name="textexpansion">Text Expansion</a>
+</h3>
+
+<p><strong>neutriNote</strong> supports text expansion: simply highlight any shortcut word and tap the <strong>Text Expansion</strong> icon to expand the word.  All shortcuts are saved in a file called <strong>~neutrinote_shortcuts</strong>, with one definition per line in the format of <code>shortcut label|expanded text</code> (if you do not see the file, enable hidden files under <strong>Settings</strong>).  Below are some examples:  </p>
+
+<pre><code>cell|123-456-7890
+email|john.smith@test.com
+
+# Usage: select "highlight your_text" and expand, return "&lt;mark&gt;your_text&lt;/mark&gt;".
+highlight|&lt;mark&gt;???&lt;/mark&gt;
+</code></pre>
+
+<p>Shortcuts can be defined for frequently used patterns for string replacements.  For example:</p>
+
+<pre><code># Usage: select "encode some_text_string" and expand, some_text_string will be returned with all blank spaces encoded.
+encode|neutriNote#replace \s %20
+</code></pre>
+
+<p>You can also use basic C style format specifiers to "morph" text snippets.</p>
+
+<pre><code># Usage: select "addcomma some_numeric_string" and expand, some_numeric_string will be comma separated.
+addcomma|neutriNote#morph ℅,d
+</code></pre>
+
+<p>You can create shortcuts for simple shell commands as well.  Give it a try by adding the prefix <code>neutriNote$</code> to the commands just like below:</p>
+
+<pre><code>date|neutriNote$ date
+ps|neutriNote$ ps
+</code></pre>
+
+<p>You can include basic parameters with the commands, just write them after the command shortcut and separate each parameter with space+commas like this: <code>shortcut_label param1 , param2 , param3</code>.  Select the whole string and tap the expand icon to paste the output.  Users of cURL can also simplify the definitons of their expansions with <code>neutriNote?</code> instead of <code>neutriNote$</code> and trail that directly by a URL.</p>
+
+<h3>
+<a id="voice-memo" class="anchor" href="#voice-memo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a name="voicememo">Voice Memo</a>
+</h3>
+
+<p><strong>neutriNote</strong> is compatible with Google Now dictation.  Simply say <em>Ok Google note to self</em> and pick <strong>neutriNote</strong> to capture what you say.</p>
+
+<h3>
+<a id="external-fonts" class="anchor" href="#external-fonts" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a name="externalfonts">External Fonts</a>
+</h3>
+
+<p>It's easy to use external fonts such as those featured by Google Fonts in <strong>neutriNote</strong> (IMPORTANT: be sure to read their terms of use carefully):</p>
+
+<ol>
+<li>Create a folder called <code>fonts</code> under your Local Repository, download and save the font file (.ttf) in that folder.  Note that external fonts will not be backup by <strong>neutriNote</strong>.</li>
+<li>Enable hidden files under <strong>Settings</strong>.  Create a new note called <code>~neutrinote_fonts</code> if one does not exist yet.</li>
+<li>Add a section in the note for the font (if there are multiple fonts, separate each section by a blank line) with a line dedicated to each of the following: 
+
+<ul>
+<li>Font name (any meaningful name)</li>
+<li>Font file name (.ttf)</li>
+<li>Link information (see instructions from Google Fonts)</li>
+<li>CSS style (see instructions from Google Fonts)</li>
+</ul>
+</li>
+<li>The font is now ready for use in <strong>neutriNote</strong>.</li>
+</ol>
+
+<p>For example, to use this <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Goudy+Bookletter+1911">font</a>, just add this section to <code>~neutrinote_fonts</code>:</p>
+
+<pre><code>Goudy Bookletter 1911
+GoudyBookletter1911.ttf
+&lt;link href='https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'&gt;
+font-family: 'Goudy Bookletter 1911', serif;
+</code></pre>
+
+<h3>
+<a id="ambient-glow" class="anchor" href="#ambient-glow" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a name="ambientglow">Ambient Glow</a>
+</h3>
+
+<p><strong>Ambient Glow</strong> is an experimental function that adjusts the color temperature of <strong>neutriNote</strong> to <a href="https://en.wikipedia.org/wiki/Color_temperature#Categorizing_different_lighting">approximate</a> the level of your current environment for a more <em>atmospheric</em> editing experience.  It differs from blue light filtering apps in that it does not demand your location information -- instead only light sensor data from Tasker will be used (to conserve battery).  <a href="https://play.google.com/store/apps/details?id=com.appmindlab.autotheme">neutriNote Auto Theme</a> is required for this function to work properly.  Note that <strong>Ambient Glow</strong> will not be applied to Markdown and for users of blue light filters it is recommended that this function be disabled. </p>
+
+<h3>
+<a id="keyboard" class="anchor" href="#keyboard" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a name="keyboard">Keyboard</a>
+</h3>
+
+<p>The following editor shortcuts are supported when connected to a physical keyboard:</p>
+
+<table>
+<thead>
+<tr>
+<th>Shortcuts</th>
+<th align="center">Actions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Ctrl-S</code></td>
+<td align="center">Save</td>
+</tr>
+<tr>
+<td><code>Ctrl-F</code></td>
+<td align="center">Local Find</td>
+</tr>
+<tr>
+<td><code>F3</code></td>
+<td align="center">Find Next</td>
+</tr>
+<tr>
+<td><code>Ctrl-H</code></td>
+<td align="center">Replace</td>
+</tr>
+<tr>
+<td><code>Ctrl-Z</code></td>
+<td align="center">Undo</td>
+</tr>
+<tr>
+<td><code>Ctrl-Shift-Z</code></td>
+<td align="center">Redo</td>
+</tr>
+<tr>
+<td><code>Ctrl-]</code></td>
+<td align="center">Indent</td>
+</tr>
+<tr>
+<td><code>Ctrl-[</code></td>
+<td align="center">Un-indent</td>
+</tr>
+</tbody>
+</table>
+
+<h3>
+<a id="gestures" class="anchor" href="#gestures" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a name="gestures">Gestures</a>
+</h3>
+
+<p>Various user interface elements support gestures for better productivity:</p>
+
+<ul>
+<li>
+<p>Note list screen:</p>
+
+<ul>
+<li>Tap <strong>list status</strong> to navigate to the top of the list.</li>
+<li>Long tap any blue rectangle to retrieve notes with related metadata.</li>
+<li>Long tap any star to retrieve all starred notes.</li>
+<li>Tap current sort method to reverse current sort order.</li>
+<li>Swipe left/right on <strong>list status</strong> bar to navigate adjacent filters/days.</li>
+<li>Double tap <strong>list status</strong> to resume default filter/day.</li>
+</ul>
+</li>
+<li>
+<p>Edit screen:</p>
+
+<ul>
+<li>Tap <strong>editor status</strong> (to the right of the note title) to view note statistics and clipboard content, long tap to view recent updates in other notes without leaving the current note.</li>
+<li>Tap the <strong>Shortcut</strong> icon to view user defined shortcuts.</li>
+<li>Immediately after conducting a search, tap the <strong>Search</strong> icon to advance to the next match.</li>
+<li>To edit a drawing, select it and tap the <strong>Draw</strong> icon.</li>
+<li>Double tap <strong>editor status</strong> to temporarily save the current cursor position.<br>
+</li>
+<li>Swipe left on <strong>editor status</strong> to return to saved cursor position.</li>
+<li>After conducting search, dial up/down <strong>editor status</strong> to go to previous/next hits.</li>
+<li>For Android 6.0 or higher, swipe right on <strong>editor status</strong> will resume in edit screen the last scroll bar position from Markdown preview.</li>
+</ul>
+</li>
+</ul>
+
+<h3>
+<a id="hacks" class="anchor" href="#hacks" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a name="hacks">Hacks</a>
+</h3>
+
+<p>What follows are features that may conflict with the core functions of <strong>neutriNote</strong>.  Use at your own discretion.</p>
+
+<p>You can tinker with the variables found inside of <strong>~neutrinote_settings_data</strong> (enabled by <strong>Show Hidden</strong> under <strong>Settings</strong>).  After saving your changes, do <strong>Restore App Data</strong> for the changes to take effect.  Note: altering the setting file could affect the stability of <strong>neutriNote</strong>.</p>
+
+<table>
+<thead>
+<tr>
+<th>Variable Names</th>
+<th align="center">Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>com.appmindlab.nano.pref_open_in_markdown</td>
+<td align="center">
+<code>true</code>: always open notes in markdown preview</td>
+</tr>
+<tr>
+<td>com.appmindlab.nano.pref_show_toolbar</td>
+<td align="center">
+<code>true</code>: always show edit toolbar</td>
+</tr>
+<tr>
+<td>com.appmindlab.nano.pref_latex_single_dollar</td>
+<td align="center">
+<code>true</code>: use single dollar signs to signify math expressions</td>
+</tr>
+<tr>
+<td>com.appmindlab.nano.pref_preview_mode</td>
+<td align="center">
+<code>start</code>: display the beginning of notes in preview, <code>end</code>: display the end, <code>off</code>: disable preview</td>
+</tr>
+<tr>
+<td>com.appmindlab.nano.pref_canvas_strokes</td>
+<td align="center">Fixed width symbols supported by sketch tool delimited by semicolons, e.g., <code>:;\;/;_;-;,;●</code> (vertical bar and semicolon not allowed)</td>
+</tr>
+<tr>
+<td>com.appmindlab.nano.pref_keep_deleted_copies</td>
+<td align="center">
+<code>true</code>: keep copies of deleted files under <code>trash</code> folder</td>
+</tr>
+<tr>
+<td>com.appmindlab.nano.pref_markdown_trigger</td>
+<td align="center">Specify a metadata substring pattern to open notes in Markdown by default</td>
+</tr>
+<tr>
+<td>com.appmindlab.nano.pref_linkify_trigger</td>
+<td align="center">Specify a metadata substring pattern to open notes linkified by default</td>
+</tr>
+<tr>
+<td>com.appmindlab.nano.pref_safe_mode_tag</td>
+<td align="center">Specify a metadata substring pattern to disable internal Markdown parser</td>
+</tr>
+<tr>
+<td>com.appmindlab.nano.pref_indent_char</td>
+<td align="center">Specify the character(s) to use for indentation.  Default: 4 spaces</td>
+</tr>
+<tr>
+<td>com.appmindlab.nano.pref_icon_behavior</td>
+<td align="center">0: animation off, 1: animation on, 2: <a href="#snooze">snooze</a> animation</td>
+</tr>
+<tr>
+<td>com.appmindlab.nano.pref_excluded_buttons</td>
+<td align="center">Selectively hide toolbar buttons via a semicolon delimited string, e.g., <code>location;draw;replace</code> will hide the location, draw, and replace buttons on the toolbar.  The following buttons can be hidden: <code>markdown</code>, <code>time</code>, <code>date</code>, <code>location</code>, <code>expand</code>, <code>draw</code>, <code>top</code>, <code>bottom</code>, <code>find</code>, <code>replace</code>, <code>barcode</code>, <code>image</code>, <code>define</code>, <code>calculate</code>, <code>search</code>
+</td>
+</tr>
+<tr>
+<td>com.appmindlab.nano.pref_custom_date_format</td>
+<td align="center">Override system date stamp format with custom <a href="https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html">date format</a>
+</td>
+</tr>
+<tr>
+<td>com.appmindlab.nano.pref_custom_time_format</td>
+<td align="center">Override system time stamp format with custom <a href="https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html">time format</a>
+</td>
+</tr>
+</tbody>
+</table>
+
+<p>Advanced users may enable multiple text file types for <strong>neutriNote</strong>.  To setup, please carefully follow all the steps below:</p>
+
+<ol>
+<li>Backup ALL app settings and notes.</li>
+<li>Add a blank file called <code>~neutrinote_multitype.txt</code> to your <strong>Local Repository</strong>.</li>
+<li>Un-install <strong>neutriNote</strong> (or clear the app's data under Android's system settings).</li>
+<li>Re-install <strong>neutriNote</strong>.</li>
+<li>Once rescan finishes, file extensions will appear in note titles.</li>
+<li>Restore app data.</li>
+</ol>
+
+<p>(To reverse the support of multiple file types, you would need to remove the file <code>~neutrinote_multitype.txt</code>, then un-install/re-install <strong>neutriNote</strong>.)</p>
+
+<p>Note that <strong>neutriNote Connector</strong> will not handle files without <code>.txt</code> extension.  To sync files without <code>.txt</code> extension with Dropbox you would have to install a third party app or install <a href="https://play.google.com/store/apps/details?id=com.appmindlab.connectorplus"><strong>neutriNote Connector+</strong></a>.  (If you have <strong>neutriNote Connector</strong> installed, you would need to remove it prior to launching <strong>neutriNote Connector+</strong>.)</p>
+
+<h3>
+<a id="snooze-experimental" class="anchor" href="#snooze-experimental" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a name="snooze">Snooze (Experimental)</a>
+</h3>
+
+<p>With <strong>neutriNote</strong>'s non-intrusive visual reminders, it is easy to set aside notes for editing later, or build a habit of reviewing saved notes.  Simply enable snooze animation by appending the following to <code>~neutrinote_settings_data</code>:</p>
+
+<pre><code>com.appmindlab.nano.pref_icon_behavior|2
+</code></pre>
+
+<p>Then add special <strong>snooze strings</strong> such as <code>+1h</code> ("snooze for an hour") or <code>+2d</code> ("snooze for two days") to the metadata of selected notes.  By doing so a non-intrusive animation will remind you to view the notes if they have not been visited long enough.  The visual reminders would be dismissed as soon as the notes were opened.  To de-activate the snooze, simply remove the snooze string from the note's metadata.  </p>
+
+<table>
+<thead>
+<tr>
+<th>Units</th>
+<th align="center">Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>m</code> for minutes</td>
+<td align="center">
+<code>+30m</code>: snooze for 30 minutes</td>
+</tr>
+<tr>
+<td>
+<code>h</code> for hours</td>
+<td align="center">
+<code>+8h</code>: snooze for 8 hours</td>
+</tr>
+<tr>
+<td>
+<code>d</code> for days</td>
+<td align="center">
+<code>+3d</code>: snooze for 3 days</td>
+</tr>
+<tr>
+<td>
+<code>w</code> for weeks</td>
+<td align="center">
+<code>+2w</code>: snooze for 2 weeks</td>
+</tr>
+<tr>
+<td>
+<code>M</code> for months</td>
+<td align="center">
+<code>+3M</code>: snooze for a quarter</td>
+</tr>
+<tr>
+<td>
+<code>y</code> for years</td>
+<td align="center">
+<code>+10y</code>: snooze for a decade</td>
+</tr>
+</tbody>
+</table>
+
+<p>To transfer snooze to another device, be sure to tap <strong>Backup/Restore App Data</strong>.  Even more useful is that snooze strings are also fully searchable, they work just like regular metadata!</p>
+
+<h3>
+<a id="miscellaneous" class="anchor" href="#miscellaneous" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a name="misc">Miscellaneous</a>
+</h3>
+
+<p><strong>neutriNote</strong> comes with many goodies for capturing text based data without switching away such as the built-in barcode scanner.  Another is a handy calculator for solving mathematical expressions based on <a href="http://mathjs.org/docs/expressions/syntax.html">Math.js</a> (network connection required).  To see how that works, try one of the following examples in your notes:</p>
+
+<ol>
+<li>Select the expression. </li>
+<li>Tap the calculator button from the toolbar.</li>
+<li>View the answer with the option to paste it back into your note.</li>
+</ol>
+
+<pre><code>sin(45 deg) ^ 2
+
+cos(45 deg)
+
+5.08 cm to inch
+
+det([-1, 2; 3, 1])
+
+log(10000, 10)
+</code></pre>
+
+<h3>
+<a id="performance" class="anchor" href="#performance" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a name="performance">Performance</a>
+</h3>
+
+<p>When editing a long note, hide the title bar to reduce lags.  </p>
+
+<p>In general, using default font style can help reduce the time in opening long notes.</p>
+
+<p>For users who do not use mathematics expressions, mathematics rendering can be disabled by entering a <code>.</code> under <strong>Mathematics</strong> in <strong>Settings</strong>. Markdown rendering should be faster with mathematics disabled.</p>
+
+<h3>
+<a id="known-issues" class="anchor" href="#known-issues" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a name="issues">Known Issues</a>
+</h3>
+
+<p>Anytime a note is accessed from widget, if there is a note already being edited, the note originally being edited will exit without saving.  <strong>neutriNote</strong> does not distinguish between opening a note from widget or from the note list, the currently opened note will be closed to make way for the newly opened note.   It is thus highly recommended that important changes be saved right away.</p>
+
+<p>If a note needs to be renamed, do so within <strong>neutriNote</strong>.  Certain cloud sync would also change the case of note titles.  <strong>neutriNote</strong> would detect those changes and be case insensitive accordingly.  However, <strong>neutriNote</strong> would not delete notes unless their titles match exactly.  Therefore it is so crucial that notes be renamed from the end of <strong>neutriNote</strong>.</p>
+
+<p>To improve app stability in lower-end devices, <strong>neutriNote</strong> supports note size up to 1.5 MB.  Notes beyond the size will automatically be moved to a folder called <code>import_errors</code>.  To bring them back into <strong>neutriNote</strong>, you would need to split the notes into files below 1.5 MB and move them into the repository folder.</p>
+
+<h3>
+<a id="faqs" class="anchor" href="#faqs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a name="faq">FAQs</a>
+</h3>
+
+<p><strong>No folder support?</strong> <strong>neutriNote</strong> is designed to provide a flat, hierarchy-free, <a href="http://blog.codinghorror.com/trees-treeviews-and-ui/">"low cognitive load"</a> note taking experience so that the number of taps can be minimized, folder navigation would require a nested UI and more taps to get to notes beyond the root level.  On top of that, offline search would need to traverse levels of folders in such a way that turnaround time could vary perceivably.  Metadata used together with custom filters provides more general organization than folders (a note can match multiple metadata simultaneously).</p>
+
+<p><strong>Story behind the name?</strong> <a href="https://en.wikipedia.org/wiki/Neutrino">This</a> came up when trying to conjure up something that conveys unclutterness. </p>
+
+<h3>
+<a id="privacy-policy" class="anchor" href="#privacy-policy" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a name="privacy">Privacy Policy</a>
+</h3>
+
+<p>This app does not gather personal information. Location data can always be disabled via Settings.  A menu option is also provided to clear search history.</p>
+
+<h3>
+<a id="todo" class="anchor" href="#todo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a name="todo">TODO</a>
+</h3>
+
+<p>Keep the app as crash-proof as possible.</p>
+
+<h3>
+<a id="about" class="anchor" href="#about" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a name="about">About</a>
+</h3>
+
+<p>Every effort has been made to ensure that all third-party software used be properly acknowledged (see license information in the <strong>About</strong> dialog).  Please feel free to contact by <a href="mailto:lightandshadowscamera@gmail.com">email</a> anytime should such information be found incomplete or inaccurate.</p>
+
+<p>You can also visit <a href="https://plus.google.com/u/0/communities/117565395761503074053">Product Page</a> for development updates regarding the app.</p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
