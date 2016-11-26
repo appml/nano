@@ -313,6 +313,12 @@ highlight|&lt;mark&gt;???&lt;/mark&gt;
 encode|neutriNote#replace \s %20
 </code></pre>
 
+<p>An example to trim leading and trailing spaces from a body of text:</p>
+
+<pre><code># Usage: select "trim some_text_string" and expand, leading and trailing spaces of some_text_string will be removed.
+trim|neutriNote#trim
+</code></pre>
+
 <p>You can also use basic C style format specifiers to "morph" text snippets.</p>
 
 <pre><code># Usage: select "addcomma some_numeric_string" and expand, some_numeric_string will be comma separated.
