@@ -263,6 +263,17 @@ ps|neutriNote$ ps
 
 You can include basic parameters with the commands, just write them after the command shortcut and separate each parameter with space+commas like this: `shortcut_label param1 , param2 , param3`.  Select the whole string and tap the expand icon to paste the output.  Users of cURL can also simplify the definitons of their expansions with `neutriNote?` instead of `neutriNote$` and trail that directly by a URL.
 
+To emulate the behavior of to-do list, shortcuts can be defined to mimic checkbox toggling.
+
+```
+# Usage: Place cursor next to any asterisk and expand.  To toggle checkboxes, tap expand again.
+
+*|[▪]
+[▪]|[✔]
+[✖]|[▪]
+[✔]|[✖]
+```
+
 
 ### <a name="batchselect">Batch Select</a>
 Special selection commands are available for better productivity.
