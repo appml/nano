@@ -1817,18 +1817,20 @@
     return exports;
   })();
 
-  // Set up
-  neutriNote.document = document;
+  ////////////////
+  // Initialize
+  ////////////////
+  neutriNote.init(document);
 
   ////////////////
   // Get raw data
   ////////////////
-  var str = neutriNote.getContent();
+  var str = neutriNote.getData();
 
   ///////////////////////
   // Setup rendered view
   ///////////////////////
-  neutriNote.init('content');
+  neutriNote.prepare();
 
   ////////////////
   // Parse
@@ -1846,5 +1848,5 @@
   ////////////////
   // Set content
   ////////////////
-  neutriNote.setContent('content', html_doc.toString());
+  neutriNote.setContent(html_doc.toString());
 })(window, document);
