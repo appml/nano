@@ -394,7 +394,7 @@ neutriNote's Markdown module may be replaced by other flavors.  To enable, you w
 | init(document)       | Initialize the output. |
 | getData()            | Get raw note content.  |                     
 | prepare()            | Prepare for rendering. |
-| setContent(html)     | Set content of element with id to html. |
+| setContent(html)     | Set content to html.   |
 
 
 As an example, suppose you simply want to render everything in italics, all you need is to create `~neutrinote_script.txt` and paste in the following code:
