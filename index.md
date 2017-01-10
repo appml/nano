@@ -390,7 +390,7 @@ Note that **neutriNote Connector** will not handle files without `.txt` extensio
 neutriNote's Markdown engine is fully modular and swappable.  If you are familar with compiler scripting and would like to integrate your own parser, you would need to use the following entry points in your code:
 
 | Methods              | Descriptions           |                              
-| ---------------------|:----------------------:|
+| ---------------------|------------------------|
 | init(document)       | Initialize the framework. |
 | getData()            | Get raw content from a note.  |                     
 | prepare()            | Prepare for the rendering process. |
@@ -429,7 +429,7 @@ To illustrate, suppose you simply want to render everything in italics, all you 
 })(window, document);
 ```
 
-Now tap render to view the output of your custom parser.
+Now go to your note and tap render to view the output of your custom parser.
 
 More useful parsing can be achieved by following the same pattern.  Take a look at this example of integrating [org-mode](https://raw.githubusercontent.com/appml/nano/master/samples/%7Eneutrinote_script.txt) into neutriNote.
 
