@@ -396,6 +396,38 @@ neutriNote's Markdown engine is fully modular and swappable.  If you are familar
 | prepare()            | Prepare for the rendering process. |
 | setContent(html)     | Set view to rendering outcome.   |
 
+Adopt this pattern of invoking neurtiNote in your script:
+
+```
+(function (){
+  ////////////
+  // Set up //
+  ////////////
+  neutriNote.init(document);
+
+  //////////////////
+  // Get raw data //
+  //////////////////
+  var str = neutriNote.getData();
+
+  ///////////////////////////
+  // Prepare for rendering //
+  ///////////////////////////
+  neutriNote.prepare();
+
+  ///////////
+  // Parse //
+  ///////////
+  
+  ...
+
+  /////////////////
+  // Set content //
+  /////////////////
+  neutriNote.setContent(str)
+
+})(window, document);
+```
 
 To illustrate, suppose you simply want to render everything in italics, all you need is to create `~neutrinote_script.txt` and paste in the following code:
 
