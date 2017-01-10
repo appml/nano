@@ -386,18 +386,18 @@ Advanced users may enable multiple text file types for **neutriNote**.  To setup
 
 Note that **neutriNote Connector** will not handle files without `.txt` extension.  To sync files without `.txt` extension with Dropbox you would have to install a third party app or install [**neutriNote Connector+**](https://play.google.com/store/apps/details?id=com.appmindlab.connectorplus).  (If you have **neutriNote Connector** installed, you would need to remove it prior to launching **neutriNote Connector+**.)
 
-### <a name="api">API (v2.0.8)</a>
-neutriNote's Markdown module may be replaced by other flavors.  To enable, you would need to use the following entry points in your code to integrate your parser with neutrinote:
+### <a name="api">API (v2.0.8) </a>
+neutriNote's Markdown engine is fully modular and swappable.  If you are familar with compiler scripting and would like to integrate your own parser, you would need to use the following entry points in your code:
 
 | Methods              | Descriptions           |                              
 | ---------------------|:----------------------:|
-| init(document)       | Initialize the output. |
-| getData()            | Get raw note content.  |                     
-| prepare()            | Prepare for rendering. |
-| setContent(html)     | Set content to html.   |
+| init(document)       | Initialize the framework. |
+| getData()            | Get raw content from a note.  |                     
+| prepare()            | Prepare for the rendering process. |
+| setContent(html)     | Set view to rendering outcome.   |
 
 
-As an example, suppose you simply want to render everything in italics, all you need is to create `~neutrinote_script.txt` and paste in the following code:
+To illustrate, suppose you simply want to render everything in italics, all you need is to create `~neutrinote_script.txt` and paste in the following code:
 
 ```
 (function (){
@@ -431,7 +431,7 @@ As an example, suppose you simply want to render everything in italics, all you 
 
 Now tap render to view the output of your custom parser.
 
-For more complex parsers, such as other Markdown variants, or even non-Markdown syntax like [org-mode](https://raw.githubusercontent.com/appml/nano/master/samples/%7Eneutrinote_script.txt), simply swap in calls made to the parser of your choosing.
+More useful parsing can be achieved by following the same pattern.  Take a look at this example of integrating [org-mode](https://raw.githubusercontent.com/appml/nano/master/samples/%7Eneutrinote_script.txt) into neutriNote.
 
 To restore default PHP Markdown syntax, just remove `~neutrinote_script.txt`.
 
