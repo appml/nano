@@ -419,7 +419,7 @@ Adopt this pattern of invoking neurtiNote in your script:
   // Parse //
   ///////////
   
-  ...
+  ... <- Custom conversion logic goes here!
 
   /////////////////
   // Set content //
