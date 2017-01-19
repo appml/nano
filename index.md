@@ -283,6 +283,7 @@ Special selection commands are available for better productivity.
 * Tap `Bottom` icon in *Toolbox* when a section of text has been selected to extend selection all the way to the bottom.
 * Tap **editor status** next to note title to gather statistics for current note when nothing is selected, or just the selected text when a section of text has been selected (experimental).
 * To edit an ASCII drawing, select it and tap the **Sketch** icon.
+* To encode/decode a portion of the note, select the portion and choose **Encode/Decode** from menu.
 * Tap `(` or `)` from *Symbol Bar* when text selection is active to enclose the selected text in brackets.  Hint: also try out other symbol pairs.
 
     
