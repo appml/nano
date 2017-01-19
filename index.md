@@ -248,6 +248,16 @@ An example to trim leading and trailing spaces from a body of text:
 trim|neutriNote#trim
 ```
 
+Shortcuts to obfuscate / defuscate a chunk of text:
+
+```
+# Usage: select "obfuscate some_text_string" and expand, some_text_string will be obfuscated.
+obfuscate|neutriNote#encode
+
+# Usage: select "defuscate some_text_string" and expand, some_text_string will be defuscated.
+defuscate|neutriNote#decode
+```
+
 You can also use basic C style format specifiers to "morph" text snippets.
 
 ```
@@ -262,8 +272,6 @@ date|neutriNote$ date
 ps|neutriNote$ ps
 ```
 
-You can include basic parameters with the commands, just write them after the command shortcut and separate each parameter with space+commas like this: `shortcut_label param1 , param2 , param3`.  Select the whole string and tap the expand icon to paste the output.  Users of cURL can also simplify the definitons of their expansions with `neutriNote?` instead of `neutriNote$` and trail that directly by a URL.
-
 To emulate the behavior of to-do list, shortcuts can be defined to mimic checkbox toggling.
 
 ```
@@ -274,6 +282,8 @@ To emulate the behavior of to-do list, shortcuts can be defined to mimic checkbo
 [✖]|[▪]
 [✔]|[✖]
 ```
+
+You can include basic parameters with the commands, just write them after the command shortcut and separate each parameter with space+commas like this: `shortcut_label param1 , param2 , param3`.  Select the whole string and tap the expand icon to paste the output.  Users of cURL can also simplify the definitons of their expansions with `neutriNote?` instead of `neutriNote$` and trail that directly by a URL.
 
 
 ### <a name="batchselect">Batch Select</a>
