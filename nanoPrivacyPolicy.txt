@@ -10,4 +10,4 @@ Privacy Policy
 
 4. neutriNote is not part of any ad or statistics network. 
 
-The developer has no interest in, and is morally opposed to, the selling or otherwise abuse of any customer data.
+5. The developer has no interest in, and is morally opposed to, the selling or otherwise abuse of any customer data.
