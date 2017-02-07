@@ -1,0 +1,13 @@
+==============
+Privacy Policy
+==============
+
+1. This app does not gather personal information.
+
+2. The developer does not know anything about the customer except what is given in the Google Wallet payment details. That data will not be used by the developer except for accounting and tax purposes, where required by the relevant tax authorities.
+
+3. This app does not, to the best of the developer's knowledge, send any data, anywhere.  The developer, however, has no control over the data which Google may collect when the app uses Google services e.g. for some forms of location detection.
+
+4. This app is not part of any ad or statistics network. 
+
+5. The developer has no interest in, and is morally opposed to, the selling or otherwise abuse of any customer data.
