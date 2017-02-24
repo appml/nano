@@ -340,7 +340,7 @@ The following editor shortcuts are supported when connected to a physical keyboa
 | `Ctrl-]`        | Indent     |  
 | `Ctrl-[`        | Un-indent  |  
 
-### <a name="gestures">Gestures</a>
+### <a name="s">Gestures</a>
 Various user interface elements support gestures for better productivity:
 
 * Note list screen:
@@ -352,7 +352,7 @@ Various user interface elements support gestures for better productivity:
     * Double tap **list status** to resume default filter/day.
 
 * Edit screen:
-    * Tap **editor status** (to the right of the note title) to view note statistics and clipboard content, long tap to view recent updates in other notes without leaving the current note.
+    * Tap **editor status** (to the right of the note title) to view note statistics and clipboard content; long tap clipboard content to view full clipboard content; long tap update status to view recent updates in other notes without leaving the current note.
     * Tap the **Shortcut** icon to view user defined shortcuts.
     * Immediately after conducting a search, tap the **Search** icon to advance to the next match.
     * Double tap **editor status** to temporarily save the current cursor position.  
