@@ -25,7 +25,6 @@
 1. [Privacy Policy](#privacy)
 1. [TODO](#todo)
 1. [About](#about)
-1. [Be a Supporter](#supporter)
 
 ### <a name="started">Getting Started</a>
 Thank you for choosing **neutriNote**.  
@@ -551,5 +550,4 @@ Every effort has been made to ensure that all third-party software used be prope
 
 You can also visit [Product Page](https://plus.google.com/u/0/communities/117565395761503074053) for development updates regarding the app.
 
-### <a name="supporter">Be a Supporter</a>
-If you find neutriNote useful, please introduce it to those who might enjoy the app. Please also consider a [donation](https://ko-fi.com/A355OQ2) of any amount.  Your gifts will go directly to test devices to ensure app compatibility with new versions of Android.  Thank you.
+To further support neutriNote's development, please visit my [Ko-fi](https://ko-fi.com/A355OQ2) page.
