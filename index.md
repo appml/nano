@@ -550,4 +550,4 @@ Every effort has been made to ensure that all third-party software used be prope
 
 You can also visit [Product Page](https://plus.google.com/u/0/communities/117565395761503074053) for development updates regarding the app.
 
-To further support neutriNote's development, please visit developer's [Ko-fi](https://ko-fi.com/A355OQ2) page.
+To further support neutriNote's development, please visit developer's [Ko-fi](https://ko-fi.com/neutriNote) page.
