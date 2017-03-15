@@ -265,6 +265,13 @@ You can also use basic C style format specifiers to "morph" text snippets.
 addcomma|neutriNote#morph ℅,d
 ```
 
+Even there is a way to remove HTML tags from strings:
+
+```
+# Usage: select "notag some_text_string" and expand to remove HTML tags from some_text_string.
+notag|neutriNote#removeHTML
+```
+
 You can create shortcuts for simple shell commands as well.  Give it a try by adding the prefix `neutriNote$` to the commands just like below:
 
 ```
@@ -295,6 +302,7 @@ Special selection commands are available for better productivity.
 * To edit an ASCII drawing, select it and tap the **Sketch** icon.
 * To encode/decode a portion of the note, select the portion and choose **Encode/Decode** from menu.
 * Tap `(` or `)` from *Symbol Bar* when text selection is active to enclose the selected text in brackets.  Hint: also try out other symbol pairs.
+* Select multiple paragraphs and you can apply some symbols to all paragraphs simultaneously from the **Markdown Symbol Toolbar**.  For example, you can indent all paragraphs by tapping the `➡` symbol, or turning the paragraphs into a bulleted list by tapping `*`.
 
     
 ### <a name="voicememo">Voice Memo</a>
@@ -340,7 +348,7 @@ The following editor shortcuts are supported when connected to a physical keyboa
 | `Ctrl-]`        | Indent     |  
 | `Ctrl-[`        | Un-indent  |  
 
-### <a name="s">Gestures</a>
+### <a name="gestures">Gestures</a>
 Various user interface elements support gestures for better productivity:
 
 * Note list screen:
@@ -401,7 +409,7 @@ Note that **neutriNote Connector** will not handle files without `.txt` extensio
 neutriNote's Markdown engine is fully modular and swappable.  If you are familar with compiler scripting and would like to integrate your own parser, you would need to use the following entry points in your code:
 
 | Methods              | Descriptions           |                              
-| ---------------------|------------------------|
+| ---------------------|----------------------|
 | init(document)       | Initialize the framework. |
 | getData()            | Get raw content from a note.  |                     
 | prepare()            | Prepare for the rendering process. |
@@ -439,6 +447,7 @@ Adopt this pattern of invoking neurtiNote in your script:
 
 })(window, document);
 ```
+
 
 To illustrate, suppose you simply want to render everything in italics, all you need is to create `~neutrinote_script.txt` and paste in the following code:
 
