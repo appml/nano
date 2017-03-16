@@ -265,7 +265,17 @@ You can also use basic C style format specifiers to "morph" text snippets.
 addcomma|neutriNote#morph ℅,d
 ```
 
-Even there is a way to remove HTML tags from strings:
+These simple shortcuts make it easy to sort lines:
+
+```
+# Usage: select "sort some_lines" and expand, some_lines will be sorted.
+sort|neutriNote#sort
+
+# Usage: select "rsort some_lines" and expand, some_lines will be sorted in reverse order.
+rsort|neutriNote#rsort
+```
+
+There is even a way to remove HTML tags from strings:
 
 ```
 # Usage: select "notag some_text_string" and expand to remove HTML tags from some_text_string.
@@ -302,7 +312,7 @@ Special selection commands are available for better productivity.
 * To edit an ASCII drawing, select it and tap the **Sketch** icon.
 * To encode/decode a portion of the note, select the portion and choose **Encode/Decode** from menu.
 * Tap `(` or `)` from *Symbol Bar* when text selection is active to enclose the selected text in brackets.  Hint: also try out other symbol pairs.
-* Select multiple paragraphs and you can apply some symbols to all paragraphs simultaneously from the **Markdown Symbol Toolbar**.  For example, you can indent all paragraphs by tapping the `➡` symbol, or turning the paragraphs into a bulleted list by tapping `*`.
+* Edit multiple paragraphs: select multiple paragraphs and tap a symbol / action from  **Markdown Symbol Toolbar**.  For example, you can indent selected paragraphs by tapping `➡`, or turn selected paragraphs into a bulleted list simply by tapping `*`.
 
     
 ### <a name="voicememo">Voice Memo</a>
