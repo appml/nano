@@ -386,21 +386,21 @@ You can tinker with the variables found inside of **~neutrinote_settings_data** 
 | Variable Names                                    |  Values                                                                                                          |
 | ------------------------------------------------- |:----------------------------------------------------------------------------------------------------------------:|
 | com.appmindlab.nano.pref_open_in_markdown         | `true`: always open notes in markdown preview                                                                    |
-| com.appmindlab.nano.pref_show_toolbar             | `true`: always show edit toolbar                                                                                 | 
-| com.appmindlab.nano.pref_latex_single_dollar      | `true`: use single dollar signs to signify math expressions                                                      |  
-| com.appmindlab.nano.pref_preview_mode             | `start`: display the beginning of notes in preview, `end`: display the end, `off`: disable preview               |
-| com.appmindlab.nano.pref_canvas_strokes           | Fixed width symbols supported by sketch tool delimited by semicolons, e.g., `:;\;/;_;-;,;●` (vertical bar and semicolon not allowed) |
-| com.appmindlab.nano.pref_keep_deleted_copies      | `true`: keep copies of deleted files under `trash` folder                                                        |
 | com.appmindlab.nano.pref_markdown_trigger         | Specify a metadata substring pattern to open notes in Markdown by default                                        |
-| com.appmindlab.nano.pref_linkify_trigger          | Specify a metadata substring pattern to open notes linkified by default                                          |
 | com.appmindlab.nano.pref_safe_mode_tag            | Specify a metadata substring pattern to disable internal Markdown parser                                         |
-| com.appmindlab.nano.pref_local_priority_tag       | Specify a metadata substring pattern to prevent local copy from being overwritten by remote changes.  Note that conflicts may occur if a note is being edited on multiple devices |                      
-| com.appmindlab.nano.pref_indent_char              | Specify the character(s) to use for indentation.  Default: 4 spaces                                              |
-| com.appmindlab.nano.pref_icon_behavior            | 0: animation off, 1: animation on, 2: [snooze](#snooze) animation                                                |
+| com.appmindlab.nano.pref_linkify_trigger          | Specify a metadata substring pattern to open notes linkified by default                                          |
+| com.appmindlab.nano.pref_latex_single_dollar      | `true`: use single dollar signs to signify math expressions                                                      |
+| com.appmindlab.nano.pref_indent_char              | Specify the character(s) to use for indentation.  Default: 4 spaces                                              |  
+| com.appmindlab.nano.pref_wrap_pre_code            | `true`: wrap rendered code lines.  Default: true                                                                 |
+| com.appmindlab.nano.pref_show_toolbar             | `true`: always show edit toolbar                                                                                 |
+| com.appmindlab.nano.pref_canvas_strokes           | Fixed width symbols supported by sketch tool delimited by semicolons, e.g., `:;\;/;_;-;,;●` (vertical bar and semicolon not allowed) | 
 | com.appmindlab.nano.pref_excluded_buttons         | Selectively hide toolbar buttons via a semicolon delimited string, e.g., `location;draw;replace` will hide the location, draw, and replace buttons on the toolbar.  The following buttons can be hidden: `markdown`, `time`, `date`, `location`, `expand`, `draw`, `top`, `bottom`, `find`, `replace`, `barcode`, `image`, `ocr`, `define`, `calculate`, `search` |
 |com.appmindlab.nano.pref_custom_date_format        | Override system date stamp format with custom [date format](https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html) |
 |com.appmindlab.nano.pref_custom_time_format        | Override system time stamp format with custom [time format](https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html) |
-
+| com.appmindlab.nano.pref_preview_mode             | `start`: display the beginning of notes in preview, `end`: display the end, `off`: disable preview               |
+| com.appmindlab.nano.pref_icon_behavior            | 0: animation off, 1: animation on, 2: [snooze](#snooze) animation                                                |
+| com.appmindlab.nano.pref_keep_deleted_copies      | `true`: keep copies of deleted files under `trash` folder                                                        |
+| com.appmindlab.nano.pref_local_priority_tag       | Specify a metadata substring pattern to prevent local copy from being overwritten by remote changes.  Note that conflicts may occur if a note is being edited on multiple devices |            
 
 Advanced users may enable multiple text file types for **neutriNote**.  To setup, please carefully follow all the steps below:
 
