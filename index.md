@@ -306,8 +306,8 @@ You can include basic parameters with the commands, just write them after the co
 ### <a name="batchselect">Batch Select</a>
 Special selection commands are available for better productivity.
 
-* Tap `Top` icon in *Toolbox* when a section of text has been selected to extend selection all the way to the top.
-* Tap `Bottom` icon in *Toolbox* when a section of text has been selected to extend selection all the way to the bottom.
+* Tap `Top` icon in *Toolbox* when a section of text has been selected to extend selection all the way to the top, or if an anchor has been positioned above current cursor, extend selection up to the anchor.
+* Tap `Bottom` icon in *Toolbox* when a section of text has been selected to extend selection all the way to the bottom, or if an anchor has been positioned below current cursor, extend selection down to the anchor.
 * Tap **editor status** next to note title to gather statistics for current note when nothing is selected, or just the selected text when a section of text has been selected (experimental).
 * To edit an ASCII drawing, select it and tap the **Sketch** icon.
 * To encode/decode a portion of the note, select the portion and choose **Encode/Decode** from menu.
