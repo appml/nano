@@ -300,7 +300,7 @@ To emulate the behavior of to-do list, shortcuts can be defined to mimic checkbo
 [✔]|[✖]
 ```
 
-Multitasking especially with floating apps is easier with shortcut like this.
+Multitasking especially with floating apps is easier with shortcut like this:
 
 ```
 # Usage: launch a terminal without leaving neutriNote by expanding the shortcut.
