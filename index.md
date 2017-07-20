@@ -409,7 +409,7 @@ You can tinker with the variables found inside of **~neutrinote_settings_data** 
 |com.appmindlab.nano.pref_custom_time_format        | Override system time stamp format with custom [time format](https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html) |
 | com.appmindlab.nano.pref_preview_mode             | `start`: display the beginning of notes in preview, `end`: display the end, `off`: disable preview               |
 | com.appmindlab.nano.pref_icon_behavior            | 0: animation off, 1: animation on, 2: [snooze](#snooze) animation                                                |
-| com.appmindlab.nano.pref_keep_deleted_copies      | `true`: keep copies of deleted files under `trash` folder                                                        |
+| com.appmindlab.nano.pref_keep_deleted_copies      | `true`: keep copies of deleted files under `trash_bin` folder                                                        |
 | com.appmindlab.nano.pref_local_priority_tag       | Specify a metadata substring pattern to prevent local copy from being overwritten by remote changes.  Note that conflicts may occur if a note is being edited on multiple devices |            
 
 Advanced users may enable multiple text file types for **neutriNote**.  To setup, please carefully follow all the steps below:
