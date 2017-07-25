@@ -15,6 +15,7 @@
     * [Keyboard](#keyboard)
     * [Gestures](#gestures)
     * [Hacks](#hacks)
+    * [Built-in Variables](#variables)
     * [API](#api)
     * [Snooze](#snooze)
     * [Misc.](#misc)
@@ -410,7 +411,9 @@ You can tinker with the variables found inside of **~neutrinote_settings_data** 
 | com.appmindlab.nano.pref_preview_mode             | `start`: display the beginning of notes in preview, `end`: display the end, `off`: disable preview               |
 | com.appmindlab.nano.pref_icon_behavior            | 0: animation off, 1: animation on, 2: [snooze](#snooze) animation                                                |
 | com.appmindlab.nano.pref_keep_deleted_copies      | `true`: keep copies of deleted files under `trash_bin` folder                                                        |
-| com.appmindlab.nano.pref_local_priority_tag       | Specify a metadata substring pattern to prevent local copy from being overwritten by remote changes.  Note that conflicts may occur if a note is being edited on multiple devices |            
+| com.appmindlab.nano.pref_local_priority_tag       | Specify a metadata substring pattern to prevent local copy from being overwritten by remote changes.  Note that conflicts may occur if a note is being edited on multiple devices |
+| com.appmindlab.nano.pref_eval_built_in_variables  | `true`: evalute [built-in variables](#variables) in search or shortcut definitions |                      
+
 
 Advanced users may enable multiple text file types for **neutriNote**.  To setup, please carefully follow all the steps below:
 
@@ -424,6 +427,23 @@ Advanced users may enable multiple text file types for **neutriNote**.  To setup
 (To reverse the support of multiple file types, you would need to remove the file `~neutrinote_multitype.txt`, then un-install/re-install **neutriNote**.)
 
 Note that **neutriNote Connector** will not handle files without `.txt` extension.  To sync files without `.txt` extension with Dropbox you would have to install a third party app or install [**neutriNote Connector+**](https://play.google.com/store/apps/details?id=com.appmindlab.connectorplus).  (If you have **neutriNote Connector** installed, you would need to remove it prior to launching **neutriNote Connector+**.)
+
+### <a name="variables">Built-in Variables (v2.3.4) </a>
+Built-in variables may be used in search or shortcut definitions.  For example, to find notes with tomorrow's time stamp, simply type `@tomorrow` in the search box.  You can even include built-in variables in **Custom Filters**, say, for listing notes containing tomorrow's time stamp, or include them in shortcut definitions to generate text expansion snippets on the fly.
+
+| Variables            | Descriptions                            |                              
+| ---------------------|-----------------------------------------|
+| @title               | Title of the current note.              |
+| @created             | Created time of the current note.       |                     
+| @modified            | Last modified time of the current note. |
+| @accessed            | Last accessed time of the current note. |
+| @clipboard           | Clipboard content.                      |
+| @yesterday           | Yesterday's date stamp.                 |
+| @today               | Today's date stamp.                     |
+| @tomorrow            | Tomorrow's date stamp.                  |
+| @now                 | Current time stamp.                     |
+
+See [Hacks](#hacks) for information on how to enable the use of built-in variables.
 
 ### <a name="api">API (v2.0.8) </a>
 neutriNote's Markdown engine is fully modular and swappable.  If you are familar with compiler scripting and would like to integrate your own parser, you would need to use the following entry points in your code:
