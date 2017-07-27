@@ -16,6 +16,7 @@
     * [Gestures](#gestures)
     * [Hacks](#hacks)
     * [Built-in Variables](#variables)
+    * [SD Card](#sdcard)
     * [API](#api)
     * [Snooze](#snooze)
     * [Misc.](#misc)
@@ -412,7 +413,8 @@ You can tinker with the variables found inside of **~neutrinote_settings_data** 
 | com.appmindlab.nano.pref_icon_behavior            | 0: animation off, 1: animation on, 2: [snooze](#snooze) animation                                                |
 | com.appmindlab.nano.pref_keep_deleted_copies      | `true`: keep copies of deleted files under `trash_bin` folder                                                        |
 | com.appmindlab.nano.pref_local_priority_tag       | Specify a metadata substring pattern to prevent local copy from being overwritten by remote changes.  Note that conflicts may occur if a note is being edited on multiple devices |
-| com.appmindlab.nano.pref_eval_built_in_variables  | `true`: evalute [built-in variables](#variables) in search or shortcut definitions |                      
+| com.appmindlab.nano.pref_eval_built_in_variables  | `true`: evalute [built-in variables](#variables) in search or shortcut definitions            |                      
+| com.appmindlab.nano.pref_sdcard_repo              | `true`: allow local repository on [SD card](#sdcard)                                          |                
 
 
 Advanced users may enable multiple text file types for **neutriNote**.  To setup, please carefully follow all the steps below:
@@ -444,6 +446,24 @@ Built-in variables may be used in search or shortcut definitions.  For example, 
 | @now                 | Current time stamp.                     |
 
 See [Hacks](#hacks) for information on how to enable the use of built-in variables.
+
+### <a name="sdcard">SD Card (v2.3.4) </a>
+For devices running Android 5 or above, **Local Repository** may reside on SD card with caveats:
+
+* **Syncthing** will no longer work.
+* **neutriNote Connector / Connector+** will no longer work.  You may continue to sync your repository with 3rd party sync apps nonetheless.
+* "Pull to sync" from note list will no longer work.  
+
+Should you decide to make the switch, go through the following steps with caution:
+
+1. Backup ALL app settings and notes.
+1. Add `com.appmindlab.nano.pref_sdcard_repo|true` in `~neutrinote_settings_data.txt`.
+1. Copy your repository to a new location on SD card using any file manager app.
+1. Import the new settings by tapping **Restore App Data**.
+1. Go to **Settings**, tap **Local Repository Path**.  You should now see your SD card listed as an option.
+1. Pick the newly moved repository under the SD card.
+1. That's all.  Notice that **Incremental Backup** will from now on be stored on the SD card.
+
 
 ### <a name="api">API (v2.0.8) </a>
 neutriNote's Markdown engine is fully modular and swappable.  If you are familar with compiler scripting and would like to integrate your own parser, you would need to use the following entry points in your code:
