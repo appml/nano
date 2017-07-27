@@ -452,7 +452,6 @@ For devices running Android 5 or above, **Local Repository** may reside on SD ca
 
 * **Syncthing** will no longer work.
 * **neutriNote Connector / Connector+** will no longer work.  You may continue to sync your repository with 3rd party sync apps nonetheless.
-* "Pull to sync" from note list will no longer work.  
 
 Should you decide to make the switch, go through the following steps with caution:
 
