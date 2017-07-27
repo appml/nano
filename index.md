@@ -452,8 +452,9 @@ For devices running Android 5 or above, **Local Repository** may reside on SD ca
 
 * **Syncthing** will no longer work.
 * **neutriNote Connector / Connector+** will no longer work.  You may continue to sync your repository with 3rd party sync apps nonetheless.
+* To trigger immediate sync using "pull refresh", Tasker users may want to capture file modified event of `~neutrinote.meta`.
 
-Should you decide to make the switch, go through the following steps with caution:
+Should you decide to make the switch, please apply the following steps with caution:
 
 1. Backup ALL app settings and notes.
 1. Add `com.appmindlab.nano.pref_sdcard_repo|true` in `~neutrinote_settings_data.txt`.
