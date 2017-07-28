@@ -16,7 +16,7 @@
     * [Gestures](#gestures)
     * [Hacks](#hacks)
     * [Built-in Variables](#variables)
-    * [SD Card](#sdcard)
+    * [External Storage](#externalstorage)
     * [API](#api)
     * [Snooze](#snooze)
     * [Misc.](#misc)
@@ -414,9 +414,7 @@ You can tinker with the variables found inside of **~neutrinote_settings_data** 
 | com.appmindlab.nano.pref_keep_deleted_copies      | `true`: keep copies of deleted files under `trash_bin` folder                                                        |
 | com.appmindlab.nano.pref_local_priority_tag       | Specify a metadata substring pattern to prevent local copy from being overwritten by remote changes.  Note that conflicts may occur if a note is being edited on multiple devices |
 | com.appmindlab.nano.pref_eval_built_in_variables  | `true`: evalute [built-in variables](#variables) in search or shortcut definitions            |                      
-| com.appmindlab.nano.pref_sdcard_repo              | `true`: allow local repository on [SD card](#sdcard)                                          |                
-
-
+             
 Advanced users may enable multiple text file types for **neutriNote**.  To setup, please carefully follow all the steps below:
 
 1. Backup ALL app settings and notes.
@@ -447,23 +445,23 @@ Built-in variables may be used in search or shortcut definitions.  For example, 
 
 See [Hacks](#hacks) for information on how to enable the use of built-in variables.
 
-### <a name="sdcard">SD Card (v2.3.4) </a>
-For devices running Android 6 or above, **Local Repository** may reside on SD card with caveats:
+### <a name="externalstorage">External Storage (v2.3.4) </a>
+For devices running Android 6 or above, **Local Repository** may reside on external storage (more commonly known by users as SD card) with caveats:
 
 * **Syncthing** will no longer work.
-* **neutriNote Connector+** (but not **neutriNote Connector**) works with **Local Repository** on SD .  
-* **DO NOT** replace the SD card or risk data loss.
+* **neutriNote Connector+** (but not **neutriNote Connector**) works with **Local Repository** on external storage.  
+* **DO NOT** replace the external storage or risk data loss.
 
-The following steps are for transferring **Local Repository** from internal storage to SD card:
+The following steps are for transferring **Local Repository** from internal storage to external storage (for new installs simply pick a path from external storage as usual):
 
 1. Backup ALL app settings and notes.
 1. Uninstall neutriNote.
-1. Copy your repository to a new location on SD card using any file manager app.
+1. Copy your repository to a new location on external storage using any file manager app.
 1. Reinstall neutriNote.
-1. Pick the repository path under SD card.
+1. Pick the repository path under external storage.
 1. Tap **Restore App Data**.
 1. Adjust **Local Repository** path in sync apps you are currently using.
-1. That's it!  Notice that **Incremental Backup** will from now on be also stored on the SD card.
+1. That's it!  Notice that **Incremental Backup** will from now on be also stored on the external storage.
 
 
 ### <a name="api">API (v2.0.8) </a>
