@@ -451,7 +451,7 @@ See [Hacks](#hacks) for information on how to enable the use of built-in variabl
 For devices running Android 5 or above, **Local Repository** may reside on SD card with caveats:
 
 * **Syncthing** will no longer work.
-* **neutriNote Connector / Connector+** will no longer work.  You may continue to sync your repository with 3rd party sync apps nonetheless.
+* **neutriNote Connector+** (but not **neutriNote Connector**) will support **Local Repository** on SD.
 * To trigger immediate sync using "pull refresh", Tasker users may want to capture file modified event of `~neutrinote.meta`.
 
 Should you decide to make the switch, please apply the following steps with caution:
