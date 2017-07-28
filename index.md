@@ -448,21 +448,22 @@ Built-in variables may be used in search or shortcut definitions.  For example, 
 See [Hacks](#hacks) for information on how to enable the use of built-in variables.
 
 ### <a name="sdcard">SD Card (v2.3.4) </a>
-For devices running Android 5 or above, **Local Repository** may reside on SD card with caveats:
+For devices running Android 6 or above, **Local Repository** may reside on SD card with caveats:
 
 * **Syncthing** will no longer work.
-* **neutriNote Connector+** (but not **neutriNote Connector**) will support **Local Repository** on SD.
-* To trigger immediate sync using "pull refresh", Tasker users may want to capture file modified event of `~neutrinote.meta`.
+* **neutriNote Connector+** (but not **neutriNote Connector**) works with **Local Repository** on SD .  
+* **DO NOT** replace the SD card or risk data loss.
 
-Should you decide to make the switch, please apply the following steps with caution:
+The following steps are for transferring **Local Repository** from internal storage to SD card:
 
 1. Backup ALL app settings and notes.
-1. Add `com.appmindlab.nano.pref_sdcard_repo|true` in `~neutrinote_settings_data.txt`.
+1. Uninstall neutriNote.
 1. Copy your repository to a new location on SD card using any file manager app.
-1. Import the new settings by tapping **Restore App Data**.
-1. Go to **Settings**, tap **Local Repository Path**.  You should now see your SD card listed as an option.
-1. Pick the newly moved repository under the SD card.
-1. That's all.  Notice that **Incremental Backup** will from now on be stored on the SD card.
+1. Reinstall neutriNote.
+1. Pick the repository path under SD card.
+1. Tap **Restore App Data**.
+1. Adjust **Local Repository** path in sync apps you are using currently.
+1. That's it!  Notice that **Incremental Backup** will from now on be stored on the SD card.
 
 
 ### <a name="api">API (v2.0.8) </a>
