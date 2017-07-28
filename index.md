@@ -462,8 +462,8 @@ The following steps are for transferring **Local Repository** from internal stor
 1. Reinstall neutriNote.
 1. Pick the repository path under SD card.
 1. Tap **Restore App Data**.
-1. Adjust **Local Repository** path in sync apps you are using currently.
-1. That's it!  Notice that **Incremental Backup** will from now on be stored on the SD card.
+1. Adjust **Local Repository** path in sync apps you are currently using.
+1. That's it!  Notice that **Incremental Backup** will from now on be also stored on the SD card.
 
 
 ### <a name="api">API (v2.0.8) </a>
