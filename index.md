@@ -451,8 +451,7 @@ For devices running Android 6 or above, **Local Repository** may reside on exter
 
 * **Syncthing** will no longer work.
 * Not supported by both **neutriNote Connector / Connector+**. 
-* **DO NOT** replace the external storage or risk data loss.
-* Since whether this can be enabled depends on ROMs / devices, this advanced option is not recommended for non-technical users.
+* Since whether this can be enabled depends on ROMs / devices, it is not recommended for non-technical users.
 
 The following steps are for transferring **Local Repository** from internal storage to external storage (for new installs simply pick a path from external storage as usual):
 
@@ -461,7 +460,7 @@ The following steps are for transferring **Local Repository** from internal stor
 1. Tap **Restore App Data**.
 1. Copy your repository to a new location on external storage using any file manager app.
 1. Pick the repository path under external storage.  
-    * If an error occurs, your device is incompatible and you may revert the setting above.
+    * If an error occurs, your device is incompatible and neutriNote will automatically fall back to your existing repository.
     * If no error occurs, adjust **Local Repository** path in sync apps you are currently using.
 
 ### <a name="api">API (v2.0.8) </a>
