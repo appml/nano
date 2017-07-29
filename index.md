@@ -449,10 +449,10 @@ See [Hacks](#hacks) for information on how to enable the use of built-in variabl
 ### <a name="externalstorage">External Storage (v2.3.4) </a>
 For devices running Android 6 or above, **Local Repository** may reside on external storage (more commonly known by users as SD card) with caveats:
 
-* Whether this can be enabled depends on ROMs / devices.
 * **Syncthing** will no longer work.
-* **neutriNote Connector+** (but not **neutriNote Connector**) works with **Local Repository** on external storage.  
+* Not supported by both **neutriNote Connector / Connector+**. 
 * **DO NOT** replace the external storage or risk data loss.
+* Since whether this can be enabled depends on ROMs / devices, this advanced option is not recommended for non-technical users.
 
 The following steps are for transferring **Local Repository** from internal storage to external storage (for new installs simply pick a path from external storage as usual):
 
