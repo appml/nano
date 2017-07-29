@@ -453,7 +453,7 @@ For devices running Android 6 or above, **Local Repository** may reside on exter
 * Not supported by both **neutriNote Connector / Connector+**. 
 * Since whether this can be enabled depends on ROMs / devices, it is not recommended for non-technical users.
 
-The following steps are for transferring **Local Repository** from internal storage to external storage (for new installs simply pick a path from external storage as usual):
+The following steps are for transferring **Local Repository** from internal storage to external storage:
 
 1. Backup ALL app settings and notes.
 1. Add this line `com.appmindlab.nano.pref_external_storage_repo|true` to `~neutrinote_settings_data.txt`.
