@@ -413,7 +413,8 @@ You can tinker with the variables found inside of **~neutrinote_settings_data** 
 | com.appmindlab.nano.pref_icon_behavior            | 0: animation off, 1: animation on, 2: [snooze](#snooze) animation                                                |
 | com.appmindlab.nano.pref_keep_deleted_copies      | `true`: keep copies of deleted files under `trash_bin` folder                                                        |
 | com.appmindlab.nano.pref_local_priority_tag       | Specify a metadata substring pattern to prevent local copy from being overwritten by remote changes.  Note that conflicts may occur if a note is being edited on multiple devices |
-| com.appmindlab.nano.pref_eval_built_in_variables  | `true`: evalute [built-in variables](#variables) in search or shortcut definitions            |                      
+| com.appmindlab.nano.pref_eval_built_in_variables  | `true`: evalute [built-in variables](#variables) in search or shortcut definitions            |  
+| com.appmindlab.nano.pref_external_storage_repo    | `true`: enable storing **Local Repository** in external storage |
              
 Advanced users may enable multiple text file types for **neutriNote**.  To setup, please carefully follow all the steps below:
 
@@ -448,6 +449,7 @@ See [Hacks](#hacks) for information on how to enable the use of built-in variabl
 ### <a name="externalstorage">External Storage (v2.3.4) </a>
 For devices running Android 6 or above, **Local Repository** may reside on external storage (more commonly known by users as SD card) with caveats:
 
+* Whether this can be enabled depends on ROMs / devices.
 * **Syncthing** will no longer work.
 * **neutriNote Connector+** (but not **neutriNote Connector**) works with **Local Repository** on external storage.  
 * **DO NOT** replace the external storage or risk data loss.
@@ -455,14 +457,12 @@ For devices running Android 6 or above, **Local Repository** may reside on exter
 The following steps are for transferring **Local Repository** from internal storage to external storage (for new installs simply pick a path from external storage as usual):
 
 1. Backup ALL app settings and notes.
-1. Uninstall neutriNote.
-1. Copy your repository to a new location on external storage using any file manager app.
-1. Reinstall neutriNote.
-1. Pick the repository path under external storage.
+1. Add this line `com.appmindlab.nano.pref_external_storage_repo|true` to `~neutrinote_settings_data.txt`.
 1. Tap **Restore App Data**.
-1. Adjust **Local Repository** path in sync apps you are currently using.
-1. That's it!  Notice that **Incremental Backup** will from now on be also stored on the external storage.
-
+1. Copy your repository to a new location on external storage using any file manager app.
+1. Pick the repository path under external storage.  
+    * If an error occurs, your device is incompatible and you may revert the setting above.
+    * If no error occurs, adjust **Local Repository** path in sync apps you are currently using.
 
 ### <a name="api">API (v2.0.8) </a>
 neutriNote's Markdown engine is fully modular and swappable.  If you are familar with compiler scripting and would like to integrate your own parser, you would need to use the following entry points in your code:
