@@ -16,7 +16,6 @@
     * [Gestures](#gestures)
     * [Hacks](#hacks)
     * [Built-in Variables](#variables)
-    * [External Storage](#externalstorage)
     * [API](#api)
     * [Snooze](#snooze)
     * [Misc.](#misc)
@@ -414,7 +413,6 @@ You can tinker with the variables found inside of **~neutrinote_settings_data** 
 | com.appmindlab.nano.pref_keep_deleted_copies      | `true`: keep copies of deleted files under `trash_bin` folder                                                        |
 | com.appmindlab.nano.pref_local_priority_tag       | Specify a metadata substring pattern to prevent local copy from being overwritten by remote changes.  Note that conflicts may occur if a note is being edited on multiple devices |
 | com.appmindlab.nano.pref_eval_built_in_variables  | `true`: evalute [built-in variables](#variables) in search or shortcut definitions            |  
-| com.appmindlab.nano.pref_external_storage_repo    | `true`: enable storing **Local Repository** in external storage |
              
 Advanced users may enable multiple text file types for **neutriNote**.  To setup, please carefully follow all the steps below:
 
@@ -445,23 +443,6 @@ Built-in variables may be used in search or shortcut definitions.  For example, 
 | @now                 | Current time stamp.                     |
 
 See [Hacks](#hacks) for information on how to enable the use of built-in variables.
-
-### <a name="externalstorage">External Storage (v2.3.4) </a>
-For devices running Android 6 or above, **Local Repository** may reside on external storage (more commonly known by users as SD card) with caveats:
-
-* **Syncthing** will no longer work.
-* Not supported by both **neutriNote Connector / Connector+**. 
-* Since whether this can be enabled depends on ROMs / devices, it is not recommended for non-technical users.
-
-The following steps are for transferring **Local Repository** from internal storage to external storage:
-
-1. Backup ALL app settings and notes.
-1. Add this line `com.appmindlab.nano.pref_external_storage_repo|true` to `~neutrinote_settings_data.txt`.
-1. Tap **Restore App Data**.
-1. Copy your repository to a new location on external storage using any file manager app.
-1. Pick the repository path under external storage.  
-    * If an error occurs, your device is incompatible and neutriNote will automatically fall back to your existing repository.
-    * If no error occurs, adjust **Local Repository** path in sync apps you are currently using.
 
 ### <a name="api">API (v2.0.8) </a>
 neutriNote's Markdown engine is fully modular and swappable.  If you are familar with compiler scripting and would like to integrate your own parser, you would need to use the following entry points in your code:
