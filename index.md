@@ -456,8 +456,8 @@ From version 2.3.4, it's possible to store **Local Repository** on SD card for A
 
 Caveats:
 
-* Syncthing will no longer work with neutriNote.
-* Uninstall neutriNote will remove **Local Repository** as well.  That means all your notes will be gone.  Be sure to backup and sync the folder regularly.
+* Syncthing will no longer work with neutriNote, nor will Connector add-ons.
+* Uninstall neutriNote will remove **Local Repository** as well.  That means all your notes will be deleted.  Be sure to backup and sync the folder regularly.
 * Not the most customizable strategy for notes backup / sync.
 
 ### <a name="api">API (v2.0.8) </a>
