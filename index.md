@@ -452,7 +452,7 @@ From version 2.3.4, it's possible to store **Local Repository** on SD card for A
 1. Backup ALL your notes and data.
 1. Copy your notes into `/Android/data/com.appmindlab.nano/files` on your SD card.
 1. In neutriNote's Settings, set the path of **Local Repository** to `/Android/data/com.appmindlab.nano/files`.
-1. Adjust the path accordingly in neutriNote Connector+ (SD card is not supported by Connector).
+1. Adjust the path accordingly in your sync apps (SD card is not supported by Connector / Connector+).
 
 Caveats:
 
