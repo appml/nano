@@ -448,7 +448,7 @@ See [Hacks](#hacks) for information on how to enable the use of built-in variabl
 ### <a name="sdcard">SD Card (v2.3.4) </a>
 From version 2.3.4, it's possible to store **Local Repository** on SD card for Android 6+ devices.
 
-1. Download and install **neutriNote Storage+** from Google Play.
+1. Download and install [**neutriNote Storage+**](https://play.google.com/apps/testing/com.appmindlab.externalstorage) from Google Play.
 1. Backup ALL your notes and data.
 1. Copy your notes into `/Android/data/com.appmindlab.nano/files` on your SD card.
 1. In neutriNote's Settings, set the path of **Local Repository** to `/Android/data/com.appmindlab.nano/files`.
