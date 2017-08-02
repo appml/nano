@@ -16,7 +16,6 @@
     * [Gestures](#gestures)
     * [Hacks](#hacks)
     * [Built-in Variables](#variables)
-    * [SD Card](#sdcard)
     * [API](#api)
     * [Snooze](#snooze)
     * [Misc.](#misc)
@@ -444,21 +443,6 @@ Built-in variables may be used in search or shortcut definitions.  For example, 
 | @now                 | Current time stamp.                     |
 
 See [Hacks](#hacks) for information on how to enable the use of built-in variables.
-
-### <a name="sdcard">SD Card (v2.3.4) </a>
-From version 2.3.4, it's possible to store **Local Repository** on SD card for Android 6+ devices.
-
-1. Download and install [**neutriNote Storage+**](https://play.google.com/apps/testing/com.appmindlab.externalstorage) from Google Play.
-1. Backup ALL your notes and data.
-1. Copy your notes into `/Android/data/com.appmindlab.nano/files` on your SD card.
-1. In neutriNote's Settings, set the path of **Local Repository** to `/Android/data/com.appmindlab.nano/files`.
-1. Adjust the path accordingly in your sync apps (SD card is not supported by Connector / Connector+).
-
-Caveats:
-
-* Syncthing will no longer work with neutriNote, nor will Connector add-ons.
-* Uninstall neutriNote will remove **Local Repository** as well.  That means all your notes will be deleted.  Be sure to backup and sync the folder regularly.
-* Not the most customizable strategy for notes backup / sync.
 
 ### <a name="api">API (v2.0.8) </a>
 neutriNote's Markdown engine is fully modular and swappable.  If you are familar with compiler scripting and would like to integrate your own parser, you would need to use the following entry points in your code:
