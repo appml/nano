@@ -16,6 +16,7 @@
     * [Gestures](#gestures)
     * [Hacks](#hacks)
     * [Built-in Variables](#variables)
+    * [Storage Saver](#storage)
     * [API](#api)
     * [Snooze](#snooze)
     * [Misc.](#misc)
@@ -413,6 +414,7 @@ You can tinker with the variables found inside of **~neutrinote_settings_data** 
 | com.appmindlab.nano.pref_keep_deleted_copies      | `true`: keep copies of deleted files under `trash_bin` folder                                                        |
 | com.appmindlab.nano.pref_local_priority_tag       | Specify a metadata substring pattern to prevent local copy from being overwritten by remote changes.  Note that conflicts may occur if a note is being edited on multiple devices |
 | com.appmindlab.nano.pref_eval_built_in_variables  | `true`: evalute [built-in variables](#variables) in search or shortcut definitions            |  
+| com.appmindlab.nano.pref_low_space_mode           | `true`: turn on [storage space saver](#storage) |   
              
 Advanced users may enable multiple text file types for **neutriNote**.  To setup, please carefully follow all the steps below:
 
@@ -443,6 +445,16 @@ Built-in variables may be used in search or shortcut definitions.  For example, 
 | @now                 | Current time stamp.                     |
 
 See [Hacks](#hacks) for information on how to enable the use of built-in variables.
+
+### <a name="storage">Storage Saver</a>
+For devices equipped with SD cards, it is possible to store backups on SD cards to save space in internal storage. 
+
+1. Tap **Backup App Data**.
+1. Add `com.appmindlab.nano.pref_low_space_mode|true` to **~neutrinote_settings_data**.
+1. Tap **Restore App Data**.
+1. Future backups will be stored at `/Android/data/com.appmindlab.nao/files/neutrinote_export` under the SD card.
+
+Notice that the backups will be automatically removed to reclaim storage space if neutriNote is uninstalled.
 
 ### <a name="api">API (v2.0.8) </a>
 neutriNote's Markdown engine is fully modular and swappable.  If you are familar with compiler scripting and would like to integrate your own parser, you would need to use the following entry points in your code:
