@@ -452,7 +452,7 @@ For devices equipped with SD cards, it is possible to store backups on SD cards 
 1. Tap **Backup App Data**.
 1. Add `com.appmindlab.nano.pref_low_space_mode|true` to **~neutrinote_settings_data**.
 1. Tap **Restore App Data**.
-1. Future backups will be stored at `/Android/data/com.appmindlab.nao/files/neutrinote_export` under the SD card.
+1. Future backups will be stored at `/Android/data/com.appmindlab.nano/files/neutrinote_export` under the SD card.
 
 Notice that the backups will be automatically removed to reclaim storage space if neutriNote is uninstalled.
 
