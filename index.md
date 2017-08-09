@@ -216,6 +216,21 @@ Draw a simple diagram in plain text is easy using [yUML](http://yuml.me/diagram/
 
 Steps above apply to [neutriNote Backup+](https://play.google.com/store/apps/details?id=com.appmindlab.backupplus) as well.
 
+The following illustrates finer control over expiring automated backups.  Backups kept over 180 days will be purged automatically or chronologically once the number of backups exceeds 30 copies.
+
+```
+A1: Send Intent
+[Action:com.appmindlab.nano.ACTION_FULL_BACKUP 
+Cat:None 
+Mime Type: 
+Data: 
+Extra:com.appmindlab.nano.EXTRA_MAX_BACKUP_COUNT:30 
+Extra:com.appmindlab.nano.EXTRA_MAX_BACKUP_AGE:180 
+Extra: 
+Package: 
+Class: 
+Target:Broadcast Receiver ] 
+```
 
 For users who are interested in keeping clipboard history, simply create a profile to monitor the setting of Tasker's `%CLIP` variable, then add the following task (replace the path with that of your **Local Repository**):
     
