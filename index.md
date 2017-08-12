@@ -1,4 +1,4 @@
-## User Guide
+## User Guide ([Japanese Version](https://github.com/ayatakesi/neutriNote/blob/master/index.md)
 
 1. [Getting Started](#started)
 1. [Backup and Restore](#backup)
