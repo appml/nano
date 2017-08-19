@@ -373,17 +373,19 @@ font-family: 'Goudy Bookletter 1911', serif;
 
 ### <a name="keyboard">Keyboard</a>
 The following editor shortcuts are supported when connected to a physical keyboard:
-    
-| Shortcuts       | Actions    |
-| --------------- |:----------:|
-| `Ctrl-S`        | Save       |
-| `Ctrl-F`        | Local Find | 
-| `F3`            | Find Next  | 
-| `Ctrl-H`        | Replace    |  
-| `Ctrl-Z`        | Undo       |  
-| `Ctrl-Shift-Z`  | Redo       | 
-| `Ctrl-]`        | Indent     |  
-| `Ctrl-[`        | Un-indent  |  
+
+| Shortcuts                  | Actions           |
+| -------------------------- |:-----------------:|
+| `Ctrl-S`                   | Save              |
+| `Ctrl-F`                   | Local Find        | 
+| `F3`                       | Find Next         | 
+| `Ctrl-H`                   | Replace           | 
+| `Ctrl-D`                   | Dictionary Lookup |  
+| `Ctrl-Z`                   | Undo              |  
+| `Ctrl-Shift-Z`             | Redo              | 
+| `Ctrl-]` or `Ctrl-I`       | Indent            |  
+| `Ctrl-[` or `Ctrl-Shift-I` | Un-indent         | 
+
 
 ### <a name="gestures">Gestures</a>
 Various user interface elements support gestures for better productivity:
