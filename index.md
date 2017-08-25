@@ -380,7 +380,8 @@ The following editor shortcuts are supported when connected to a physical keyboa
 | `Ctrl-F`                   | Local Find        | 
 | `F3`                       | Find Next         | 
 | `Ctrl-H`                   | Replace           | 
-| `Ctrl-D`                   | Dictionary Lookup |  
+| `Ctrl-D`                   | Dictionary Lookup |
+| `Ctrl-W`                   | Web Search        |
 | `Ctrl-Z`                   | Undo              |  
 | `Ctrl-Shift-Z`             | Redo              | 
 | `Ctrl-]` or `Ctrl-I`       | Indent            |  
