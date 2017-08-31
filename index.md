@@ -401,7 +401,7 @@ Various user interface elements support gestures for better productivity:
 
 * Edit screen:
     * Tap **editor status** (to the right of the note title) to view note statistics and clipboard content; long tap clipboard content to view full clipboard content; long tap update status to view recent updates in other notes without leaving the current note.
-    * Tap the **Shortcut** icon to view user defined shortcuts.
+    * Long tap the **Shortcut** icon to view user defined shortcuts.
     * Immediately after conducting a search, tap the **Search** icon to advance to the next match.
     * Double tap **editor status** to temporarily save the current cursor position.  
     * Swipe left on **editor status** to return to saved cursor position.
