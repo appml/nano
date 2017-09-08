@@ -340,7 +340,7 @@ Special selection commands are available for better productivity.
 * To encode/decode a portion of the note, select the portion and choose **Encode/Decode** from menu.
 * Tap `(` or `)` from *Symbol Bar* when text selection is active to enclose the selected text in brackets.  Hint: also try out other symbol pairs.
 * Edit multiple paragraphs: select multiple paragraphs and tap a symbol / action from  **Markdown Symbol Toolbar**.  For example, you can indent selected paragraphs by tapping `➡`, or turn selected paragraphs into a bulleted list simply by tapping `*`.
-* Select the path of any attached image (with prefix `attachments`), tap **OCR** to extract text from the image.
+* Select the path of any linked image, tap **OCR** to extract text from the image.
 
     
 ### <a name="voicememo">Voice Memo</a>
