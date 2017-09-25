@@ -437,6 +437,7 @@ You can tinker with the variables found inside of **~neutrinote_settings_data** 
 | com.appmindlab.nano.pref_local_priority_tag       | Specify a metadata substring pattern to prevent local copy from being overwritten by remote changes.  Note that conflicts may occur if a note is being edited on multiple devices |
 | com.appmindlab.nano.pref_eval_built_in_variables  | `true`: evalute [built-in variables](#variables) in search or shortcut definitions            |  
 | com.appmindlab.nano.pref_low_space_mode           | `true`: turn on [storage space saver](#storage) |   
+| com.appmindlab.nano.pref_new_note_file_type       | Specify file type for new notes.  Multiple type mode required (see below).  Default: `.txt`  | 
              
 Advanced users may enable multiple text file types for **neutriNote**.  To setup, please carefully follow all the steps below:
 
