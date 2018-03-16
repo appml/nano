@@ -439,7 +439,7 @@ You can tinker with the variables found inside of **~neutrinote_settings_data** 
 | com.appmindlab.nano.pref_eval_built_in_variables  | `true`: evalute [built-in variables](#variables) in search or shortcut definitions            |  
 | com.appmindlab.nano.pref_low_space_mode           | `true`: turn on [storage space saver](#storage) |   
 | com.appmindlab.nano.pref_new_note_file_type       | Specify file type for new notes.  Multiple type mode required (see below).  Default: `.txt`  | 
-| com.appmindlab.nano.pref_lab_mode                 | `true`: enable experimental features such as OCR                                                                |  
+| com.appmindlab.nano.pref_lab_mode                 | `true`: enable experimental features such as OCR, diff-tool                                                                |  
              
 Advanced users may enable multiple text file types for **neutriNote**.  To setup, please carefully follow all the steps below:
 
@@ -636,5 +636,3 @@ Keep the app as crash-proof as possible.
 Every effort has been made to ensure that all third-party software used be properly acknowledged (see license information in the **About** dialog).  Please feel free to contact by [email](mailto:lightandshadowscamera@gmail.com) anytime should such information be found incomplete or inaccurate.
 
 You can also visit [Product Page](https://plus.google.com/u/0/communities/117565395761503074053) for development updates regarding the app.
-
-To further support neutriNote's development, please visit developer's [Ko-fi](https://ko-fi.com/neutriNote) page.
