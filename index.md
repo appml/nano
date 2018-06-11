@@ -41,7 +41,7 @@ If you have installed **neutriNote** previously, you may pick the repository alr
 
 If you have settings backed up from your previous installation, you may also choose [Restore App Data](https://www.dropbox.com/s/nveejx2dn1pdbqi/navigation_drawer.png?dl=0, "Backup/Restore App Data") to restore settings.
 
-To enable sync is easy, either install a third party app like [Syncthing](https://play.google.com/store/apps/details?id=com.nutomic.syncthingandroid&hl=en) and register your repository with it or get [neutriNote Connector](https://play.google.com/store/apps/details?id=com.appmindlab.connector) -- a Dropbox adapter designed just for 
+To enable sync is easy, either install a third party app like [Syncthing](https://play.google.com/store/apps/details?id=com.nutomic.syncthingandroid&hl=en) and register your repository with it or get [neutriNote Connector+](https://play.google.com/store/apps/details?id=com.appmindlab.connectorplus) -- a Dropbox adapter designed just for 
 **neutriNote**.  
 
 Even without add-ons, **neutriNote** is ready for use.  Explore around to discover many features that would make **neutriNote** a highly integrated part of your note taking experience (for example, long tap metadata label to retrieve notes sharing [similar](https://www.dropbox.com/s/tqa3h774xrn49zd/metadata_long_click.png?dl=0) label and tap the local find icon in the edit screen to jump to the next match).  To extend it into a tool for personal information management, please do take a moment to go over the following sections.  New users may also want to check out [Backup and Restore](#backup) for ways to preserve note data beyond the sync mechanism.
@@ -456,7 +456,7 @@ Advanced users may enable multiple text file types for **neutriNote**.  To setup
 
 > To enable search history transfer across devices, simply add a note called `~neutrinote_search_history.txt`.   Search history can then be cloned when app data are restored by tapping **Restore App Data** on your other devices.
 
-Note that **neutriNote Connector** will not handle files without `.txt` extension.  To sync files without `.txt` extension with Dropbox you would have to install a third party app or install [**neutriNote Connector+**](https://play.google.com/store/apps/details?id=com.appmindlab.connectorplus).  (If you have **neutriNote Connector** installed, you would need to remove it prior to launching **neutriNote Connector+**.)
+Note that **neutriNote Connector** will not handle files without `.txt` extension.  To sync files without `.txt` extension with Dropbox you would have to install a third party app or install [**neutriNote Connector+**](https://play.google.com/store/apps/details?id=com.appmindlab.connectorplus).  (If you have **neutriNote Connector** installed, you would need to remove it prior to launching **neutriNote Connector+**.  If you have **neutriNote Connector+** installed, you would need to _re-install_ the app.)
 
 ### <a name="variables">Built-in Variables (v2.3.4) </a>
 Built-in variables may be used in search or shortcut definitions.  For example, to find notes with tomorrow's time stamp, simply type `@tomorrow` in the search box.  You can even include built-in variables in **Custom Filters**, say, for listing notes containing tomorrow's time stamp, or include them in shortcut definitions to generate text expansion snippets on the fly.
