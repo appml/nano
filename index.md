@@ -62,7 +62,7 @@ While notes can be retrieved based on modified time, accessed time, and location
 
 Search can also be limited to metadata by using the prefix _meta:_ in the search string.  A search string such as _meta:personal_ will return all notes with the substring _personal_ in the metadata (likewise _meta:_ will return notes without metadata). It is also possible to use [regular expression](http://en.m.wikipedia.org/wiki/Glob_(programming)) in metadata search,  simply use the prefix _metareg:_ in the search string. 
 
-To ensure metadata match when conducting multi-term search, one may use the following syntax at the main search bar: `join:term1,term2,term3` and so on.  Doing so will ensure at least one of the terms can be found in the metadata for each search hit. Such syntax can be used to simulate search within metadata/tags.
+To ensure metadata match when conducting multi-term search, one may use the following syntax at the main search bar: `join:term1,term2,term3` and so on.  Doing so will ensure at least one of the terms can be found in the metadata for each search hit. Such syntax can be used to simulate search within metadata/tags.  Alternatively, fuzzy search can be conducted on metadata with syntax `related:term1,term2,term3` and `similar:term1,term2,term3`.
 
 To search for multiple terms, the easiest way is to use **Advanced Search**.  You can also specify boolean search queries with syntax like `and:term1,term2,term3,...,termN` to find notes containing all the terms (`or:term1,term2,term3,..,termN` to find notes containing one of the terms). 
 
@@ -80,7 +80,7 @@ For searching within notes, **neutriNote** recognizes basic [Perl](http://www.er
 ### <a name="advanced">Advanced Features</a>
 
 ### <a name="metadata">Metadata</a>
-Metadata are general purpose text strings that exist outside note data.  They are searchable and can be used as tags.
+Metadata are general purpose text strings that exist outside note data.  They are searchable and can be used as tags.  To emulate filtering by tags, simply enter into the main search bar queries like `tag:term1,term2,term3`, so that each term may be interpreted as a tag during search.
         
 ### <a name="md">Markdown</a>
 **neutriNote** supports [PHP Markdown Extra]( http://michelf.ca/projects/php-markdown/extra/) and LaTeX style mathematical expressions.  The easiest way to enter mathematical expressions is to wrap them in `$$`.  For inline math, use `\\(...\\)` as in the example below:
