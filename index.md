@@ -301,6 +301,13 @@ There is even a way to remove HTML tags from strings:
 notag|neutriNote#removeHTML
 ```
 
+To remove zero-width spaces, simply do:
+
+```
+# Usage: select "zero some_text_string" and expand to remove zero-width spaces from some_text_string.
+zero|neutriNote#nohiddenspace
+```
+
 You can create shortcuts for simple shell commands as well.  Give it a try by adding the prefix `neutriNote$` to the commands just like below:
 
 ```
