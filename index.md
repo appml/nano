@@ -407,6 +407,7 @@ Various user interface elements support gestures for better productivity:
     * Tap current sort method to reverse current sort order.
     * Swipe left/right on **list status** bar to navigate adjacent filters/days.
     * Double tap **list status** to resume default filter/day.
+    * Long tap **list status** whenever update messages are shown to access the list of the recently updated items.
 
 * Edit screen:
     * Tap **editor status** (to the right of the note title) to view note statistics and clipboard content; long tap clipboard content to view full clipboard content; long tap update status to view recent updates in other notes without leaving the current note.
