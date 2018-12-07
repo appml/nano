@@ -260,6 +260,13 @@ Shortcuts can be defined for frequently used patterns for string replacements.  
 encode|neutriNote#replace \s %20
 ```
 
+To replace all occurrences of a specific pattern by line breaks, simply:
+
+```
+# Usage: select "eol some_text_string" and expand, some_text_string will be returned with all blank spaces replaced by linebreaks.
+eol|neutriNote#linebreak \s
+```
+
 An example to trim leading and trailing spaces from a body of text:
 
 ```
