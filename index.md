@@ -267,7 +267,13 @@ To replace all occurrences of a specific pattern by line breaks, simply:
 eol|neutriNote#linebreak \s
 ```
 
-(Tip: `<br>` can be used as placeholders for linebreaks in shortcut definitions.)
+`<br>` can also be used as placeholders for linebreaks in shortcut definitions.  For example:
+
+```
+# Create a blank 3x2 table.
+
+3x2|| | | |<br>|---|---|---|---|<br>| | | |<br>|---|---|---|---|
+```
 
 An example to trim leading and trailing spaces from a body of text:
 
