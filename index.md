@@ -219,7 +219,7 @@ A2: Write File [ File:neutriNote/clipboard_events.txt Text:## %DATE %TIME %NEWLI
 A3: Variable Set [ Name:%clip_prev To:%CLIP Do Maths:Off Append:Off ] 
 ```
 
-Combined with other ways to extend **neutriNote**, there are essentially an infinite number of ways to automate a richer note contents.
+Combined with other ways to extend **neutriNote**, there are essentially an infinite number of ways to automate the creation of richer note contents.
 
 ### <a name="textexpansion">Text Expansion</a>
 **neutriNote** supports text expansion: simply highlight any shortcut word and tap the **Text Expansion** icon to expand the word.  All shortcuts are saved in a file called **~neutrinote_shortcuts**, with one definition per line in the format of `shortcut label|expanded text` (if you do not see the file, enable hidden files under **Settings**).  Below are some examples:  
