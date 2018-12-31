@@ -209,15 +209,17 @@ Draw a simple diagram in plain text is easy using [yUML](http://yuml.me/diagram/
 
 ### <a name="automation">Automation</a>
 
-**neutriNote** can easily be integrated into Tasker automation.  For example, to launch a third party Tasker plugin, it is as simple as creating a Tasker profile to observe **Local Repository** events.  Specifically, to trigger third party sync plugins, simply add a blank file `~neutrinote_noop.txt` to **Local Repository** and have its modifications monitored by Tasker.  Then **neutriNote** will emit a file modification event in response to each pull-to-refresh inside the app. 
+**neutriNote** can easily be integrated into existing Tasker automation.  For example, to launch a third party Tasker plugin, it can be as simple as creating a Tasker profile to "observe" **Local Repository** events.  Specifically, to trigger third party sync plugins, simply add a blank file `~neutrinote_noop.txt` in **Local Repository** and have its modifications monitored by Tasker to piggyback a modification event corresponding to that file emitted by pull-to-refresh in **neutriNote**. 
 
-One more example: for users who are interested in keeping clipboard history, simply create a profile to monitor the setting of Tasker's `%CLIP` variable, then add the following task (replace the path with that of your **Local Repository**):
+One of the most useful features of Tasker is its rich set of variables.  One can easily maintain of log of the variables in **neutriNote** as well.  Consider this example of keeping clipboard history in **neutriNote**: simply create a profile to monitor the setting of Tasker's `%CLIP` variable, then add the following task (replace the path with that of your **Local Repository**):
     
 ```
 A1: Variable Set [ Name:%NEWLINE To:Do Maths:Off Append:Off ] 
 A2: Write File [ File:neutriNote/clipboard_events.txt Text:## %DATE %TIME %NEWLINE %CLIP %NEWLINE Append:On Add Newline:On ] If [ %clip neq %clip_prev ]
 A3: Variable Set [ Name:%clip_prev To:%CLIP Do Maths:Off Append:Off ] 
 ```
+
+Combined with other ways to extend **neutriNote**, there are essentially an infinite number of ways to automate a richer note contents.
 
 ### <a name="textexpansion">Text Expansion</a>
 **neutriNote** supports text expansion: simply highlight any shortcut word and tap the **Text Expansion** icon to expand the word.  All shortcuts are saved in a file called **~neutrinote_shortcuts**, with one definition per line in the format of `shortcut label|expanded text` (if you do not see the file, enable hidden files under **Settings**).  Below are some examples:  
