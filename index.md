@@ -209,32 +209,9 @@ Draw a simple diagram in plain text is easy using [yUML](http://yuml.me/diagram/
 
 ### <a name="automation">Automation</a>
 
-**neutriNote** can be easily automated using Tasker.  For example, **neutriNote**'s theme can be set according to light level with the use of ([neutriNote Auto Theme](https://play.google.com/store/apps/details?id=com.appmindlab.autotheme)) with these steps:
+**neutriNote** can easily be integrated into Tasker automation.  For example, to launch a third party Tasker plugin, it is as simple as creating a Tasker profile to observe **Local Repository** events.  Specifically, to trigger third party sync plugins, simply add a blank file `~neutrinote_noop.txt` to **Local Repository** and have its modifications monitored by Tasker.  Then **neutriNote** will emit a file modification event in response to each pull-to-refresh inside the app. 
 
-1. Create a _new_ task in Tasker.
-1. Add a _new_ action, choose **App** from **Select Action Category**.
-1. Choose the extension just downloaded from the app selection screen. 
-1. Now the task is created and ready for use in any of your profiles.  For example, create a new profile that will be triggered when the display is on (add a new profile, then choose **State** -> pick **Display**) to launch the task.  Now each time the screen is turned on, **neutriNote** will automatically select a theme based on the current light level.
-
-Steps above apply to [neutriNote Backup+](https://play.google.com/store/apps/details?id=com.appmindlab.backupplus) as well.
-
-The following illustrates finer control over expiring automated backups.  Backups kept over 180 days will be purged automatically or chronologically once the number of backups exceeds 30 copies.
-
-```
-A1: Send Intent
-[Action:com.appmindlab.nano.ACTION_FULL_BACKUP 
-Cat:None 
-Mime Type: 
-Data: 
-Extra:com.appmindlab.nano.EXTRA_MAX_BACKUP_COUNT:30 
-Extra:com.appmindlab.nano.EXTRA_MAX_BACKUP_AGE:180 
-Extra: 
-Package: 
-Class: 
-Target:Broadcast Receiver ] 
-```
-
-For users who are interested in keeping clipboard history, simply create a profile to monitor the setting of Tasker's `%CLIP` variable, then add the following task (replace the path with that of your **Local Repository**):
+One more example: for users who are interested in keeping clipboard history, simply create a profile to monitor the setting of Tasker's `%CLIP` variable, then add the following task (replace the path with that of your **Local Repository**):
     
 ```
 A1: Variable Set [ Name:%NEWLINE To:Do Maths:Off Append:Off ] 
