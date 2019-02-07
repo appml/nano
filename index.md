@@ -20,6 +20,7 @@
     * [Built-in Variables](#variables)
     * [Storage Saver](#storage)
     * [API](#api)
+    * [Text Editor](#texteditor)
     * [Snooze](#snooze)
     * [Misc.](#misc)
     * [Examples](#examples) 
@@ -221,6 +222,7 @@ A3: Variable Set [ Name:%clip_prev To:%CLIP Do Maths:Off Append:Off ]
 
 Combined with other ways to extend **neutriNote**, there are essentially an infinite number of ways to automate the creation of richer note contents.
 
+
 ### <a name="textexpansion">Text Expansion</a>
 **neutriNote** supports text expansion: simply highlight any shortcut word and tap the **Text Expansion** icon to expand the word.  All shortcuts are saved in a file called **~neutrinote_shortcuts**, with one definition per line in the format of `shortcut label|expanded text` (if you do not see the file, enable hidden files under **Settings**).  Below are some examples:  
 
@@ -385,6 +387,7 @@ The following editor shortcuts are supported when connected to a physical keyboa
 | `Ctrl-H`                   | Replace           | 
 | `Ctrl-D`                   | Dictionary Lookup |
 | `Ctrl-W`                   | Web Search        |
+| `Ctrl-M`                   | Markdown        |
 | `Ctrl-Z`                   | Undo              |  
 | `Ctrl-Shift-Z`             | Redo              | 
 | `Ctrl-]` or `Ctrl-I`       | Indent            |  
@@ -490,7 +493,7 @@ For devices equipped with SD cards, it is possible to store backups on SD cards 
 
 Notice that the backups will be automatically removed to reclaim storage space if neutriNote is uninstalled.
 
-### <a name="api">API (v2.0.8) </a>
+### <a name="api">API</a>
 neutriNote's Markdown engine is fully modular and swappable.  If you are familar with compiler scripting and would like to integrate your own parser, you would need to use the following entry points in your code:
 
 | Methods              | Descriptions           |                              
@@ -504,31 +507,31 @@ Adopt this pattern of invoking neurtiNote in your script:
 
 ```
 (function (){
-  ////////////
-  // Set up //
-  ////////////
-  neutriNote.init(document);
+  ////////////
+  // Set up //
+  ////////////
+  neutriNote.init(document);
 
-  //////////////////
-  // Get raw data //
-  //////////////////
-  var str = neutriNote.getData();
+  //////////////////
+  // Get raw data //
+  //////////////////
+  var str = neutriNote.getData();
 
-  ///////////////////////////
-  // Prepare for rendering //
-  ///////////////////////////
-  neutriNote.prepare();
+  ///////////////////////////
+  // Prepare for rendering //
+  ///////////////////////////
+  neutriNote.prepare();
 
-  ///////////
-  // Parse //
-  ///////////
+  ///////////
+  // Parse //
+  ///////////
   
   ... <- Custom conversion logic goes here!
 
-  /////////////////
-  // Set content //
-  /////////////////
-  neutriNote.setContent(str)
+  /////////////////
+  // Set content //
+  /////////////////
+  neutriNote.setContent(str)
 
 })(window, document);
 ```
@@ -538,30 +541,30 @@ To illustrate, suppose you simply want to render everything in italics, all you 
 
 ```
 (function (){
-  ////////////
-  // Set up //
-  ////////////
-  neutriNote.init(document);
+  ////////////
+  // Set up //
+  ////////////
+  neutriNote.init(document);
 
-  //////////////////
-  // Get raw data //
-  //////////////////
-  var str = neutriNote.getData();
+  //////////////////
+  // Get raw data //
+  //////////////////
+  var str = neutriNote.getData();
 
-  ///////////////////////////
-  // Prepare for rendering //
-  ///////////////////////////
-  neutriNote.prepare();
+  ///////////////////////////
+  // Prepare for rendering //
+  ///////////////////////////
+  neutriNote.prepare();
 
-  ///////////
-  // Parse //
-  ///////////
-  str = '<i>' + str + '</i>';
+  ///////////
+  // Parse //
+  ///////////
+  str = '<i>' + str + '</i>';
 
-  /////////////////
-  // Set content //
-  /////////////////
-  neutriNote.setContent(str)
+  /////////////////
+  // Set content //
+  /////////////////
+  neutriNote.setContent(str)
 
 })(window, document);
 ```
@@ -571,6 +574,9 @@ Now go to your note and tap render to view the output of your custom parser.
 More useful parsing can be achieved by following the same pattern.  Take a look at this example of integrating [org-mode](https://raw.githubusercontent.com/appml/nano/master/samples/%7Eneutrinote_script.txt) into neutriNote.
 
 To restore default PHP Markdown syntax, just remove `~neutrinote_script.txt`.
+
+### <a name="texteditor">Text Editor</a>
+Though outside the scope of note taking, **neutriNote** can be used as a general-purpose text editor to supplement apps such as Dropbox across all folders.  Changes will be sent back to original locations of edited files instead of stored in **Local Repository**, suppose the files lived outside **Local Repository**.  Note that files not stored in **Local Repository** will not be cataloged by **neutriNote**'s search engine.
 
 
 ### <a name="snooze">Snooze (Experimental)</a>
@@ -645,3 +651,4 @@ Every effort has been made to ensure that all third-party software used be prope
 You can also visit [Product Page](https://plus.google.com/u/0/communities/117565395761503074053) for development updates regarding the app.
 
 To further support neutriNote's development, please visit developer's [Ko-fi](https://ko-fi.com/neutriNote) page.
+
