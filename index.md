@@ -576,7 +576,7 @@ More useful parsing can be achieved by following the same pattern.  Take a look 
 To restore default PHP Markdown syntax, just remove `~neutrinote_script.txt`.
 
 ### <a name="texteditor">Text Editor</a>
-Though outside the scope of note taking, **neutriNote** can be used as a general-purpose text editor to supplement apps such as Dropbox across all folders.  Changes will be sent back to original locations of edited files instead of stored in **Local Repository**, suppose the files lived outside **Local Repository**.  Note that files not stored in **Local Repository** will not be cataloged by **neutriNote**'s search engine.
+Though outside the scope of note taking, **neutriNote** can be used as a lightweight text editor to supplement apps such as Dropbox across all folders.  Changes committed will be sent back to original locations of edited files instead of storing in **Local Repository**, if the files are located outside **Local Repository**.  (Note that files not stored in **Local Repository** will not be cataloged by **neutriNote**'s search engine.)
 
 
 ### <a name="snooze">Snooze (Experimental)</a>
