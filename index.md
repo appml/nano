@@ -208,6 +208,50 @@ Draw a simple diagram in plain text is easy using [yUML](http://yuml.me/diagram/
 <img src="http://yuml.me/diagram/nofunky/class/`[Customer]->[Billing Address]`">
 ```
 
+An example of basic table-based computations (note the bottom row of blank cells for storing outputs):
+
+```
+| Type A | Type B | Type C |
+|--------|:------:|-------:|
+|       1|       2|       3|
+|       2|       2|       4|
+|       3|       2|       5|
+|        |        |        |
+
+<head>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+        crossorigin="anonymous">
+    </script>
+    <script>
+        $(document).ready(function()
+        {
+            $('table thead th').each(function(i)
+            {
+                calculateColumn(i);
+            });
+        });
+
+        function calculateColumn(index)
+        {
+            var total = 0;
+            $('table tr').each(function()
+            {
+                var value = parseInt($('td', this).eq(index).text());
+                if (!isNaN(value))
+                {
+                    total += value;
+                }
+            });
+            
+            $('table tr:last td').eq(index).text('Total: ' + total);
+        }
+    </script>
+</head>
+
+```  
+
 ### <a name="automation">Automation</a>
 
 **neutriNote** can easily be integrated into existing Tasker automation.  For example, to launch a third party Tasker plugin, it can be as simple as creating a Tasker profile to "observe" **Local Repository** events.  Specifically, to trigger third party sync plugins, simply add a blank file `~neutrinote_noop.txt` in **Local Repository** and have its modifications monitored by Tasker to piggyback a modification event corresponding to that file emitted by pull-to-refresh in **neutriNote**. 
