@@ -229,11 +229,11 @@ An example of basic table-based computations (note the bottom row of blank cells
         {
             $('table thead th').each(function(i)
             {
-                calculateColumn(i);
+                sumCol(i);
             });
         });
 
-        function calculateColumn(index)
+        function sumCol(index)
         {
             var total = 0;
             $('table tr').each(function()
