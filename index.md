@@ -208,7 +208,7 @@ Draw a simple diagram in plain text is easy using [yUML](http://yuml.me/diagram/
 <img src="http://yuml.me/diagram/nofunky/class/`[Customer]->[Billing Address]`">
 ```
 
-An example of basic table-based computations (note the bottom row of blank cells for storing outputs):
+An example of basic table-based computations (note the use of bottom blank row for storing outputs):
 
 ```
 | Type A | Type B | Type C |
@@ -219,11 +219,7 @@ An example of basic table-based computations (note the bottom row of blank cells
 |        |        |        |
 
 <head>
-    <script
-        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-        crossorigin="anonymous">
-    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script>
         $(document).ready(function()
         {
