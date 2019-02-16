@@ -618,9 +618,9 @@ More useful parsing can be achieved by following the same pattern.  Take a look 
 To restore default PHP Markdown syntax, just remove `~neutrinote_script.txt`.
 
 ### <a name="python">Python Support (Experimental)</a>
-Python is one of the most popular languages used in scientific computing.  **neutriNote** provides a very basic [Python](https://brython.info/) interpreter support when Python parsing is enabled (see [Hacks](#hacks) for more details).  
+Python is one of the most widely used programming languages for scientific computing.  **neutriNote** provides a level of [interpreter](https://brython.info/) support sufficient for basic Python code fiddling.  To use, simply enable Python parsing as shown under [Hacks](#hacks) section.  
 
-Try the code below and tap **Markdown Preview**:
+To see it in action, copy the code below and tap **Markdown Preview** button:
 
 ```
 <script type="text/python">
@@ -645,7 +645,7 @@ A slightly more complex example:
 </script>
 ```
 
-Note that the `script` tag is required to indicate the scope of Python code.
+(Note that the `script` tag is required to indicate the scope of Python code.)
 
 ### <a name="texteditor">Text Editor</a>
 Though outside the scope of note taking, **neutriNote** can be used as a lightweight text editor to supplement apps such as Dropbox across all folders.  Changes committed will be sent back to original locations of edited files instead of storing in **Local Repository**, if the files are located outside **Local Repository**.  (Note that files not stored in **Local Repository** will not be cataloged by **neutriNote**'s search engine.)
