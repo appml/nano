@@ -20,6 +20,7 @@
     * [Built-in Variables](#variables)
     * [Storage Saver](#storage)
     * [API](#api)
+    * [Python Support](#python)
     * [Text Editor](#texteditor)
     * [Snooze](#snooze)
     * [Misc.](#misc)
@@ -489,6 +490,7 @@ You can tinker with the variables found inside of **~neutrinote_settings_data** 
 | com.appmindlab.nano.pref_low_space_mode           | `true`: turn on [storage space saver](#storage) |   
 | com.appmindlab.nano.pref_new_note_title_template  | Specify title template for new notes.  Default: `New Note`  | 
 | com.appmindlab.nano.pref_new_note_file_type       | Specify file type for new notes.  Multiple type mode required (see below).  Default: `.txt`  | 
+| com.appmindlab.nano.pref_parse_python             | `true`: enable basic Python code interpretation.  Default: `false`   | 
 | com.appmindlab.nano.pref_lab_mode                 | `true`: enable experimental features such as OCR, diff-tool                                                                |  
              
 Advanced users may enable multiple text file types for **neutriNote**.  To setup, please carefully follow all the steps below:
@@ -614,6 +616,36 @@ Now go to your note and tap render to view the output of your custom parser.
 More useful parsing can be achieved by following the same pattern.  Take a look at this example of integrating [org-mode](https://raw.githubusercontent.com/appml/nano/master/samples/%7Eneutrinote_script.txt) into neutriNote.
 
 To restore default PHP Markdown syntax, just remove `~neutrinote_script.txt`.
+
+### <a name="python">Python Support (Experimental)</a>
+Python is one of the most popular languages used in scientific computing.  **neutriNote** provides a very basic [Python](https://brython.info/) interpreter support when Python parsing is enabled (see [Hacks](#hacks) for more details).  
+
+Try the code below and tap **Markdown Preview**:
+
+```
+<script type="text/python">
+    from browser import document
+    document <= "Hello world !"
+</script>
+```
+
+A slightly more complex example:
+
+```
+<script type="text/python">
+    from browser import document
+
+    # Sort a list
+    aList = [5, 8, 7, 6, 2, 3]
+    aList = sorted(aList)
+    result = '\n'.join(str(i) for i in aList)
+
+    # Print the output
+    document <= result
+</script>
+```
+
+Note that the `script` tag is required to indicate the scope of Python code.
 
 ### <a name="texteditor">Text Editor</a>
 Though outside the scope of note taking, **neutriNote** can be used as a lightweight text editor to supplement apps such as Dropbox across all folders.  Changes committed will be sent back to original locations of edited files instead of storing in **Local Repository**, if the files are located outside **Local Repository**.  (Note that files not stored in **Local Repository** will not be cataloged by **neutriNote**'s search engine.)
