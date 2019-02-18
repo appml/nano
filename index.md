@@ -618,7 +618,7 @@ More useful parsing can be achieved by following the same pattern.  Take a look 
 To restore default PHP Markdown syntax, just remove `~neutrinote_script.txt`.
 
 ### <a name="python">Python Support (Experimental)</a>
-**neutriNote** can evaluate in-note Python code snippets.  To enable this feature, simply set Python parsing flag to `true` as shown under [Hacks](#hacks) section. 
+**neutriNote** can evaluate in-note Python code [snippets](http://brython.info/gallery/gallery_en.html).  To enable this feature, simply set Python parsing flag to `true` as shown under [Hacks](#hacks) section.  
 
 To see it in action, copy the code below and tap **Markdown Preview** button:
 
