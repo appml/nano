@@ -26,6 +26,7 @@
     * [Misc.](#misc)
     * [Examples](#examples) 
 1. [Performance](#performance)
+1. [Log Tools](#log)
 1. [Known Issues](#issues)
 1. [FAQs](#faq)
 1. [Privacy Policy](#privacy)
@@ -55,7 +56,7 @@ If you have already activated **Local Repository**, your notes will be sync seam
     
 **Incremental Backup** is another way to copy your notes in non-intrusive fashion. To enable, simply do so from Settings.  Then your notes and app settings will be backed up incrementally at least once daily to a internal storage folder called _neutrinote_export_.  Note: exported app settings data are stored in regular notes with prefix _.neutrinote_ so that they can be sync no differently from other notes.
 
-For more demanding scenarios, check out [neutriNote Backup+](https://play.google.com/store/apps/details?id=com.appmindlab.backupplus).
+When incremental backup is enabled, a task to conduct full backup when the device is idle will also be activated.  A maximum of 10 most recent backups will be maintained.  See [Storage Saver](#storage) section for more suggestions on how to manage backup storage space.
 
 #### <a name="search">Search Tools</a>
 While notes can be retrieved based on modified time, accessed time, and location as providied by the user interface, **neutriNote** supports high precision text based search and [regular expression](http://en.m.wikipedia.org/wiki/Glob_(programming)).  The syntax below are also highly reusable when they are included as part of the preset filters (under Settings).
@@ -220,7 +221,9 @@ Tabular data can be processed by custom codes (note the placeholder cells for ou
 |        |        |        |
 
 <head>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+    </script>
     <script>
         $(document).ready(function()
         {
@@ -647,6 +650,7 @@ A slightly more complex example:
 
 (Note that the `script` tag is required to indicate the scope of Python code.)
 
+
 ### <a name="texteditor">Text Editor</a>
 Though outside the scope of note taking, **neutriNote** can be used as a lightweight text editor to supplement apps such as Dropbox across all folders.  Changes committed will be sent back to original locations of edited files instead of storing in **Local Repository**, if the files are located outside **Local Repository**.  (Note that files not stored in **Local Repository** will not be cataloged by **neutriNote**'s search engine.)
 
@@ -699,6 +703,9 @@ In general, using default font style can help reduce the time in opening long no
 
 For users who do not use mathematics expressions, mathematics rendering can be disabled by entering a `.` under **Mathematics** in **Settings**. Markdown rendering should be faster with mathematics disabled.
 
+### <a name="log">Log Tools</a>
+Besides in-built incremental and full backup tools, **neutriNote** automatically detects potential data error especially when cross platform syncing is in use.  When the needs arise to troubleshoot remote sync errors, just create a directory under **Local Repository** and add a file called `~neutrinote_sync.log`.  The log will keep track of all remote induced data changes and create a "diff" entry for each change, such as inserts, deletes, or in-place updates.  Log will be truncated without user intervention once space runs over.  This is useful for working with 3rd party sync apps and providers of which **neutriNote** has little control.  Diff entries also capture data changes so limited form of recovery is possible.
+
 ### <a name="issues">Known Issues</a>
 Anytime a note is accessed from widget, if there is a note already being edited, the note originally being edited will exit without saving.  **neutriNote** does not distinguish between opening a note from widget or from the note list, the currently opened note will be closed to make way for the newly opened note.   It is thus highly recommended that important changes be saved right away.
 
@@ -724,3 +731,6 @@ You can also visit [Product Page](https://plus.google.com/u/0/communities/117565
 
 To further support neutriNote's development, please visit developer's [Ko-fi](https://ko-fi.com/neutriNote) page.
 
+
+
+  
