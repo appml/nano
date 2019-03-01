@@ -487,6 +487,8 @@ You can tinker with the variables found inside of **~neutrinote_settings_data** 
 | com.appmindlab.nano.pref_icon_behavior            | 0: animation off, 1: animation on, 2: [snooze](#snooze) animation                                                |
 | com.appmindlab.nano.pref_keep_deleted_copies      | `true`: keep copies of deleted files under `trash_bin` folder                                                        |
 | com.appmindlab.nano.pref_max_deleted_copies_age   | Specify maximum number of days deleted copies will be kept (pruning to occur during next backup).  Default: -1 (unlimited)      |
+| com.appmindlab.nano.pref_max_sync_log_file_age    | Specify maximum number of days sync logs will be kept.  Default: 7 (1 week)      |
+| com.appmindlab.nano.pref_max_sync_log_file_size   | Specify maximum size for each sync log file (factor of 200 KB).  Default: 2 (400 KB)      |
 | com.appmindlab.nano.pref_local_priority_tag       | Specify a metadata substring pattern to prevent local copy from being overwritten by remote changes.  Note that conflicts may occur if a note is being edited on multiple devices |
 | com.appmindlab.nano.pref_remote_priority_tag       | Specify a metadata substring pattern to override local changes with remote changes when they occurred concurrently.  Note that conflicts may occur if a note is being edited on multiple devices |
 | com.appmindlab.nano.pref_eval_built_in_variables  | `true`: evalute [built-in variables](#variables) in search or shortcut definitions            |  
@@ -704,7 +706,9 @@ In general, using default font style can help reduce the time in opening long no
 For users who do not use mathematics expressions, mathematics rendering can be disabled by entering a `.` under **Mathematics** in **Settings**. Markdown rendering should be faster with mathematics disabled.
 
 ### <a name="log">Log Tools</a>
-Besides in-built incremental and full backup tools, **neutriNote** automatically detects potential data error especially when cross platform syncing is in use.  When the needs arise to troubleshoot remote sync errors, just create a directory under **Local Repository** and add a file called `~neutrinote_sync.log`.  The log will keep track of all remote induced data changes and create a "diff" entry for each change, such as inserts, deletes, or in-place updates.  Log will be truncated without user intervention once space runs over.  This is useful for working with 3rd party sync apps and providers of which **neutriNote** has little control.  Diff entries also capture data changes so limited form of recovery is possible.
+Besides in-built incremental and full backup tools, **neutriNote** automatically detects potential data error especially when cross platform syncing is in use.  When the needs arise to troubleshoot remote sync errors, just create a directory under **Local Repository** and add a file called `~neutrinote_sync.log`.  The log will keep track of all remote induced data changes and create a "diff" entry for each change, such as inserts, deletes, or in-place updates.  This is useful for working with 3rd party sync apps and providers of which **neutriNote** has little control.  Diff entries also capture data changes so alternative on-device recovery of lost data, though limited, is possible.  
+
+Note that log size and expiration date are fully customizable (see `pref_max_sync_log_file_age` and `pref_max_sync_log_file_size` under [Hacks](#hacks) section).
 
 ### <a name="issues">Known Issues</a>
 Anytime a note is accessed from widget, if there is a note already being edited, the note originally being edited will exit without saving.  **neutriNote** does not distinguish between opening a note from widget or from the note list, the currently opened note will be closed to make way for the newly opened note.   It is thus highly recommended that important changes be saved right away.
