@@ -708,8 +708,6 @@ For users who do not use mathematics expressions, mathematics rendering can be d
 ### <a name="log">Log Tool</a>
 **neutriNote** provides a log mechanism to monitor potential data errors especially when cross platform syncing is in use.  To activate logging, create a directory under **Local Repository** and add a file called `~neutrinote_sync.log`.  Once the log file is present, remotely initiated data changes, such as inserts, deletes, or in-place updates, will automatically be captured.  Furthermore, log sizes and expiration dates are customizable via `pref_max_sync_log_file_age` and `pref_max_sync_log_file_size` settings (see [Hacks](#hacks) section).  Note that performance of **neutriNote** may be affected when logging is enabled.
 
-Note that log size and expiration date are fully customizable (see `pref_max_sync_log_file_age` and `pref_max_sync_log_file_size` under [Hacks](#hacks) section).
-
 ### <a name="issues">Known Issues</a>
 Anytime a note is accessed from widget, if there is a note already being edited, the note originally being edited will exit without saving.  **neutriNote** does not distinguish between opening a note from widget or from the note list, the currently opened note will be closed to make way for the newly opened note.   It is thus highly recommended that important changes be saved right away.
 
