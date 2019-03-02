@@ -26,7 +26,7 @@
     * [Misc.](#misc)
     * [Examples](#examples) 
 1. [Performance](#performance)
-1. [Log Tools](#log)
+1. [Log Tool](#log)
 1. [Known Issues](#issues)
 1. [FAQs](#faq)
 1. [Privacy Policy](#privacy)
@@ -705,8 +705,8 @@ In general, using default font style can help reduce the time in opening long no
 
 For users who do not use mathematics expressions, mathematics rendering can be disabled by entering a `.` under **Mathematics** in **Settings**. Markdown rendering should be faster with mathematics disabled.
 
-### <a name="log">Log Tools</a>
-Besides in-built incremental and full backup tools, **neutriNote** automatically detects potential data error especially when cross platform syncing is in use.  When the needs arise to troubleshoot remote sync errors, just create a directory under **Local Repository** and add a file called `~neutrinote_sync.log`.  The log will keep track of all remote induced data changes and create a "diff" entry for each change, such as inserts, deletes, or in-place updates.  This is useful for working with 3rd party sync apps and providers of which **neutriNote** has little control.  Diff entries also capture data changes so alternative on-device recovery of lost data, though limited, is possible.  
+### <a name="log">Log Tool</a>
+**neutriNote** provides a log mechanism to monitor potential data errors especially when cross platform syncing is in use.  To activate logging, create a directory under **Local Repository** and add a file called `~neutrinote_sync.log`.  Once the log file is present, remotely initiated data changes, such as inserts, deletes, or in-place updates, will automatically be captured.  Furthermore, log sizes and expiration dates are customizable via `pref_max_sync_log_file_age` and `pref_max_sync_log_file_size` settings (see [Hacks](#hacks) section).  Note that performance of **neutriNote** may be affected when logging is enabled.
 
 Note that log size and expiration date are fully customizable (see `pref_max_sync_log_file_age` and `pref_max_sync_log_file_size` under [Hacks](#hacks) section).
 
