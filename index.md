@@ -706,7 +706,9 @@ In general, using default font style can help reduce the time in opening long no
 For users who do not use mathematics expressions, mathematics rendering can be disabled by entering a `.` under **Mathematics** in **Settings**. Markdown rendering should be faster with mathematics disabled.
 
 ### <a name="log">Log Tool</a>
-**neutriNote** provides a log mechanism to monitor potential data errors especially when cross platform syncing is in use.  To activate logging, create a directory under **Local Repository** and add a file called `~neutrinote_sync.log`.  Once the log file is present, remotely initiated data changes, such as inserts, deletes, or in-place updates, will automatically be captured.  Furthermore, log sizes and expiration dates are customizable via `pref_max_sync_log_file_age` and `pref_max_sync_log_file_size` settings (see [Hacks](#hacks) section).  Note that performance of **neutriNote** may be affected when logging is enabled.
+**neutriNote** provides a log mechanism to monitor **Local Repository** changes.  This is useful especially when cross-platform syncing is in use.  To activate logging, create a directory called `log` under **Local Repository** and add a file called `~neutrinote_sync.log`.  Once the log file is present, recording of remotely initiated data changes, such as inserts, deletes, or in-place updates will take place automatically.  Furthermore, log attributes such as sizes and expiration dates can be specified via `pref_max_sync_log_file_age` and `pref_max_sync_log_file_size` settings (see [Hacks](#hacks) section).  
+
+Note that the performance of **neutriNote** may be affected when logging is in use.  To turn off logging, simple remove `~neutrinote_sync.log` from `log` folder. 
 
 ### <a name="issues">Known Issues</a>
 Anytime a note is accessed from widget, if there is a note already being edited, the note originally being edited will exit without saving.  **neutriNote** does not distinguish between opening a note from widget or from the note list, the currently opened note will be closed to make way for the newly opened note.   It is thus highly recommended that important changes be saved right away.
