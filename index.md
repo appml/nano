@@ -654,7 +654,7 @@ A slightly more complex example:
 
 
 ### <a name="texteditor">Text Editor</a>
-Though outside the scope of note taking, **neutriNote** can be used as a lightweight text editor to supplement apps such as Dropbox across all folders.  Changes committed will be sent back to original locations of edited files instead of storing in **Local Repository**, if the files are located outside **Local Repository**.  (Note that files not stored in **Local Repository** will not be cataloged by **neutriNote**'s search engine.)
+Though outside the scope of note taking, **neutriNote** can be used as a lightweight text editor to supplement apps such as Dropbox or Google Drive across all folders.  Changes committed will be sent back to original locations of edited files instead of storing in **Local Repository**, if the files are located outside **Local Repository**.  (Note that files not stored in **Local Repository** will not be cataloged by **neutriNote**'s search engine.)
 
 
 ### <a name="snooze">Snooze (Experimental)</a>
