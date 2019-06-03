@@ -23,11 +23,11 @@
     * [Python Support](#python)
     * [Text Editor](#texteditor)
     * [Snooze](#snooze)
-    * [Relocate Local Repository](#relocate)
     * [Misc.](#misc)
     * [Examples](#examples) 
 1. [Performance](#performance)
 1. [Log Tool](#log)
+1. [Relocate Local Repository](#relocate)
 1. [Known Issues](#issues)
 1. [FAQs](#faq)
 1. [Privacy Policy](#privacy)
@@ -679,15 +679,6 @@ Then add special **snooze strings** such as `+1h` ("snooze for an hour") or `+2d
 
 To transfer snooze to another device, be sure to tap **Backup/Restore App Data**.  Even more useful is that snooze strings are also fully searchable, they work just like regular metadata!
 
-### <a name="relocate">Relocate Local Repository</a>
-While generally not recommended, there may come a time when **Local Repository** has to be relocated.  Please handle the following steps with care:
-
-1. Backup ALL app settings and notes.
-1. For pre-Android 9 devices, copy **Local Repository** folder to its new location.  For Android 9 or above, **Local Repository** can only be located anywhere under `/Android/data/com.appmindlab.nano/files`.
-1. Un-install **neutriNote** (or clear the app's data under Android's system settings).
-1. Re-install **neutriNote**.
-1. Point **Local Repository** to its new location.
-1. Restore app data.
 
 ### <a name="misc">Miscellaneous</a>
 **neutriNote** comes with many goodies for capturing text based data without switching away such as the built-in barcode scanner.  Another is a handy calculator for solving mathematical expressions based on [Math.js](http://mathjs.org/docs/expressions/syntax.html) (network connection required).  To see how that works, try one of the following examples in your notes:
@@ -720,6 +711,18 @@ For users who do not use mathematics expressions, mathematics rendering can be d
 **neutriNote** provides a simple log mechanism to monitor **Local Repository** changes caused externally.  This is useful especially when cross-platform sync is in use.  To activate logging, create a directory called `log` under **Local Repository** and add a file called `~neutrinote_sync.log` (for devices equipped with SD cards, `~neutrinote_sync.log` can instead be placed under `/Android/data/com.appmindlab.nano/files/log`).  Once the log file is detected, recording of remotely initiated data changes, such as inserts, deletes, or in-place updates will take place automatically.  Furthermore, log attributes such as sizes and recycle frequencies can be specified via `pref_max_sync_log_file_age` and `pref_max_sync_log_file_size` settings (see [Hacks](#hacks) section).  
 
 Note that logging may have impacts on overall performance and battery consumption.  Simply delete `~neutrinote_sync.log` from `log` folder to stop logging. 
+
+
+### <a name="relocate">Relocate Local Repository</a>
+While generally not recommended, there may come a time when **Local Repository** has to be relocated.  Please handle the following steps with care:
+
+1. Backup ALL app settings and notes.
+1. For pre-Android 9 devices, copy **Local Repository** folder to its new location.  For Android 9 or above, **Local Repository** can only be located anywhere under `/Android/data/com.appmindlab.nano/files`.
+1. Un-install **neutriNote** (or clear the app's data under Android's system settings).
+1. Re-install **neutriNote**.
+1. Point **Local Repository** to its new location.
+1. Restore app data.
+
 
 ### <a name="issues">Known Issues</a>
 Anytime a note is accessed from widget, if there is a note already being edited, the note originally being edited will exit without saving.  **neutriNote** does not distinguish between opening a note from widget or from the note list, the currently opened note will be closed to make way for the newly opened note.   It is thus highly recommended that important changes be saved right away.
