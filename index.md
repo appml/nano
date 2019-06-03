@@ -23,6 +23,7 @@
     * [Python Support](#python)
     * [Text Editor](#texteditor)
     * [Snooze](#snooze)
+    * [Relocate Local Repository](#relocate)
     * [Misc.](#misc)
     * [Examples](#examples) 
 1. [Performance](#performance)
@@ -677,6 +678,16 @@ Then add special **snooze strings** such as `+1h` ("snooze for an hour") or `+2d
 | `y` for years      | `+10y`: snooze for a decade        |
 
 To transfer snooze to another device, be sure to tap **Backup/Restore App Data**.  Even more useful is that snooze strings are also fully searchable, they work just like regular metadata!
+
+### <a name="relocate">Relocate Local Repository</a>
+While generally not recommended, there may come a time when **Local Repository** has to be relocated.  Please handle the following steps with care:
+
+1. Backup ALL app settings and notes.
+1. For pre-Android 9 devices, copy **Local Repository** folder to its new location.  For Android 9 or above, **Local Repository** can only be located anywhere under `/Android/data/com.appmindlab.nano/files`.
+1. Un-install **neutriNote** (or clear the app's data under Android's system settings).
+1. Re-install **neutriNote**.
+1. Point **Local Repository** to its new location.
+1. Restore app data.
 
 ### <a name="misc">Miscellaneous</a>
 **neutriNote** comes with many goodies for capturing text based data without switching away such as the built-in barcode scanner.  Another is a handy calculator for solving mathematical expressions based on [Math.js](http://mathjs.org/docs/expressions/syntax.html) (network connection required).  To see how that works, try one of the following examples in your notes:
