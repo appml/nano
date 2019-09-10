@@ -154,19 +154,21 @@ http://neutriNote.io/my_diary?search=first%20headquarter%20visit
 
 ```
 
-* There is a conflict between Markdown italic symbol and LaTeX subscript symbol.  To workaround this problem, either escape the subscript symbols or wrap the expression in script block.  For example, instead of doing this:
+There is a conflict between Markdown italic symbol and LaTeX subscript symbol.  To workaround this problem, either escape the subscript symbols or wrap the expression in script block.  For example, instead of doing this:
 
-    `$$k_{n+1} = n^2 + k_n^2 - k_{n-1}$$`
+`$$k_{n+1} = n^2 + k_n^2 - k_{n-1}$$`
 
-    do this:
-    
-    `$$k\_{n+1} = n^2 + k\_n^2 - k\_{n-1}$$`
+do this:
 
-    Or use script block with the desired type like this:
+`$$k\_{n+1} = n^2 + k\_n^2 - k\_{n-1}$$`
+
+Or use script block with the desired type like this:
     
 ```
 <script type="math/tex">k_{n+1} = n^2 + k_n^2 - k_{n-1}</script>
 ```
+
+On the other hand, to allow line breaks within `$$` segments, use `\\\` instead of `\\`.
 
 It's easy to customize the style of Markdown with popular inline CSS.  For more extensive styling needs, you can "swap out" built-in styling by declaring your CSS in  `~neutrinote_styles.txt`.  If your style is based off an existing Markdown theme, this process is pretty much effortless.  For example, to **solarize** your Markdown, simply copy and paste the following two lines into `~neutrinote_styles.txt`.
 
@@ -484,7 +486,7 @@ You can tinker with the variables found inside of **~neutrinote_settings_data** 
 |com.appmindlab.nano.pref_custom_date_format        | Override system date stamp format with custom [date format](https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html) |
 |com.appmindlab.nano.pref_custom_time_format        | Override system time stamp format with custom [time format](https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html) |
 | com.appmindlab.nano.pref_preview_mode             | `start`: display the beginning of notes in preview, `end`: display the end, `off`: disable preview               |
-| com.appmindlab.nano.pref_star_at_top             | `true`: place starred notes above other notes in list view.  Default: `false`          |
+| com.appmindlab.nano.pref_star_at_top              | `true`: place starred notes above other notes in list view.  Default: `false`          |
 | com.appmindlab.nano.pref_icon_behavior            | 0: animation off, 1: animation on, 2: [snooze](#snooze) animation                                                |
 | com.appmindlab.nano.pref_keep_deleted_copies      | `true`: keep copies of deleted files under `trash_bin` folder                                                        |
 | com.appmindlab.nano.pref_max_deleted_copies_age   | Specify maximum number of days deleted copies will be kept (pruning to occur during next backup).  Default: -1 (unlimited)      |
@@ -707,6 +709,7 @@ In general, using default font style can help reduce the time in opening long no
 
 For users who do not use mathematics expressions, mathematics rendering can be disabled by entering a `.` under **Mathematics** in **Settings**. Markdown rendering should be faster with mathematics disabled.
 
+
 ### <a name="log">Log Tool</a>
 **neutriNote** provides a simple log mechanism to monitor **Local Repository** changes caused externally.  This is useful especially when cross-platform sync is in use.  To activate logging, create a directory called `log` under **Local Repository** and add a file called `~neutrinote_sync.log` (for devices equipped with SD cards, `~neutrinote_sync.log` can instead be placed under `/Android/data/com.appmindlab.nano/files/log`).  Once the log file is detected, recording of remotely initiated data changes, such as inserts, deletes, or in-place updates will take place automatically.  Furthermore, log attributes such as sizes and recycle frequencies can be specified via `pref_max_sync_log_file_age` and `pref_max_sync_log_file_size` settings (see [Hacks](#hacks) section).  
 
@@ -725,11 +728,12 @@ While generally not recommended, there may come a time when **Local Repository**
 
 
 ### <a name="issues">Known Issues</a>
-Anytime a note is accessed from widget, if there is a note already being edited, the note originally being edited will exit without saving.  **neutriNote** does not distinguish between opening a note from widget or from the note list, the currently opened note will be closed to make way for the newly opened note.   It is thus highly recommended that important changes be saved right away.
+Anytime a note is accessed from widget, if there is a note already being edited, the note originally being edited will exit without saving.  **neutriNote** does not distinguish between opening a note from widget or from the note list, the currently opened note will be closed to make way for the newly opened note.  It is thus highly recommended that important changes be saved right away.
 
 If a note needs to be renamed, do so within **neutriNote**.  Certain cloud sync would also change the case of note titles.  **neutriNote** would detect those changes and be case insensitive accordingly.  However, **neutriNote** would not delete notes unless their titles match exactly.  Therefore it is so crucial that notes be renamed from the end of **neutriNote**.
 
 To improve app stability in lower-end devices, **neutriNote** supports note size up to 1.5 MB.  Notes beyond the size will automatically be moved to a folder called `import_errors`.  To bring them back into **neutriNote**, you would need to split the notes into files below 1.5 MB and move them into the repository folder.
+
 
 ### <a name="faq">FAQs</a>
 **No folder support?** **neutriNote** is designed to provide a flat, hierarchy-free, ["low cognitive load"](http://blog.codinghorror.com/trees-treeviews-and-ui/) note taking experience so that the number of taps can be minimized, folder navigation would require a nested UI and more taps to get to notes beyond the root level.  On top of that, offline search would need to traverse levels of folders in such a way that turnaround time could vary perceivably.  Metadata used together with custom filters provides more general organization than folders (a note can match multiple metadata simultaneously).
@@ -748,6 +752,8 @@ Every effort has been made to ensure that all third-party software used be prope
 You can also visit [Product Page](https://plus.google.com/u/0/communities/117565395761503074053) for development updates regarding the app.
 
 To further support neutriNote's development, please visit developer's [Ko-fi](https://ko-fi.com/neutriNote) page.
+.
+
 
 
 
