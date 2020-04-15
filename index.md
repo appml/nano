@@ -462,8 +462,8 @@ Various user interface elements support gestures for better productivity:
     * After conducting search, dial up/down **editor status** to go to previous/next hits.
     * For Android 6.0 or higher, swipe right on **editor status** will resume in edit screen the last scroll bar position from Markdown preview.
     
-* Markdown Preview:
-    * (Experimental) For a more fluid e-book like reading experience, tap anywhere on a paragraph to reflow the text around screen after zooming.  Tap any empty space to reflow the whole document.  To resume original text wrapping, zoom all the way out and tap again.
+* Markdown preview:
+    * (Experimental) For a more fluid e-book like reading experience, tap anywhere on a paragraph to reflow the text around screen after zooming. Tap any empty space to reflow the whole document (or swipe left on **editor status**). To resume the appearance of original text wrap, zoom all the way out and tap again.
 
 ### <a name="hacks">Hacks</a>
 What follows are features that may conflict with the core functions of **neutriNote**.  Use at your own discretion.
