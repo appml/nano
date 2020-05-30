@@ -662,7 +662,7 @@ A slightly more complex example:
 (Note that the `script` tag is required to indicate the scope of Python code.)
 
 
-### <a name="components">Web Component Support (Experimental, requires 3.2.1 or above)</a>
+### <a name="components">Web Component Support (Experimental, requires 3.2.2 or above)</a>
 **neutriNote** supports reusable user defined components through Vue.js.  This is especially useful for including frequently used note elements. 
 
  To enable, simply enable Vue parsing shown under [Hacks](#hacks) section and create a new note with the title `app.js` and **neutriNote** will handle the rest.
