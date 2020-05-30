@@ -21,6 +21,7 @@
     * [Storage Saver](#storage)
     * [API](#api)
     * [Python Support](#python)
+    * [Web Component Support](#components)
     * [Text Editor](#texteditor)
     * [Snooze](#snooze)
     * [Misc.](#misc)
@@ -461,7 +462,7 @@ Various user interface elements support gestures for better productivity:
     * Swipe left on **editor status** to return to saved cursor position.
     * After conducting search, dial up/down **editor status** to go to previous/next hits.
     * For Android 6.0 or higher, swipe right on **editor status** will resume in edit screen the last scroll bar position from Markdown preview.
-    
+
 * Markdown preview:
     * (Experimental) For a more fluid e-book like reading experience, tap anywhere on a paragraph to reflow the text around screen after zooming. Tap any empty space to reflow the whole document (or swipe left on **editor status**). To resume the appearance of original text wrap, zoom all the way out and tap again.
 
@@ -480,7 +481,7 @@ You can tinker with the variables found inside of **~neutrinote_settings_data** 
 | com.appmindlab.nano.pref_latex_single_dollar      | `true`: use single dollar signs to signify math expressions                                                      |
 | com.appmindlab.nano.pref_indent_char              | Specify the character(s) to use for indentation.  Default: 4 spaces                                              |  
 | com.appmindlab.nano.pref_append_custom_style    | `true`: **Extend** built-in styles with `~neutrinote_styles.txt`,  `false`: **Replace** built-in styles with `~neutrinote_styles.txt`                |
-| com.appmindlab.nano.pref_show_toolbar             | `true`: always show edit toolbar (hint: tap screen to hide, double tap to re-display                                                                                 |
+| com.appmindlab.nano.pref_show_toolbar             | `true`: always show edit toolbar (hint: tap screen to hide, double tap to re-display)                                                                                 |
 | com.appmindlab.nano.pref_toolbox_mode             | `stateful`: keep editor toolbox scroll position (default), `stateless`: always reset editor toolbox scroll position, `pin_save`: keep save button visible            |
 | com.appmindlab.nano.pref_oled                     | `true`: dim screen elements for OLED screens               |
 | com.appmindlab.nano.pref_canvas_strokes           | Fixed width symbols supported by sketch tool delimited by semicolons, e.g., `:;\;/;_;-;,;●` (vertical bar and semicolon not allowed) | 
@@ -503,6 +504,7 @@ You can tinker with the variables found inside of **~neutrinote_settings_data** 
 | com.appmindlab.nano.pref_new_note_title_template  | Specify title template for new notes.  Default: `New Note`  | 
 | com.appmindlab.nano.pref_new_note_file_type       | Specify file type for new notes.  Multiple type mode required (see below).  Default: `.txt`  | 
 | com.appmindlab.nano.pref_parse_python             | `true`: enable basic Python code interpretation.  Default: `false`   | 
+| com.appmindlab.nano.pref_parse_vue             | `true`: enable basic Vue.js components.  Default: `false`   | 
 | com.appmindlab.nano.pref_lab_mode                 | `true`: enable experimental features such as OCR, diff-tool                                                                |  
              
 Advanced users may enable multiple text file types for **neutriNote**.  To setup, please carefully follow all the steps below:
@@ -660,6 +662,47 @@ A slightly more complex example:
 (Note that the `script` tag is required to indicate the scope of Python code.)
 
 
+### <a name="components">Web Component Support (Experimental, requires 3.2.1 or above)</a>
+**neutriNote** supports reusable user defined components through Vue.js.  This is especially useful for including frequently used note elements. 
+
+ To enable, simply enable Vue parsing shown under [Hacks](#hacks) section and create a new note with the title `app.js` and **neutriNote** will handle the rest.
+
+To see it in action, copy the following sample component definition for `<btn-style>` to `app.js`, the file where all component declarations are to be placed: 
+
+```
+Vue.component('btn-style', {
+    props: ['theme'],
+    template: '<li>{{ theme.desc }}</li>'
+})
+
+var app = new Vue({
+    el: '#app',
+    data: {
+        buttonStyles: [
+            { id: 0, desc: 'primary' },
+            { id: 1, desc: 'secondary' },
+            { id: 2, desc: 'success' },
+            { id: 3, desc: 'warning' },
+            { id: 4, desc: 'info' }
+        ]
+    }
+})
+
+``` 
+
+That's it!  Now see how easy it is to deploy `<btn-style>` anywhere throughout your notes as long as it is inside a `div` block by the id `app`.
+
+```
+<div id="app">
+    <ol>
+        <btn-style v-for="item in buttonStyles" v-bind:theme="item" v-bind:key="item.id"></btn-style>
+    </ol>
+</div>
+```
+
+Note that currently **neutriNote** does not support the import of external components, so not a substitute for any full-scale development architecture.
+
+
 ### <a name="texteditor">Text Editor</a>
 Though outside the scope of note taking, **neutriNote** can be used as a lightweight text editor to supplement apps such as Dropbox or Google Drive across all folders.  Changes committed will be sent back to original locations of edited files instead of storing in **Local Repository**, if the files are located outside **Local Repository**.  (Note that files not stored in **Local Repository** will not be cataloged by **neutriNote**'s search engine.)
 
@@ -757,8 +800,3 @@ You can also visit [Product Page](https://plus.google.com/u/0/communities/117565
 
 To further support neutriNote's development, please visit developer's [Ko-fi](https://ko-fi.com/neutriNote) page.
 .
-
-
-
-
-  
