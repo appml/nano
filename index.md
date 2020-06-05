@@ -1,6 +1,8 @@
-## User Guide 
+## User Guide
 
 <sup>[[Japanese Edition](https://github.com/ayatakesi/neutriNote/blob/master/index.md)]</sup>
+
+### <a name="toc">Table of Contents</a>
 
 1. [Getting Started](#started)
 1. [Backup and Restore](#backup)
@@ -60,6 +62,8 @@ If you have already activated **Local Repository**, your notes will be sync seam
 
 When incremental backup is enabled, a task to conduct full backup when the device is idle will also be activated.  A maximum of 10 most recent backups will be maintained.  See [Storage Saver](#storage) section for more suggestions on how to manage backup storage space.
 
+<a href="#toc">:top: Back to top</a>
+
 #### <a name="search">Search Tools</a>
 While notes can be retrieved based on modified time, accessed time, and location as providied by the user interface, **neutriNote** supports high precision text based search and [regular expression](http://en.m.wikipedia.org/wiki/Glob_(programming)).  The syntax below are also highly reusable when they are included as part of the preset filters (under Settings).
 
@@ -80,13 +84,17 @@ all;starred;A;B;C;D;E;F;G;H;I;J;K;L;M;N;O;P;Q;R;S;T;U;V;W;X;Y;Z
 **all** is reserved for retrieving all notes, and **starred** reserved for retrieving starred notes. Single character filters are reserved for retrieving notes with titles beginning with said alphabets.
 
 For searching within notes, **neutriNote** recognizes basic [Perl](http://www.erudil.com/preqr.pdf) style patterns: `\d` for digits, `\s` for whitespace, etc.  
+
+<a href="#toc">:top: Back to top</a>
  
 
 ### <a name="advanced">Advanced Features</a>
 
 ### <a name="metadata">Metadata</a>
 Metadata are general purpose text strings that exist outside note data.  They are searchable and can be used as tags.  To emulate filtering by tags, simply enter into the main search bar queries like `tag:term1,term2,term3,...,termN`, so that each term must be present in the metadata (in any order) for a note to be considered a match.  On the other hand, if the presence of any one term is sufficient for a note to be considered a match, use `tag*:term1,term2,term3,...,termN` instead.
-        
+
+<a href="#toc">:top: Back to top</a>
+
 ### <a name="md">Markdown</a>
 **neutriNote** supports [PHP Markdown Extra]( http://michelf.ca/projects/php-markdown/extra/) and LaTeX style mathematical expressions.  The easiest way to enter mathematical expressions is to wrap them in `$$`.  For inline math, use `\\(...\\)` as in the example below:
 ```
@@ -177,7 +185,10 @@ It's easy to customize the style of Markdown with popular inline CSS.  For more 
 <link href="http://thomasf.github.io/solarized-css/solarized-light.min.css" rel="stylesheet"></link>
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 ```
-    
+
+<a href="#toc">:top: Back to top</a>
+
+
 ### <a name="examples">Examples</a>
 An example of how **neutriNote**'s rendering component could be used to plot a graph using [JSXGraph](http://jsxgraph.uni-bayreuth.de/wp/examples/):
 
@@ -256,6 +267,9 @@ Tabular data can be processed by custom codes (note the placeholder cells for ou
 
 ```  
 
+<a href="#toc">:top: Back to top</a>
+
+
 ### <a name="automation">Automation</a>
 
 **neutriNote** can easily be integrated into existing Tasker automation.  For example, to launch a third party Tasker plugin, it can be as simple as creating a Tasker profile to "observe" **Local Repository** events.  Specifically, to trigger third party sync plugins, simply add a blank file `~neutrinote_noop.txt` in **Local Repository** and have its modifications monitored by Tasker to piggyback a modification event corresponding to that file emitted by pull-to-refresh in **neutriNote**. 
@@ -269,6 +283,8 @@ A3: Variable Set [ Name:%clip_prev To:%CLIP Do Maths:Off Append:Off ]
 ```
 
 Combined with other ways to extend **neutriNote**, there are essentially an infinite number of ways to automate the creation of richer note contents.
+
+<a href="#toc">:top: Back to top</a>
 
 
 ### <a name="textexpansion">Text Expansion</a>
@@ -380,6 +396,8 @@ termfloat|neutriNote#launch com.termux.window
 
 You can include basic parameters with the commands, just write them after the command shortcut and separate each parameter with space+commas like this: `shortcut_label param1 , param2 , param3`.  Select the whole string and tap the expand icon to paste the output.  Users of cURL can also simplify the definitons of their expansions with `neutriNote?` instead of `neutriNote$` and trail that directly by a URL.
 
+<a href="#toc">:top: Back to top</a>
+
 
 ### <a name="batchselect">Batch Select</a>
 Special selection commands are available for better productivity.
@@ -394,10 +412,14 @@ Special selection commands are available for better productivity.
 * Edit multiple paragraphs: select multiple paragraphs and tap a symbol / action from  **Markdown Symbol Toolbar**.  For example, you can indent selected paragraphs by tapping `➡`, or turn selected paragraphs into a bulleted list simply by tapping `*`.
 * Select the path of any linked image, tap **OCR** to extract text from the image.
 
+<a href="#toc">:top: Back to top</a>
+
     
 ### <a name="voicememo">Voice Memo</a>
 **neutriNote** is compatible with Google Now dictation.  Simply say _Ok Google note to self_ and pick **neutriNote** to capture what you say.
  
+<a href="#toc">:top: Back to top</a>
+
 
 ### <a name="externalfonts">External Fonts</a>
 It's easy to use external fonts such as those featured by Google Fonts in **neutriNote** (IMPORTANT: be sure to read their terms of use carefully):
@@ -420,9 +442,14 @@ GoudyBookletter1911.ttf
 font-family: 'Goudy Bookletter 1911', serif;
 ```        
 
+<a href="#toc">:top: Back to top</a>
+
         
 ### <a name="ambientglow">Ambient Glow</a>
 **Ambient Glow** is an experimental function that adjusts the color temperature of **neutriNote** to [approximate](https://en.wikipedia.org/wiki/Color_temperature#Categorizing_different_lighting) the level of your current environment for a more _atmospheric_ editing experience.  It differs from blue light filtering apps in that it does not demand your location information -- instead only light sensor data from Tasker will be used (to conserve battery).  [neutriNote Auto Theme](https://play.google.com/store/apps/details?id=com.appmindlab.autotheme) is required for this function to work properly.  Note that **Ambient Glow** will not be applied to Markdown and for users of blue light filters it is recommended that this function be disabled. 
+
+<a href="#toc">:top: Back to top</a>
+
 
 ### <a name="keyboard">Keyboard</a>
 The following editor shortcuts are supported when connected to a physical keyboard:
@@ -440,6 +467,8 @@ The following editor shortcuts are supported when connected to a physical keyboa
 | `Ctrl-Shift-Z`             | Redo              | 
 | `Ctrl-]` or `Ctrl-I`       | Indent            |  
 | `Ctrl-[` or `Ctrl-Shift-I` | Un-indent         | 
+
+<a href="#toc">:top: Back to top</a>
 
 
 ### <a name="gestures">Gestures</a>
@@ -465,6 +494,9 @@ Various user interface elements support gestures for better productivity:
 
 * Markdown preview:
     * (Experimental) For a more fluid e-book like reading experience, tap anywhere on a paragraph to reflow the text around screen after zooming. Tap any empty space to reflow the whole document (or swipe left on **editor status**). To resume the appearance of original text wrap, zoom all the way out and tap again.
+
+<a href="#toc">:top: Back to top</a>
+
 
 ### <a name="hacks">Hacks</a>
 What follows are features that may conflict with the core functions of **neutriNote**.  Use at your own discretion.
@@ -522,6 +554,9 @@ Advanced users may enable multiple text file types for **neutriNote**.  To setup
 
 Note that **neutriNote Connector** will not handle files without `.txt` extension.  To sync files without `.txt` extension with Dropbox you would have to install a third party app or install [**neutriNote Connector+**](https://play.google.com/store/apps/details?id=com.appmindlab.connectorplus).  (If you have **neutriNote Connector** installed, you would need to remove it prior to launching **neutriNote Connector+**.  If you have **neutriNote Connector+** installed, you would need to _re-install_ the app.)
 
+<a href="#toc">:top: Back to top</a>
+
+
 ### <a name="variables">Built-in Variables (v2.3.4) </a>
 Built-in variables may be used in search or shortcut definitions.  For example, to find notes with tomorrow's time stamp, simply type `@tomorrow` in the search box.  You can even include built-in variables in **Custom Filters**, say, for listing notes containing tomorrow's time stamp, or include them in shortcut definitions to generate text expansion snippets on the fly.
 
@@ -539,6 +574,9 @@ Built-in variables may be used in search or shortcut definitions.  For example, 
 
 See [Hacks](#hacks) for information on how to enable the use of built-in variables.
 
+<a href="#toc">:top: Back to top</a>
+
+
 ### <a name="storage">Storage Saver</a>
 For devices equipped with SD cards, it is possible to store backups on SD cards to save space in internal storage. 
 
@@ -548,6 +586,9 @@ For devices equipped with SD cards, it is possible to store backups on SD cards 
 1. Future backups will be stored at `/Android/data/com.appmindlab.nano/files/neutrinote_export` under the SD card.
 
 Notice that the backups will be automatically removed to reclaim storage space if neutriNote is uninstalled.
+
+<a href="#toc">:top: Back to top</a>
+
 
 ### <a name="api">API</a>
 neutriNote's Markdown engine is fully modular and swappable.  If you are familar with compiler scripting and would like to integrate your own parser, you would need to use the following entry points in your code:
@@ -631,6 +672,9 @@ More useful parsing can be achieved by following the same pattern.  Take a look 
 
 To restore default PHP Markdown syntax, just remove `~neutrinote_script.txt`.
 
+<a href="#toc">:top: Back to top</a>
+
+
 ### <a name="python">Python Support (Experimental)</a>
 **neutriNote** can evaluate in-note Python code snippets.  To enable this feature, simply set Python parsing flag to `true` as shown under [Hacks](#hacks) section.  
 
@@ -660,6 +704,8 @@ A slightly more complex example:
 ```
 
 (Note that the `script` tag is required to indicate the scope of Python code.)
+
+<a href="#toc">:top: Back to top</a>
 
 
 ### <a name="components">Web Component Support (Experimental, requires 3.2.2 or above)</a>
@@ -702,9 +748,13 @@ That's it!  Now see how easy it is to deploy `<btn-style>` anywhere throughout y
 
 Note that currently **neutriNote** does not support the import of external components, so not a substitute for any full-scale development architecture.
 
+<a href="#toc">:top: Back to top</a>
+
 
 ### <a name="texteditor">Text Editor</a>
 Though outside the scope of note taking, **neutriNote** can be used as a lightweight text editor to supplement apps such as Dropbox or Google Drive across all folders.  Changes committed will be sent back to original locations of edited files instead of storing in **Local Repository**, if the files are located outside **Local Repository**.  (Note that files not stored in **Local Repository** will not be cataloged by **neutriNote**'s search engine.)
+
+<a href="#toc">:top: Back to top</a>
 
 
 ### <a name="snooze">Snooze (Experimental)</a>
@@ -728,6 +778,8 @@ Then add special **snooze strings** such as `+1h` ("snooze for an hour") or `+2d
 
 To transfer snooze to another device, be sure to tap **Backup/Restore App Data**.  Even more useful is that snooze strings are also fully searchable, they work just like regular metadata!
 
+<a href="#toc">:top: Back to top</a>
+
 
 ### <a name="misc">Miscellaneous</a>
 **neutriNote** comes with many goodies for capturing text based data without switching away such as the built-in barcode scanner.  Another is a handy calculator for solving mathematical expressions based on [Math.js](http://mathjs.org/docs/expressions/syntax.html) (network connection required).  To see how that works, try one of the following examples in your notes:
@@ -748,6 +800,9 @@ det([-1, 2; 3, 1])
 
 log(10000, 10)
 ```
+
+<a href="#toc">:top: Back to top</a>
+
         
 ### <a name="performance">Performance</a>
 When editing a long note, hide the title bar to reduce lags.  
@@ -756,11 +811,15 @@ In general, using default font style can help reduce the time in opening long no
 
 For users who do not use mathematics expressions, mathematics rendering can be disabled by entering a `.` under **Mathematics** in **Settings**. Markdown rendering should be faster with mathematics disabled.
 
+<a href="#toc">:top: Back to top</a>
+
 
 ### <a name="log">Log Tool</a>
 **neutriNote** provides a simple log mechanism to monitor **Local Repository** changes caused externally.  This is useful especially when cross-platform sync is in use.  To activate logging, create a directory called `log` under **Local Repository** and add a file called `~neutrinote_sync.log` (for devices equipped with SD cards, `~neutrinote_sync.log` can instead be placed under `/Android/data/com.appmindlab.nano/files/log`).  Once the log file is detected, recording of remotely initiated data changes, such as inserts, deletes, or in-place updates will take place automatically.  Furthermore, log attributes such as sizes and recycle frequencies can be specified via `pref_max_sync_log_file_age` and `pref_max_sync_log_file_size` settings (see [Hacks](#hacks) section).  
 
 Note that logging may have impacts on overall performance and battery consumption.  Simply delete `~neutrinote_sync.log` from `log` folder to stop logging. 
+
+<a href="#toc">:top: Back to top</a>
 
 
 ### <a name="relocate">Relocate Local Repository</a>
@@ -773,6 +832,8 @@ While generally not recommended, there may come a time when **Local Repository**
 1. Point **Local Repository** to its new location.
 1. Restore app data.
 
+<a href="#toc">:top: Back to top</a>
+
 
 ### <a name="issues">Known Issues</a>
 Anytime a note is accessed from widget, if there is a note already being edited, the note originally being edited will exit without saving.  **neutriNote** does not distinguish between opening a note from widget or from the note list, the currently opened note will be closed to make way for the newly opened note.  It is thus highly recommended that important changes be saved right away.
@@ -781,17 +842,28 @@ If a note needs to be renamed, do so within **neutriNote**.  Certain cloud sync 
 
 To improve app stability in lower-end devices, **neutriNote** supports note size up to 1.5 MB.  Notes beyond the size will automatically be moved to a folder called `import_errors`.  To bring them back into **neutriNote**, you would need to split the notes into files below 1.5 MB and move them into the repository folder.
 
+<a href="#toc">:top: Back to top</a>
+
 
 ### <a name="faq">FAQs</a>
 **No folder support?** **neutriNote** is designed to provide a flat, hierarchy-free, ["low cognitive load"](http://blog.codinghorror.com/trees-treeviews-and-ui/) note taking experience so that the number of taps can be minimized, folder navigation would require a nested UI and more taps to get to notes beyond the root level.  On top of that, offline search would need to traverse levels of folders in such a way that turnaround time could vary perceivably.  Metadata used together with custom filters provides more general organization than folders (a note can match multiple metadata simultaneously).
 
 **Story behind the name?** [This](https://en.wikipedia.org/wiki/Neutrino) came up when trying to conjure up something that conveys unclutterness. 
 
+<a href="#toc">:top: Back to top</a>
+
+
 ### <a name="privacy">Privacy Policy</a>
 This app does not gather personal information. Location data can always be disabled via Settings.  A menu option is also provided to clear search history.
 
+<a href="#toc">:top: Back to top</a>
+
+
 ### <a name="todo">TODO</a>
 Keep the app as crash-proof as possible.
+
+<a href="#toc">:top: Back to top</a>
+
 
 ### <a name="about">About</a>
 Every effort has been made to ensure that all third-party software used be properly acknowledged (see license information in the **About** dialog).  Please feel free to contact by [email](mailto:lightandshadowscamera@gmail.com) anytime should such information be found incomplete or inaccurate.
@@ -799,4 +871,5 @@ Every effort has been made to ensure that all third-party software used be prope
 You can also visit [Product Page](https://plus.google.com/u/0/communities/117565395761503074053) for development updates regarding the app.
 
 To further support neutriNote's development, please visit developer's [Ko-fi](https://ko-fi.com/neutriNote) page.
-.
+
+<a href="#toc">:top: Back to top</a>
