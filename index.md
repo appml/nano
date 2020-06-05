@@ -23,7 +23,7 @@
     * [Storage Saver](#storage)
     * [API](#api)
     * [Python Support](#python)
-    * [Web Component Support](#components)
+    * [Web Components](#components)
     * [Text Editor](#texteditor)
     * [Snooze](#snooze)
     * [Misc.](#misc)
@@ -708,7 +708,7 @@ A slightly more complex example:
 <a href="#toc">:top: Back to top</a>
 
 
-### <a name="components">Web Component Support (Experimental, requires 3.2.2 or above)</a>
+### <a name="components">Web Components</a>
 **neutriNote** supports reusable user defined components through Vue.js.  This is especially useful for including frequently used note elements. 
 
  To enable, simply enable Vue parsing shown under [Hacks](#hacks) section and create a new note with the title `app.js` and **neutriNote** will handle the rest.
