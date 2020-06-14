@@ -395,6 +395,14 @@ Multitasking especially with floating apps is easier with shortcut like this:
 termfloat|neutriNote#launch com.termux.window
 ```
 
+The following shortcut allows you to create a link to the current note, at the position of the currently selected text:
+
+```
+# Usage: select "link some_text_string" and expand to create in clipboard a link to the current note at the position of the selected text.  A link from other notes to this note can then be created by pasting the current clipboard content into other notes.
+
+link|neutriNote#createlink
+```
+
 You can include basic parameters with the commands, just write them after the command shortcut and separate each parameter with space+commas like this: `shortcut_label param1 , param2 , param3`.  Select the whole string and tap the expand icon to paste the output.  Users of cURL can also simplify the definitons of their expansions with `neutriNote?` instead of `neutriNote$` and trail that directly by a URL.
 
 <a href="#toc">🔝 Back to top</a>
