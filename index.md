@@ -313,6 +313,13 @@ To replace all occurrences of a specific pattern by line breaks, simply:
 eol|neutriNote#linebreak \s
 ```
 
+To join multiple lines, try using this:
+
+```
+# Usage: select "join some_text_string" and expand, some_text_string will be returned with all newline characters replaced by blank spaces.
+join|neutriNote#replace \n \s
+```
+
 `<nano:br>` can also be used as placeholders for linebreaks in shortcut definitions.  For example:
 
 ```
