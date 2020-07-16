@@ -320,6 +320,13 @@ To join multiple lines, try using this:
 join|neutriNote#replace \n \s
 ```
 
+Or even this:
+
+```
+# Usage: select "concat some_text_string" and expand, some_text_string will be returned with all newline characters replaced by blank spaces.
+concat|neutriNote#remove \n
+```
+
 `<nano:br>` can also be used as placeholders for linebreaks in shortcut definitions.  For example:
 
 ```
