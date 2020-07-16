@@ -323,7 +323,7 @@ join|neutriNote#replace \n \s
 Or even this:
 
 ```
-# Usage: select "concat some_text_string" and expand, some_text_string will be returned with all newline characters replaced by blank spaces.
+# Usage: select "concat some_text_string" and expand, some_text_string will be returned with all lines concatenated.
 concat|neutriNote#remove \n
 ```
 
