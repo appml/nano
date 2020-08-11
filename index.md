@@ -417,7 +417,7 @@ Hop from note to note directly in the editor:
 hop|neutriNote#funnel
 ```
 
-Search entire repo for selected terms like this:
+Search entire repo for selected terms in the editor like this:
 
 ```
 # Usage: select "fetch some_text_string" and expand to look up some_text_string throughout the repo.
