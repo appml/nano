@@ -42,4 +42,4 @@ App Permissions Explained:
 
 /X\('-')/X\
 
-Test drive the latest features: https://play.google.com/apps/testing/com.appmindlab.nano
+Test drive the latest features [here](https://play.google.com/apps/testing/com.appmindlab.nano).
