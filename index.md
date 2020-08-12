@@ -409,15 +409,15 @@ Multitasking especially with floating apps is easier with shortcut like this:
 termfloat|neutriNote#launch com.termux.window
 ```
 
-Hop from note to note directly in the editor:
+Open a note directly from the current note with this:
 
 ```
-# Usage: jump directly from one note to another by creating a funnel.
+# Usage: jump directly from one note to another by creating a "funnel."
 
 hop|neutriNote#funnel
 ```
 
-Search entire repo for selected terms in the editor like this:
+Quickly sift through the entire repo for a selected term:
 
 ```
 # Usage: select "fetch some_text_string" and expand to look up some_text_string throughout the repo.
