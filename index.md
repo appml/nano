@@ -84,7 +84,7 @@ all;starred;A;B;C;D;E;F;G;H;I;J;K;L;M;N;O;P;Q;R;S;T;U;V;W;X;Y;Z
 
 **all** is reserved for retrieving all notes, and **starred** reserved for retrieving starred notes. Single character filters are reserved for retrieving notes with titles beginning with said alphabets.
 
-For searching within notes, **neutriNote** recognizes basic [Perl](http://www.erudil.com/preqr.pdf) style patterns: `\d` for digits, `\s` for whitespace, etc.  
+For searching within notes, **neutriNote** recognizes basic [Perl](https://remram44.github.io/regex-cheatsheet/regex.html) style patterns: `\d` for digits, `\s` for whitespace, etc.  
 
 <a href="#toc">🔝 Back to top</a>
  
