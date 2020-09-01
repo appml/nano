@@ -7,6 +7,7 @@
 
 1. [Getting Started](#started)
 1. [Backup and Restore](#backup)
+1. [Mirror](#mirror)
 1. [Search Tools](#search)
 1. [Advanced Features](#advanced)
     * [Metadata](#metadata)
@@ -20,7 +21,8 @@
     * [Keyboard](#keyboard)
     * [Gestures](#gestures)
     * [Hacks](#hacks)
-    * [Built-in Variables](#variables)
+    * [Built-in Variables](#builtinvariables)
+    * [Custom Variables](#customvariables)
     * [Storage Saver](#storage)
     * [API](#api)
     * [Python Support](#python)
@@ -56,6 +58,7 @@ Even without add-ons, **neutriNote** is ready for use.  Explore around to discov
 
 **IMPORTANT**: from v1.3.1, **neutriNote** supports **Runtime Permissions** in Android Marshmallow devices.  Be sure to grant **neutriNote** permission to access external storage for its **Local Repository** to work properly.  To enable previously denied permissions, go to **neutriNote**'s **App Info** under Android, renable the permissions and restart the app.
 
+
 #### <a name="backup">Backup and Restore</a>
 If you have already activated **Local Repository**, your notes will be sync seamlessly to the repository.  You can replicate your notes remotely by sharing the folder with third party apps such as [Syncthing](https://play.google.com/store/apps/details?id=com.nutomic.syncthingandroid&hl=en).  **IMPORTANT**: Do NOT use stale repositories since they could be out of sync.  Always use the method described in the [Getting Started](#started) section from above to initialize and assign repositories.
     
@@ -64,6 +67,14 @@ If you have already activated **Local Repository**, your notes will be sync seam
 When incremental backup is enabled, a task to conduct full backup when the device is idle will also be activated.  A maximum of 10 most recent backups will be maintained.  See [Storage Saver](#storage) section for more suggestions on how to manage backup storage space.
 
 <a href="#toc">🔝 Back to top</a>
+
+
+#### <a name="mirror">Mirror (v3.3.0 or above)</a>
+
+A mirror is esentially a replica of **Local Repository** which can be used to share **neutriNote**'s data with 3rd party apps (for example, to enable 3rd party cloud sync under Android 11).  To enable, simply add a folder under backup and name it `mirror`.  A pull-to-refresh under **neutriNote** will set off 2-way mirroring.  The only exception to the mirroring is file deletions, which must be initiated from **neurtiNote**.
+
+<a href="#toc">🔝 Back to top</a>
+
 
 #### <a name="search">Search Tools</a>
 While notes can be retrieved based on modified time, accessed time, and location as providied by the user interface, **neutriNote** supports high precision text based search and [regular expression](http://en.m.wikipedia.org/wiki/Glob_(programming)).  The syntax below are also highly reusable when they are included as part of the preset filters (under Settings).
@@ -604,7 +615,7 @@ Note that **neutriNote Connector** will not handle files without `.txt` extensio
 <a href="#toc">🔝 Back to top</a>
 
 
-### <a name="variables">Built-in Variables (v2.3.4) </a>
+### <a name="builtinvariables">Built-in Variables</a>
 Built-in variables may be used in search or shortcut definitions.  For example, to find notes with tomorrow's time stamp, simply type `@tomorrow` in the search box.  You can even include built-in variables in **Custom Filters**, say, for listing notes containing tomorrow's time stamp, or include them in shortcut definitions to generate text expansion snippets on the fly.
 
 | Variables            | Descriptions                            |                              
@@ -620,6 +631,22 @@ Built-in variables may be used in search or shortcut definitions.  For example, 
 | @now                 | Current time stamp.                     |
 
 See [Hacks](#hacks) for information on how to enable the use of built-in variables.
+
+<a href="#toc">🔝 Back to top</a>
+
+
+### <a name="customvariables">Custom Variables (v3.3.0 or above)</a>
+
+Custom variables are variables with the prefix `@@` and are used as shortcuts in conducting local search.  Say you have a shortcut defined like this:
+
+```
+# End of Paragraph
+eop|\\n\\n
+```
+
+Enter `@@eop` in local search bar and tap search will take you to the boundary of each paragraph.  (Indeed a rudimentary tool to overview long notes when combined with gestures.)
+
+Note that only shortcuts defined for simple string replacement are supported.
 
 <a href="#toc">🔝 Back to top</a>
 
