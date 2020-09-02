@@ -7,7 +7,6 @@
 
 1. [Getting Started](#started)
 1. [Backup and Restore](#backup)
-1. [Mirror](#mirror)
 1. [Search Tools](#search)
 1. [Advanced Features](#advanced)
     * [Metadata](#metadata)
@@ -32,6 +31,7 @@
     * [Misc.](#misc)
     * [Examples](#examples) 
 1. [Performance](#performance)
+1. [Mirror](#mirror)
 1. [Log Tool](#log)
 1. [Relocate Local Repository](#relocate)
 1. [Known Issues](#issues)
@@ -65,13 +65,6 @@ If you have already activated **Local Repository**, your notes will be sync seam
 **Incremental Backup** is another way to copy your notes in non-intrusive fashion. To enable, simply do so from Settings.  Then your notes and app settings will be backed up incrementally at least once daily to a internal storage folder called _neutrinote_export_.  Note: exported app settings data are stored in regular notes with prefix _.neutrinote_ so that they can be sync no differently from other notes.
 
 When incremental backup is enabled, a task to conduct full backup when the device is idle will also be activated.  A maximum of 10 most recent backups will be maintained.  See [Storage Saver](#storage) section for more suggestions on how to manage backup storage space.
-
-<a href="#toc">🔝 Back to top</a>
-
-
-#### <a name="mirror">Mirror (v3.3.0 or above)</a>
-
-A mirror is esentially a replica of **Local Repository** which can be used to share **neutriNote**'s data with 3rd party apps (for example, to enable 3rd party cloud sync under Android 11).  To enable, simply add a folder under backup and name it `mirror`.  A pull-to-refresh under **neutriNote** will set off 2-way mirroring.  The only exception to the mirroring is file deletions, which must be initiated from **neurtiNote**.
 
 <a href="#toc">🔝 Back to top</a>
 
@@ -884,6 +877,15 @@ When editing a long note, hide the title bar to reduce lags.
 In general, using default font style can help reduce the time in opening long notes.
 
 For users who do not use mathematics expressions, mathematics rendering can be disabled by entering a `.` under **Mathematics** in **Settings**. Markdown rendering should be faster with mathematics disabled.
+
+<a href="#toc">🔝 Back to top</a>
+
+
+#### <a name="mirror">Mirror (v3.3.0 or above)</a>
+
+A **Mirror** is esentially a replica of **Local Repository** which can be used to share **neutriNote**'s data with 3rd party apps (for example, to enable 3rd party cloud sync under Android 11).  It can also be thought of as a type of **Remote Repository** for push and pull **Local Repository** changes.  To enable, simply add a folder under backup and name it `mirror`.  A pull-to-refresh under **neutriNote** will set off 2-way mirroring.  The only exception to the mirroring is file deletions, which must be initiated from **neurtiNote**.  
+
+Note that since the speed of mirroring is below than that of **Local Repository** sync, it's ideal to leave it to run in the background.  If that is not an option, consider importing and exporting to the `mirror` folder directly with **Import/Export Files**.
 
 <a href="#toc">🔝 Back to top</a>
 
