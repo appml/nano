@@ -883,9 +883,9 @@ For users who do not use mathematics expressions, mathematics rendering can be d
 
 #### <a name="mirror">Mirror (v3.3.0 or above)</a>
 
-A **Mirror** is esentially a replica of **Local Repository** which can be used to share **neutriNote**'s data with 3rd party apps (for example, to enable 3rd party cloud sync under Android 11).  It can also be thought of as a type of **Remote Repository** for push and pull **Local Repository** changes.  To enable, simply add a folder under backup and name it `mirror`.  A pull-to-refresh under **neutriNote** will set off 2-way mirroring.  The only exception to the mirroring is file deletions, which must be initiated from **neurtiNote**.  
+**Mirror** is a replica of **Local Repository** which is constructed over time, much like a **Remote Repository** for __push and pull__ local and remote changes.  One possible use is to share data with 3rd party apps, such as cloud sync or a secondary text editor.   To activate, simply add a folder under [backup folder](#backup) and name it `mirror`, an ongoing replica will be constructed in the background.  The only restriction is that all deletions are one-way.  In other words, only deletions from **neurtiNote** (i.e. **Local Repository**) will be mirrored.  
 
-Note that since the speed of mirroring is below than that of **Local Repository** sync, it's ideal to leave it to run in the background.  If that is not an option, consider importing and exporting to the `mirror` folder directly with **Import/Export Files**.
+Note that the process of mirroring could take time to conserve battery.
 
 <a href="#toc">🔝 Back to top</a>
 
