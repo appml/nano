@@ -31,6 +31,7 @@
     * [Snooze](#snooze)
     * [Misc.](#misc)
 1. [Performance](#performance)
+1. [Mirror](#mirror)
 1. [Log Tool](#log)
 1. [Relocate Local Repository](#relocate)
 1. [Known Issues](#issues)
@@ -876,6 +877,15 @@ When editing a long note, hide the title bar to reduce lags.
 In general, using default font style can help reduce the time in opening long notes.
 
 For users who do not use mathematics expressions, mathematics rendering can be disabled by entering a `.` under **Mathematics** in **Settings**. Markdown rendering should be faster with mathematics disabled.
+
+<a href="#toc">🔝 Back to top</a>
+
+
+### <a name="mirror">Mirror (v3.3.0 or above)</a>
+
+**Mirror** is a replica of **Local Repository** which is constructed over time, much like a **Remote Repository** for __push and pull__ local and remote changes.  One possible use is to share data with 3rd party apps, such as [cloud sync](https://play.google.com/store/apps/details?id=com.nutomic.syncthingandroid) or a secondary text editor.   To activate, simply add a folder under [backup folder](#backup) and name it `mirror`, and an ongoing replica will be constructed in the background.  The only restriction is that all deletions are one-way.  In other words, only deletions from **neurtiNote** (i.e. **Local Repository**) will be mirrored.  
+
+Note that in order to conserve battery, the process of mirroring could take a while to get data up-to-date.
 
 <a href="#toc">🔝 Back to top</a>
 
