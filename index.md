@@ -891,9 +891,9 @@ Note that in order to conserve battery, the process of mirroring could take a wh
 
 
 ### <a name="log">Log Tool</a>
-**neutriNote** provides a simple log mechanism to monitor **Local Repository** changes caused externally.  This is useful especially when cross-platform sync is in use.  To activate logging, create a directory called `log` under **Local Repository** and add a file called `~neutrinote_sync.log` (for devices equipped with SD cards, `~neutrinote_sync.log` can instead be placed under `/Android/data/com.appmindlab.nano/files/log`).  Once the log file is detected, recording of remotely initiated data changes, such as inserts, deletes, or in-place updates will take place automatically.  Furthermore, log attributes such as sizes and recycle frequencies can be specified via `pref_max_sync_log_file_age` and `pref_max_sync_log_file_size` settings (see [Hacks](#hacks) section).  
+**neutriNote** provides a simple log mechanism to monitor **Local Repository** changes caused externally.  This is useful especially when cross-platform sync is in use.  To activate logging, simply add a file called `~neutrinote_sync.log` under **Local Repository** and observe that the `log` folder will be created automatically to record remote data changes such as inserts, deletes, or in-place updates.  Log attributes such as sizes and recycle frequencies can be customized further via `pref_max_sync_log_file_age` and `pref_max_sync_log_file_size` settings (see [Hacks](#hacks) section).  
 
-Note that logging may have impacts on overall performance and battery consumption.  Simply delete `~neutrinote_sync.log` from `log` folder to stop logging. 
+Note that logging may have impacts on overall performance and battery consumption.  To stop recording changes, simply delete `~neutrinote_sync.log`. 
 
 <a href="#toc">🔝 Back to top</a>
 
