@@ -881,11 +881,11 @@ For users who do not use mathematics expressions, mathematics rendering can be d
 <a href="#toc">🔝 Back to top</a>
 
 
-### <a name="mirror">Mirror (v3.3.0 or above)</a>
+### <a name="mirror">Mirror (v3.3.1 or above)</a>
 
-**Mirror** is a replica of **Local Repository** which is constructed over time, much like a **Remote Repository** for __push and pull__ local and remote changes.  One possible use is to share data with 3rd party apps, such as [self-hosted sync](https://play.google.com/store/apps/details?id=com.nutomic.syncthingandroid) or a secondary text editor.   To activate, simply add a folder under [backup folder](#backup) and name it `mirror`, and an ongoing replica will be constructed in the background.  The only restriction is that all deletions are one-way.  In other words, only deletions from **neurtiNote** (i.e. **Local Repository**) will be mirrored.  
+**Mirror** is a replica of **Local Repository** much like a **Remote Repository** for __push and pull__ local and remote changes.  The primary difference between **Local Repository** and **Mirror** is that in Android 11 access to the former is restricted for privacy reasons, while the later is accessible to 3rd party apps, such as [peer-to-peer sync](https://play.google.com/store/apps/details?id=com.nutomic.syncthingandroid) or a secondary text editor.  Thus **Mirror** is offered as an option depending on your privacy preferences and workflow.  To activate, simply add a folder under [backup folder](#backup) and name it `mirror`, **Mirror Files** will appear under the menu with options to __push__ and __pull__ note changes. 
 
-Note that in order to conserve battery, the process of mirroring could take a while to get data up-to-date.
+Note that only deletions initiated from **neurtiNote** (i.e. **Local Repository**) will be mirrored.  
 
 <a href="#toc">🔝 Back to top</a>
 
