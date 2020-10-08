@@ -1,3 +1,6 @@
+[Official Site](https://neutrinote.wordpress.com/) | [FAQ](https://neutrinote.wordpress.com/how-do-i/) | [Documentation](https://appml.github.io/nano/)
+
+
 What is neutriNote?
 ===================
 
