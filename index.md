@@ -59,7 +59,7 @@ Even without add-ons, **neutriNote** is ready for use.  Explore around to discov
 **IMPORTANT**: from v1.3.1, **neutriNote** supports **Runtime Permissions** in Android Marshmallow devices.  Be sure to grant **neutriNote** permission to access external storage for its **Local Repository** to work properly.  To enable previously denied permissions, go to **neutriNote**'s **App Info** under Android, renable the permissions and restart the app.
 
 
-#### <a name="backup">Backup and Restore</a>
+### <a name="backup">Backup and Restore</a>
 If you have already activated **Local Repository**, your notes will be sync seamlessly to the repository.  You can replicate your notes remotely by sharing the folder with third party apps such as [Syncthing](https://play.google.com/store/apps/details?id=com.nutomic.syncthingandroid&hl=en).  **IMPORTANT**: Do NOT use stale repositories since they could be out of sync.  Always use the method described in the [Getting Started](#started) section from above to initialize and assign repositories.
     
 **Incremental Backup** is another way to copy your notes in non-intrusive fashion. To enable, simply do so from Settings.  Then your notes and app settings will be backed up incrementally at least once daily to a internal storage folder called _neutrinote_export_.  Note: exported app settings data are stored in regular notes with prefix _.neutrinote_ so that they can be sync no differently from other notes.
@@ -78,7 +78,7 @@ Note that only deletions initiated from **neurtiNote** (i.e. **Local Repository*
 <a href="#toc">🔝 Back to top</a>
 
 
-#### <a name="search">Search Tools</a>
+### <a name="search">Search Tools</a>
 While notes can be retrieved based on modified time, accessed time, and location as providied by the user interface, **neutriNote** supports high precision text based search and [regular expression](http://en.m.wikipedia.org/wiki/Glob_(programming)).  The syntax below are also highly reusable when they are included as part of the preset filters (under Settings).
 
 **Search by Fields** It is possible to restrict search to a specified field.  For example, at the main search bar over the note list, search can be limited to titles by using the prefix `title:` in the search string.  A search string like`title:log` will return all notes with the substring `log` in the titles.
