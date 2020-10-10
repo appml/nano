@@ -7,6 +7,7 @@
 
 1. [Getting Started](#started)
 1. [Backup and Restore](#backup)
+1. [Mirror](#mirror)
 1. [Search Tools](#search)
 1. [Advanced Features](#advanced)
     * [Metadata](#metadata)
@@ -31,7 +32,6 @@
     * [Snooze](#snooze)
     * [Misc.](#misc)
 1. [Performance](#performance)
-1. [Mirror](#mirror)
 1. [Log Tool](#log)
 1. [Relocate Local Repository](#relocate)
 1. [Known Issues](#issues)
@@ -65,6 +65,15 @@ If you have already activated **Local Repository**, your notes will be sync seam
 **Incremental Backup** is another way to copy your notes in non-intrusive fashion. To enable, simply do so from Settings.  Then your notes and app settings will be backed up incrementally at least once daily to a internal storage folder called _neutrinote_export_.  Note: exported app settings data are stored in regular notes with prefix _.neutrinote_ so that they can be sync no differently from other notes.
 
 When incremental backup is enabled, a task to conduct full backup when the device is idle will also be activated.  A maximum of 10 most recent backups will be maintained.  See [Storage Saver](#storage) section for more suggestions on how to manage backup storage space.
+
+<a href="#toc">🔝 Back to top</a>
+
+
+### <a name="mirror">Mirror (v3.3.1 or above)</a>
+
+**Mirror** is a replica of **Local Repository** much like a **Remote Repository** for __push and pull__ local and remote changes.  The primary difference between **Local Repository** and **Mirror** is that in Android 11 access to the former is restricted for privacy reasons, while the later is accessible to 3rd party apps, such as [peer-to-peer sync](https://play.google.com/store/apps/details?id=com.nutomic.syncthingandroid) or a secondary text editor.  Thus **Mirror** is offered as an option depending on your privacy preferences and workflow.  To activate the feature, simply add a folder under [backup folder](#backup) and name it `mirror`, **Mirror Files** will appear under the main note list menu with options to __push__ and __pull__ changes. 
+
+Note that only deletions initiated from **neurtiNote** (i.e. **Local Repository**) will be mirrored.  
 
 <a href="#toc">🔝 Back to top</a>
 
@@ -877,15 +886,6 @@ When editing a long note, hide the title bar to reduce lags.
 In general, using default font style can help reduce the time in opening long notes.
 
 For users who do not use mathematics expressions, mathematics rendering can be disabled by entering a `.` under **Mathematics** in **Settings**. Markdown rendering should be faster with mathematics disabled.
-
-<a href="#toc">🔝 Back to top</a>
-
-
-### <a name="mirror">Mirror (v3.3.1 or above)</a>
-
-**Mirror** is a replica of **Local Repository** much like a **Remote Repository** for __push and pull__ local and remote changes.  The primary difference between **Local Repository** and **Mirror** is that in Android 11 access to the former is restricted for privacy reasons, while the later is accessible to 3rd party apps, such as [peer-to-peer sync](https://play.google.com/store/apps/details?id=com.nutomic.syncthingandroid) or a secondary text editor.  Thus **Mirror** is offered as an option depending on your privacy preferences and workflow.  To activate the feature, simply add a folder under [backup folder](#backup) and name it `mirror`, **Mirror Files** will appear under the main note list menu with options to __push__ and __pull__ changes. 
-
-Note that only deletions initiated from **neurtiNote** (i.e. **Local Repository**) will be mirrored.  
 
 <a href="#toc">🔝 Back to top</a>
 
