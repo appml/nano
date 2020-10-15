@@ -33,6 +33,7 @@
     * [Misc.](#misc)
 1. [Performance](#performance)
 1. [Log Tool](#log)
+1. [Encryption](#encryption)
 1. [Relocate Local Repository](#relocate)
 1. [Known Issues](#issues)
 1. [FAQs](#faq)
@@ -894,6 +895,29 @@ For users who do not use mathematics expressions, mathematics rendering can be d
 **neutriNote** provides a simple log mechanism to monitor **Local Repository** changes caused externally.  This is useful especially when cross-platform sync is in use.  To activate logging, simply add a file called `~neutrinote_sync.log` under **Local Repository** and observe that the `log` folder will be created automatically to record remote data changes such as inserts, deletes, or in-place updates.  Log attributes such as sizes and recycle frequencies can be customized further via `pref_max_sync_log_file_age` and `pref_max_sync_log_file_size` settings (see [Hacks](#hacks) section).  
 
 Note that logging may have impacts on overall performance and battery consumption.  To stop recording changes, simply delete `~neutrinote_sync.log`. 
+
+<a href="#toc">🔝 Back to top</a>
+
+
+### <a name="encryption">Encryption (v3.3.9 or above)</a>
+Encryption support in **neutriNote** is provided via **[OpenKeyChain](https://play.google.com/store/apps/details?id=org.sufficientlysecure.keychain)** which is an open source, independently audited tool.  This setup allows your encryption keys to be stored independent of **neutriNote**.
+
+Assuming **OpenKeyChain** has been installed, simply follow these steps to encrypt a note: 
+
+1. Select a section of note that you want encrypted, or skip to the next step if the whole note is to be encrypted.
+1. Tap the **Encrypt** button under the editor toolbar to launch **OpenKeyChain**.
+1. Once in **OpenKeyChain**, either pick an existing key or use a password to encrypt.
+1. Close **OpenKeyChain** and you will be sent back to the note.
+1. Paste the newly encrypted content in to replace the text selected.
+
+Follow these steps to decrypt a note:
+                                          
+1. To decrypt the whole note, skip to the next step.  To decrypt just a section of the note, tap within `-----BEGIN PGP MESSAGE-----` and `-----END PGP MESSAGE-----`.
+1. Tap the **Decrypt** button under the editor toolbar to launch **OpenKeyChain**.                                       
+1. Once in **OpenKeyChain**, your content will automatically be decrypted.
+1. Pick **Copy to clipboard** at the menu.
+1. Close **OpenKeyChain** and you will be sent back to the note.
+1. Paste the newly decrypted content in to replace the text selected. 
 
 <a href="#toc">🔝 Back to top</a>
 
