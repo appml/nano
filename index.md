@@ -905,7 +905,7 @@ Encryption support in **neutriNote** is provided via **[OpenKeyChain](https://pl
 Assuming **OpenKeyChain** has been installed, simply follow these steps to encrypt a note: 
 
 1. Select a section of note that you want encrypted, or skip to the next step if the whole note is to be encrypted.
-1. Tap the **Encrypt** button under the editor toolbar to launch **OpenKeyChain**.
+1. Tap the **Encrypt** button 🔒 under the editor toolbar to launch **OpenKeyChain**.
 1. Once in **OpenKeyChain**, either pick an existing key or use a password to encrypt.
 1. Close **OpenKeyChain** and you will be sent back to the note.
 1. Paste the newly encrypted content in to replace the text selected.
@@ -913,7 +913,7 @@ Assuming **OpenKeyChain** has been installed, simply follow these steps to encry
 Follow these steps to decrypt a note:
                                           
 1. To decrypt the whole note, skip to the next step.  To decrypt just a section of the note, tap within `-----BEGIN PGP MESSAGE-----` and `-----END PGP MESSAGE-----`.
-1. Tap the **Decrypt** button under the editor toolbar to launch **OpenKeyChain**.                                       
+1. Tap the **Decrypt** button 🔓 under the editor toolbar to launch **OpenKeyChain**.                                       
 1. Once in **OpenKeyChain**, your content will automatically be decrypted.
 1. Pick **Copy to clipboard** at the menu.
 1. Close **OpenKeyChain** and you will be sent back to the note.
