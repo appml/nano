@@ -566,39 +566,40 @@ You can tinker with the variables found inside of **~neutrinote_settings_data** 
     
 | Variable Names                                    |  Values                                                                                                          |
 | ------------------------------------------------- |:----------------------------------------------------------------------------------------------------------------:|
-| com.appmindlab.nano.pref_open_in_markdown         | `true`: always open notes in markdown preview                                                                    |
-| com.appmindlab.nano.pref_markdown_trigger         | Specify a metadata substring pattern to open notes in Markdown by default                                        |
-| com.appmindlab.nano.pref_safe_mode_tag            | Specify a metadata substring pattern to disable internal Markdown parser                                         |
-| com.appmindlab.nano.pref_auto_toolbar_tag         | Specify a metadata substring pattern to enable auto show / hide toolbar (hint: tap screen to hide, double tap to re-display)                                        |
-| com.appmindlab.nano.pref_linkify_trigger          | Specify a metadata substring pattern to open notes linkified by default                                          |
-| com.appmindlab.nano.pref_latex_single_dollar      | `true`: use single dollar signs to signify math expressions                                                      |
-| com.appmindlab.nano.pref_indent_char              | Specify the character(s) to use for indentation.  Default: 4 spaces                                              |  
-| com.appmindlab.nano.pref_append_custom_style    | `true`: **Extend** built-in styles with `~neutrinote_styles.txt`,  `false`: **Replace** built-in styles with `~neutrinote_styles.txt`                |
-| com.appmindlab.nano.pref_show_toolbar             | `true`: always show edit toolbar (hint: tap screen to hide, double tap to re-display)                                                                                 |
-| com.appmindlab.nano.pref_toolbox_mode             | `stateful`: keep editor toolbox scroll position (default), `stateless`: always reset editor toolbox scroll position, `pin_save`: keep save button visible            |
-| com.appmindlab.nano.pref_oled                     | `true`: dim screen elements for OLED screens               |
+| com.appmindlab.nano.pref_append_custom_style      | `true`: **Extend** built-in styles with `~neutrinote_styles.txt`,  `false`: **Replace** built-in styles with `~neutrinote_styles.txt`                |
+| com.appmindlab.nano.pref_auto_toolbar_tag         | Specify a metadata substring pattern to enable auto show / hide toolbar (hint: tap screen to hide, double tap to re-display)                                         |
 | com.appmindlab.nano.pref_canvas_strokes           | Fixed width symbols supported by sketch tool delimited by semicolons, e.g., `:;\;/;_;-;,;●` (vertical bar and semicolon not allowed) | 
-| com.appmindlab.nano.pref_font_size_list           | Specify custom font size options delimited by semicolons.  Default: `8;10;12;14;16;18;24;32;48` |
-| com.appmindlab.nano.pref_margin_list              | Specify custom margin options delimited by semicolons.  Default: `8;16;24` |
+| com.appmindlab.nano.pref_custom_date_format       | Override system date stamp format with custom [date format](https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html) |
+| com.appmindlab.nano.pref_custom_time_format       | Override system time stamp format with custom [time format](https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html) |
+| com.appmindlab.nano.pref_eval_built_in_variables  | `true`: evalute [built-in variables](#variables) in search or shortcut definitions            |  
 | com.appmindlab.nano.pref_excluded_buttons         | Selectively hide toolbar buttons via a semicolon delimited string, e.g., `location;draw;replace` will hide the location, draw, and replace buttons on the toolbar.  The following buttons can be hidden: `markdown`, `time`, `date`, `location`, `expand`, `draw`, `top`, `bottom`, `find`, `replace`, `barcode`, `image`, `ocr`, `define`, `calculate`, `search` |
-|com.appmindlab.nano.pref_custom_date_format        | Override system date stamp format with custom [date format](https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html) |
-|com.appmindlab.nano.pref_custom_time_format        | Override system time stamp format with custom [time format](https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html) |
-| com.appmindlab.nano.pref_preview_mode             | `start`: display the beginning of notes in preview, `end`: display the end, `off`: disable preview               |
-| com.appmindlab.nano.pref_star_at_top              | `true`: place starred notes above other notes in list view.  Default: `false`          |
+| com.appmindlab.nano.pref_font_size_list           | Specify custom font size options delimited by semicolons.  Default: `8;10;12;14;16;18;24;32;48` |
 | com.appmindlab.nano.pref_icon_behavior            | 0: animation off, 1: animation on, 2: [snooze](#snooze) animation                                                |
+| com.appmindlab.nano.pref_indent_char              | Specify the character(s) to use for indentation.  Default: 4 spaces                                              |  
 | com.appmindlab.nano.pref_keep_deleted_copies      | `true`: keep copies of deleted files under `trash_bin` folder                                                        |
+| com.appmindlab.nano.pref_lab_mode                 | `true`: enable experimental features such as OCR, diff-tool                                                                |  
+| com.appmindlab.nano.pref_latex_single_dollar      | `true`: use single dollar signs to signify math expressions                                                      |
+| com.appmindlab.nano.pref_linkify_trigger          | Specify a metadata substring pattern to open notes linkified by default                                          |
+| com.appmindlab.nano.pref_local_priority_tag       | Specify a metadata substring pattern to prevent local copy from being overwritten by remote changes.  Note that conflicts may occur if a note is being edited on multiple devices |
+| com.appmindlab.nano.pref_low_space_mode           | `true`: turn on [storage space saver](#storage) |   
+| com.appmindlab.nano.pref_margin_list              | Specify custom margin options delimited by semicolons.  Default: `8;16;24` |
+| com.appmindlab.nano.pref_markdown_trigger         | Specify a metadata substring pattern to open notes in Markdown by default                                        |
 | com.appmindlab.nano.pref_max_deleted_copies_age   | Specify maximum number of days deleted copies will be kept (pruning to occur during next backup).  Default: -1 (unlimited)      |
 | com.appmindlab.nano.pref_max_sync_log_file_age    | Specify maximum number of days sync logs will be kept.  Default: 7 (1 week)      |
 | com.appmindlab.nano.pref_max_sync_log_file_size   | Specify maximum size for each sync log file (factor of 200 KB).  Default: 2 (400 KB)      |
-| com.appmindlab.nano.pref_local_priority_tag       | Specify a metadata substring pattern to prevent local copy from being overwritten by remote changes.  Note that conflicts may occur if a note is being edited on multiple devices |
-| com.appmindlab.nano.pref_remote_priority_tag       | Specify a metadata substring pattern to override local changes with remote changes when they occurred concurrently.  Note that conflicts may occur if a note is being edited on multiple devices |
-| com.appmindlab.nano.pref_eval_built_in_variables  | `true`: evalute [built-in variables](#variables) in search or shortcut definitions            |  
-| com.appmindlab.nano.pref_low_space_mode           | `true`: turn on [storage space saver](#storage) |   
-| com.appmindlab.nano.pref_new_note_title_template  | Specify title template for new notes.  Default: `New Note`  | 
 | com.appmindlab.nano.pref_new_note_file_type       | Specify file type for new notes.  Multiple type mode required (see below).  Default: `.txt`  | 
+| com.appmindlab.nano.pref_new_note_title_template  | Specify title template for new notes.  Default: `New Note`  | 
+| com.appmindlab.nano.pref_oled                     | `true`: dim screen elements for OLED screens               |
+| com.appmindlab.nano.pref_open_in_markdown         | `true`: always open notes in markdown preview                                                                    |
 | com.appmindlab.nano.pref_parse_python             | `true`: enable basic Python code interpretation.  Default: `false`   | 
-| com.appmindlab.nano.pref_parse_vue             | `true`: enable basic Vue.js components.  Default: `false`   | 
-| com.appmindlab.nano.pref_lab_mode                 | `true`: enable experimental features such as OCR, diff-tool                                                                |  
+| com.appmindlab.nano.pref_parse_vue                | `true`: enable basic Vue.js components.  Default: `false`   | 
+| com.appmindlab.nano.pref_preview_mode             | `start`: display the beginning of notes in preview, `end`: display the end, `off`: disable preview               |
+| com.appmindlab.nano.pref_process_text_mode        | 0: disabled, 1: allow paste from other apps, 2: allow search from other apps .  Default: 0   | 
+| com.appmindlab.nano.pref_remote_priority_tag      | Specify a metadata substring pattern to override local changes with remote changes when they occurred concurrently.  Note that conflicts may occur if a note is being edited on multiple devices |
+| com.appmindlab.nano.pref_safe_mode_tag            | Specify a metadata substring pattern to disable internal Markdown parser                                         |
+| com.appmindlab.nano.pref_show_toolbar             | `true`: always show edit toolbar (hint: tap screen to hide, double tap to re-display)                                                                                 |
+| com.appmindlab.nano.pref_star_at_top              | `true`: place starred notes above other notes in list view.  Default: `false`          |
+| com.appmindlab.nano.pref_toolbox_mode             | `stateful`: keep editor toolbox scroll position (default), `stateless`: always reset editor toolbox scroll position, `pin_save`: keep save button visible            |
              
 Advanced users may enable multiple text file types for **neutriNote**.  To setup, please carefully follow all the steps below:
 
