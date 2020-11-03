@@ -550,7 +550,8 @@ Various user interface elements support gestures for better productivity:
     * Immediately after conducting a search, tap the **Search** icon to advance to the next match.
     * Double tap **editor status** to temporarily save the current cursor position.  
     * Swipe left on **editor status** to return to saved cursor position.
-    * After conducting search, dial up/down **editor status** to go to previous/next hits.
+    * Swipe down **editor status** to launch in-note navigation.  Long press buttons to preview content at locations.
+    * After conducting search, swipe up/down **editor status** to go to previous/next hits.
     * For Android 6.0 or higher, swipe right on **editor status** will resume in edit screen the last scroll bar position from Markdown preview.
 
 * Markdown preview:
