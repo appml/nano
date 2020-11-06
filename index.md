@@ -904,9 +904,9 @@ Note that logging may have impacts on overall performance and battery consumptio
 ### <a name="encryption">Encryption (v3.3.9 or above)</a>
 Encryption support in **neutriNote** is provided via **[OpenKeyChain](https://play.google.com/store/apps/details?id=org.sufficientlysecure.keychain)** which is an open source, independently audited tool.  This setup allows your encryption keys to be stored independent of **neutriNote**.
 
-Assuming **OpenKeyChain** has been installed, simply follow these steps to encrypt a note: 
+Assuming **OpenKeyChain** has been installed, simply follow these steps to encrypt your note content: 
 
-1. Select a section of note that you want encrypted, or skip to the next step if the whole note is to be encrypted.
+1. Select a section of note that you want encrypted.
 1. Tap the **Encrypt** button 🔒 under the editor toolbar to launch **OpenKeyChain**.
 1. Once in **OpenKeyChain**, either pick an existing key or use a password to encrypt.
 1. Close **OpenKeyChain** and you will be sent back to the note.
@@ -914,7 +914,7 @@ Assuming **OpenKeyChain** has been installed, simply follow these steps to encry
 
 Follow these steps to decrypt a note:
                                           
-1. To decrypt the whole note, skip to the next step.  To decrypt just a section of the note, tap within `-----BEGIN PGP MESSAGE-----` and `-----END PGP MESSAGE-----`.
+1. To decrypt, tap anywhere within `-----BEGIN PGP MESSAGE-----` and `-----END PGP MESSAGE-----`.
 1. Tap the **Decrypt** button 🔓 under the editor toolbar to launch **OpenKeyChain**.                                       
 1. Once in **OpenKeyChain**, your content will automatically be decrypted.
 1. Pick **Copy to clipboard** at the menu.
