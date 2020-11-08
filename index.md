@@ -551,6 +551,7 @@ Various user interface elements support gestures for better productivity:
     * Double tap **editor status** to temporarily save the current cursor position.  
     * Swipe left on **editor status** to return to saved cursor position.
     * Swipe down **editor status** to launch in-note navigation.  Long press buttons to preview content at locations.
+    * Swipe up **editor status** to access recently accessed notes (a.k.a **working set**).
     * After conducting search, swipe up/down **editor status** to go to previous/next hits.
     * For Android 6.0 or higher, swipe right on **editor status** will resume in edit screen the last scroll bar position from Markdown preview.
 
@@ -601,6 +602,7 @@ You can tinker with the variables found inside of **~neutrinote_settings_data** 
 | com.appmindlab.nano.pref_show_toolbar             | `true`: always show edit toolbar (hint: tap screen to hide, double tap to re-display)                                                                                 |
 | com.appmindlab.nano.pref_star_at_top              | `true`: place starred notes above other notes in list view.  Default: `false`          |
 | com.appmindlab.nano.pref_toolbox_mode             | `stateful`: keep editor toolbox scroll position (default), `stateless`: always reset editor toolbox scroll position, `pin_save`: keep save button visible            |
+| com.appmindlab.nano.pref_working_set_size         | Specify size of working set (the set of recently accessed notes).  Default: 6          |
              
 Advanced users may enable multiple text file types for **neutriNote**.  To setup, please carefully follow all the steps below:
 
