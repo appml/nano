@@ -559,6 +559,8 @@ Various user interface elements support gestures for better productivity:
     * (Experimental) For a more fluid e-book like reading experience, tap anywhere on a paragraph to reflow the text around screen after zooming. Tap any empty space to reflow the whole document (or swipe left on **editor status**). To resume the appearance of original text wrap, zoom all the way out and tap again.
     * Double tap **editor status** to temporarily save the current cursor position.  
     * Swipe left on **editor status** to return to saved cursor position.
+    * Swipe down **editor status** to launch in-note navigation.  Long press buttons to preview content at locations.
+    * Swipe up **editor status** to access recently accessed notes (a.k.a **working set**).
 
 <a href="#toc">🔝 Back to top</a>
 
