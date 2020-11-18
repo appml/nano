@@ -387,7 +387,7 @@ There is even a way to remove HTML tags from strings:
 
 ```
 # Usage: select "notag some_text_string" and expand to remove HTML tags from some_text_string.
-notag|neutriNote#removeHTML
+notag|neutriNote#stripHTML
 ```
 
 To remove zero-width spaces, simply do:
