@@ -48,3 +48,5 @@ App Permissions Explained:
 Test drive the latest features [here](https://play.google.com/apps/testing/com.appmindlab.nano).
 
 [![Play Store](https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png)](https://play.google.com/store/apps/details?id=com.appmindlab.nano)
+
+<a href='https://ko-fi.com/X8X6AWNQ' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi2.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
