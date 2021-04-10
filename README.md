@@ -1,11 +1,8 @@
-[Official Site](https://neutrinote.wordpress.com/) | [FAQ](https://neutrinote.wordpress.com/how-do-i/) | [Documentation](https://appml.github.io/nano/) | [Source](https://github.com/appml/neutrinote)
+[Official Site](https://neutrinote.wordpress.com/) | [FAQ](https://neutrinote.wordpress.com/how-do-i/) | [Documentation](https://appml.github.io/nano/)
 
 <div style="display:flex" >
 <a href="https://play.google.com/store/apps/details?id=com.appmindlab.nano">
     <img alt="Get it on Google Play" height="64" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" />
-</a>
-<a href="https://f-droid.org/packages/com.appmindlab.nano">
-    <img src="https://f-droid.org/badge/get-it-on.png" alt="Get it on F-Droid" height="64">
 </a>
 </div><br/>
 
