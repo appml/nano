@@ -4,6 +4,9 @@
 <a href="https://play.google.com/store/apps/details?id=com.appmindlab.nano">
     <img alt="Get it on Google Play" height="64" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" />
 </a>
+<a href="https://apt.izzysoft.de/fdroid/index/apk/com.appmindlab.nano">
+    <img src="https://gitlab.com/IzzyOnDroid/repo/-/raw/master/assets/IzzyOnDroid.png" alt="Get it on IzzyOnDroid" height="64">
+</a>
 </div><br/>
 
 
