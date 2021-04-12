@@ -976,7 +976,7 @@ Keep the app as crash-proof as possible.
 ### <a name="about">About</a>
 Every effort has been made to ensure that all third-party software used be properly acknowledged (see license information in the **About** dialog).  Please feel free to contact by [email](mailto:lightandshadowscamera@gmail.com) anytime should such information be found incomplete or inaccurate.
 
-You can also visit [Product Page](https://plus.google.com/u/0/communities/117565395761503074053) for development updates regarding the app.
+You can also visit [Product Page](https://mastodon.social/@neutrinote) for development updates regarding the app.
 
 To further support neutriNote's development, please visit developer's [Ko-fi](https://ko-fi.com/neutriNote) page.
 
