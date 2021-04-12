@@ -1,4 +1,4 @@
-[Official Site](https://neutrinote.wordpress.com/) | [FAQ](https://neutrinote.wordpress.com/how-do-i/) | [Documentation](https://appml.github.io/nano/)
+[Official Site](https://neutrinote.wordpress.com/) | [FAQ](https://neutrinote.wordpress.com/how-do-i/) | [Documentation](https://appml.github.io/nano/) | [Community Edition](https://github.com/appml/neutrinote)
 
 <div style="display:flex" >
 <a href="https://play.google.com/store/apps/details?id=com.appmindlab.nano">
