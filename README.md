@@ -10,8 +10,11 @@
 </div><br/>
 
 
+neutriNote (Play Store Edition)
+===============================
+
 What is neutriNote?
-===================
+-------------------
 
 In a nutshell, all-in-one preservation of written thoughts, be those text, math (LaTeX), rich markdown, drawings, etc.,  in fully searchable plain text (universal UTF-8).
 
