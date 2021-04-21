@@ -39,6 +39,7 @@
 1. [FAQs](#faq)
 1. [Privacy Policy](#privacy)
 1. [TODO](#todo)
+1. [Source Code](#source)
 1. [About](#about)
 
 ### <a name="started">Getting Started</a>
@@ -967,6 +968,12 @@ This app does not gather personal information. Location data can always be disab
 <a href="#toc">🔝 Back to top</a>
 
 
+### <a name="source">Source Code</a>
+For further customization, **neutriNote**'s source code is available on [GitHub](https://github.com/appml/neutrinote) as **Community Edition**.
+
+<a href="#toc">🔝 Back to top</a>
+
+
 ### <a name="todo">TODO</a>
 Keep the app as crash-proof as possible.
 
@@ -981,3 +988,16 @@ You can also visit [Product Page](https://mastodon.social/@neutrinote) for devel
 To further support neutriNote's development, please visit developer's [Ko-fi](https://ko-fi.com/neutriNote) page.
 
 <a href="#toc">🔝 Back to top</a>
+
+<div style="display:flex" >
+    <a href="https://play.google.com/store/apps/details?id=com.appmindlab.nano">
+        <img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"
+             alt="Get it on Google Play" 
+             height="64" />
+    </a>
+    <a href="https://f-droid.org/packages/com.appmindlab.nano">
+        <img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
+             alt="Get it on F-Droid"
+             height="64">
+    </a>
+</div>
