@@ -34,6 +34,7 @@
 1. [Performance](#performance)
 1. [Log Tool](#log)
 1. [Encryption](#encryption)
+1. [OCR](#ocr)
 1. [Relocate Local Repository](#relocate)
 1. [Known Issues](#issues)
 1. [FAQs](#faq)
@@ -927,6 +928,12 @@ Follow these steps to decrypt a note:
 1. Pick **Copy to clipboard** at the menu.
 1. Close **OpenKeyChain** and you will be sent back to the note.
 1. Paste the newly decrypted content in to replace the text selected. 
+
+<a href="#toc">🔝 Back to top</a>
+
+
+### <a name="ocr">OCR</a>
+OCR is disabled by default.  To enable OCR in [neutriNote](https://play.google.com/store/apps/details?id=com.appmindlab.nano) installed from **Google Play**, simply follow the instructions under [Hacks](#hacks) and set `com.appmindlab.nano.pref_lab_mode` to true.  Once done, OCR icon will appear in the tool bar.  To enable OCR in [neutriNote CE](https://f-droid.org/en/packages/com.appmindlab.nano/) installed from **F-Droid**, simply install [OCR with Tesseract 4](https://f-droid.org/en/packages/io.github.subhamtyagi.ocr) from **F-Droid**.
 
 <a href="#toc">🔝 Back to top</a>
 
