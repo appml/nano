@@ -896,7 +896,7 @@ When editing a long note, hide the title bar to reduce lags.
 
 In general, using default font style can help reduce the time in opening long notes.
 
-For users who do not use mathematics expressions, mathematics rendering can be disabled by entering a `.` under **Mathematics** in **Settings**. Markdown rendering should be faster with mathematics disabled.
+For users who do not use mathematics expressions, mathematics rendering can be disabled by entering a `https://` under **Mathematics** in **Settings**. Markdown rendering should be faster with mathematics disabled.
 
 <a href="#toc">🔝 Back to top</a>
 
