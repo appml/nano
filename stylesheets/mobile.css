@@ -509,6 +509,3 @@ dd p:first-child {
   font-style: italic;
 }
 
-code {
-  white-space : pre-wrap !important;
-}
