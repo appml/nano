@@ -356,6 +356,7 @@ cell|123-456-7890
 email|john.smith@test.com
 
 # Usage: select "highlight your_text" and expand, return "<mark>your_text</mark>".
+
 highlight|<mark>???</mark>
 ```
 
@@ -363,6 +364,7 @@ Shortcuts can be defined for frequently used patterns for string replacements.  
 
 ```
 # Usage: select "encode some_text_string" and expand, some_text_string will be returned with all blank spaces encoded.
+
 encode|neutriNote#replace \s %20
 ```
 
@@ -370,6 +372,7 @@ To replace all occurrences of a specific pattern by line breaks, simply:
 
 ```
 # Usage: select "eol some_text_string" and expand, some_text_string will be returned with all blank spaces replaced by linebreaks.
+
 eol|neutriNote#linebreak \s
 ```
 
@@ -377,6 +380,7 @@ To join multiple lines, try using this:
 
 ```
 # Usage: select "join some_text_string" and expand, some_text_string will be returned with all newline characters replaced by blank spaces.
+
 join|neutriNote#replace \n \s
 ```
 
@@ -384,6 +388,7 @@ Or even this:
 
 ```
 # Usage: select "concat some_text_string" and expand, some_text_string will be returned with all lines concatenated.
+
 concat|neutriNote#remove \n
 ```
 
@@ -399,6 +404,7 @@ An example to trim leading and trailing spaces from a body of text:
 
 ```
 # Usage: select "trim some_text_string" and expand, leading and trailing spaces of some_text_string will be removed.
+
 trim|neutriNote#trim
 ```
 
@@ -406,9 +412,11 @@ Shortcuts to obfuscate / defuscate a chunk of text:
 
 ```
 # Usage: select "obfuscate some_text_string" and expand, some_text_string will be obfuscated.
+
 obfuscate|neutriNote#encode
 
 # Usage: select "defuscate some_text_string" and expand, some_text_string will be defuscated.
+
 defuscate|neutriNote#decode
 ```
 
@@ -416,6 +424,7 @@ You can also use basic C style format specifiers to "morph" text snippets.
 
 ```
 # Usage: select "addcomma some_numeric_string" and expand, some_numeric_string will be comma separated.
+
 addcomma|neutriNote#morph ℅,d
 ```
 
@@ -423,9 +432,11 @@ These simple shortcuts make it easy to sort lines:
 
 ```
 # Usage: select "sort some_lines" and expand, some_lines will be sorted.
+
 sort|neutriNote#sort
 
 # Usage: select "rsort some_lines" and expand, some_lines will be sorted in reverse order.
+
 rsort|neutriNote#rsort
 ```
 
@@ -433,6 +444,7 @@ There is even a way to remove HTML tags from strings:
 
 ```
 # Usage: select "notag some_text_string" and expand to remove HTML tags from some_text_string.
+
 notag|neutriNote#stripHTML
 ```
 
@@ -440,6 +452,7 @@ To remove zero-width spaces, simply do:
 
 ```
 # Usage: select "zero some_text_string" and expand to remove zero-width spaces from some_text_string.
+
 zero|neutriNote#nohiddenspace
 ```
 
