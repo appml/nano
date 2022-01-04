@@ -2,7 +2,7 @@ title: neutriNote
 description: 
 google_analytics: 
 show_downloads: true
-remote_theme: b2a3e8/jekyll-theme-console
+theme: jekyll-theme-hacker
 
 gems:
   - jekyll-mentions
