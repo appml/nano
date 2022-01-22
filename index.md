@@ -349,6 +349,18 @@ Or even this:
 concat|neutriNote#remove \n
 ```
 
+You can even split a string with the power of regex!  
+
+```
+# Usage: select `camel some_text_string` and expand, some_text_string will be split by camel case.
+
+camel|neutriNote#split (?<!(^|[A-Z]))(?=[A-Z])|(?<!^)(?=[A-Z][a-z])
+
+# Usage: select `snake some_text_string` and expand, some_text_string will be split by snake case.
+
+snake|neutriNote#split _
+```
+
 `<nano:br>` can also be used as placeholders for linebreaks in shortcut definitions.  For example:
 
 ```
