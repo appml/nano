@@ -397,6 +397,18 @@ You can also use basic C style format specifiers to "morph" text snippets.
 addcomma|neutriNote#morph ℅,d
 ```
 
+With the helpers below, you can convert camel cases to / from snake cases with ease:
+
+```
+# Usage: select "s2c some_cool_string" and expand to obtain someCoolString.
+
+s2c|neutriNote#snake2camel
+
+# Usage: select "c2s someCoollString" and expand to obtain some_cool_string.
+
+c2s|neutriNote#camel2snake
+```
+
 These simple shortcuts make it easy to sort lines:
 
 ```
