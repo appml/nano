@@ -404,7 +404,7 @@ With the helpers below, you can convert camel cases to / from snake cases with e
 
 s2c|neutriNote#snake2camel
 
-# Usage: select "c2s someCoollString" and expand to obtain some_cool_string.
+# Usage: select "c2s someCoolString" and expand to obtain some_cool_string.
 
 c2s|neutriNote#camel2snake
 ```
