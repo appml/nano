@@ -1,4 +1,4 @@
-
+Markdown commen
 ## User Guide
 
 <sup>[[Japanese Edition](https://github.com/ayatakesi/neutriNote/blob/master/index.md)]</sup>
@@ -503,7 +503,7 @@ The following shortcut allows Markdown comments to be created:
 comment|[???]::
 ```
 
-(Markdown comments can also be repurposed for creating "cross-note relations" when combined with the above `fetch` command.  For example, a specific comment can be placed next to related text across multiple notes to be later retrieved using the `fetch` command.  A note may contain as many comments as necessary with each comment corresponds to a set of related notes.)
+(When used in combination with the above `fetch` command, cross-note relations can be established.  For example, placing next to the text of the same topic across multiple notes the same comment would allow the notes to be `fetched` together through the comment.  Also a note may contain as many comments as necessary with each comment corresponds to a set of related notes.  Unlike metadata, this is a fine grained, structure-free, in-note organization of data that is searchable regardless editors.)
 
 You can include basic parameters with the commands, just write them after the command shortcut and separate each parameter with space+commas like this: `shortcut_label param1 , param2 , param3`.  Select the whole string and tap the expand icon to paste the output.  Users of cURL can also simplify the definitons of their expansions with `neutriNote?` instead of `neutriNote$` and trail that directly by a URL.  Likewise use `neutriNote_json?` for URLs that expect JSON parameters.
 
