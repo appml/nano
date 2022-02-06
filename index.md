@@ -500,7 +500,7 @@ The following shortcut allows Markdown comments to be created:
 ```
 # Usage: select "comment some_comment_string" and expand to generate a Markdown comment.  Such comment will be bypassed by Markdown rendering.
 
-comment|[???]:::
+comment|[???]::
 ```
 
 (Markdown comments can also be repurposed for creating "cross-note relations" when combined with the above `fetch` command.  For example, a specific comment can be placed next to related text across multiple notes to be later retrieved using the `fetch` command.  A note may contain as many comments as necessary with each comment corresponds to a set of related notes.)
