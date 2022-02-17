@@ -28,6 +28,7 @@
     * [Python Support](#python)
     * [Web Components](#components)
     * [Text Editor](#texteditor)
+    * [Mermaid Support](#mermaid)
     * [Editorless Read/Write](#editorless)
     * [Snooze](#snooze)
     * [Misc.](#misc)
@@ -647,6 +648,7 @@ You can tinker with the variables found inside of **~neutrinote_settings_data** 
 | com.appmindlab.nano.pref_oled                     | `true`: dim screen elements for OLED screens               |
 | com.appmindlab.nano.pref_open_in_markdown         | `true`: always open notes in markdown preview                                                                    |
 | com.appmindlab.nano.pref_parse_python             | `true`: enable basic Python code interpretation.  Default: `false`   | 
+| com.appmindlab.nano.pref_parse_mermaid            | `true`: enable Mermaid support.  Default: `false`   | 
 | com.appmindlab.nano.pref_parse_vue                | `true`: enable basic Vue.js components.  Default: `false`   | 
 | com.appmindlab.nano.pref_preview_mode             | `start`: display the beginning of notes in preview, `end`: display the end, `off`: disable preview               |
 | com.appmindlab.nano.pref_process_text_mode        | 0: disabled, 1: allow paste from other apps, 2: allow search from other apps .  Default: 0   | 
@@ -887,6 +889,44 @@ Note that currently **neutriNote** does not support the import of external compo
 
 ### <a name="texteditor">Text Editor</a>
 Though outside the scope of note taking, **neutriNote** can be used as a lightweight text editor to supplement apps such as Dropbox or Google Drive across all folders.  Changes committed will be sent back to original locations of edited files instead of storing in **Local Repository**, if the files are located outside **Local Repository**.  (Note that files not stored in **Local Repository** will not be cataloged by **neutriNote**'s search engine.)
+
+<a href="#toc">🔝 Back to top</a>
+
+
+### <a name="mermaid">Mermaid</a>
+
+[Mermaid](https://mermaid-js.github.io/mermaid/) provides a Markdown like syntax for making graphs.  To enable its use, simply add this line to **~neutrinote_setting_data** followed by **Restore App Data**.  For more details, see the [Hacks](#hacks) section.
+
+```
+com.appmindlab.nano.pref_parse_mermaid|true
+```
+
+Some snippets to show how easy it is to specify inline drawings.
+
+```
+<pre class="mermaid">
+    flowchart TD 
+    A-->B
+</pre>
+
+<pre class="mermaid">
+    graph TD
+    A-->B
+    A-->C
+    B-->D
+    C-->D
+</pre>
+```
+
+To expedite the workflow further, consider adding this shortcut to your collection.
+
+```
+# Usage: select "mermaid your_mermaid_graph" and expand, your_mermaid_graph will be properly wrapped for rendering.
+
+mermaid|<pre class="mermaid"><nano:br>???<nano:br></pre>
+```
+
+See [here](#textexpansion) for more information on how to get started with using **Text Expansion**.
 
 <a href="#toc">🔝 Back to top</a>
 
