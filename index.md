@@ -27,8 +27,8 @@
     * [API](#api)
     * [Python Support](#python)
     * [Web Components](#components)
+    * [Diagrams](#diagrams)
     * [Text Editor](#texteditor)
-    * [Mermaid Support](#mermaid)
     * [Editorless Read/Write](#editorless)
     * [Snooze](#snooze)
     * [Misc.](#misc)
@@ -887,13 +887,7 @@ Note that currently **neutriNote** does not support the import of external compo
 <a href="#toc">🔝 Back to top</a>
 
 
-### <a name="texteditor">Text Editor</a>
-Though outside the scope of note taking, **neutriNote** can be used as a lightweight text editor to supplement apps such as Dropbox or Google Drive across all folders.  Changes committed will be sent back to original locations of edited files instead of storing in **Local Repository**, if the files are located outside **Local Repository**.  (Note that files not stored in **Local Repository** will not be cataloged by **neutriNote**'s search engine.)
-
-<a href="#toc">🔝 Back to top</a>
-
-
-### <a name="mermaid">Mermaid</a>
+### <a name="diagrams">Diagrams</a>
 
 [Mermaid](https://mermaid-js.github.io/mermaid/) provides a Markdown like syntax for making graphs.  To enable its use, simply add this line to **~neutrinote_setting_data** followed by **Restore App Data**.  For more details, see the [Hacks](#hacks) section.
 
@@ -927,6 +921,12 @@ mermaid|<pre class="mermaid"><nano:br>???<nano:br></pre>
 ```
 
 See [here](#textexpansion) for more information on how to get started with using **Text Expansion**.
+
+<a href="#toc">🔝 Back to top</a>
+
+
+### <a name="texteditor">Text Editor</a>
+Though outside the scope of note taking, **neutriNote** can be used as a lightweight text editor to supplement apps such as Dropbox or Google Drive across all folders.  Changes committed will be sent back to original locations of edited files instead of storing in **Local Repository**, if the files are located outside **Local Repository**.  (Note that files not stored in **Local Repository** will not be cataloged by **neutriNote**'s search engine.)
 
 <a href="#toc">🔝 Back to top</a>
 
