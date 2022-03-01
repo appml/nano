@@ -847,39 +847,24 @@ A slightly more complex example:
 ### <a name="components">Web Components</a>
 **neutriNote** supports reusable user defined components through Vue.js.  This is especially useful for including frequently used note elements. 
 
- To enable, simply enable Vue parsing shown under [Hacks](#hacks) section and create a new note with the title `app.js` and **neutriNote** will handle the rest.
+To enable, simply enable Vue parsing shown under [Hacks](#hacks) section and create a new note with the title `app.js` and **neutriNote** will handle the rest.
 
-To see it in action, copy the following sample component definition for `<btn-style>` to `app.js`, the file where all component declarations are to be placed: 
+To see it in action, copy the following to `app.js`, the file where all component declarations are to be placed: 
 
 ```
-Vue.component('btn-style', {
-    props: ['theme'],
-    template: '<li>{{ theme.desc }}</li>'
-})
-
-var app = new Vue({
-    el: '#app',
-    data: {
-        buttonStyles: [
-            { id: 0, desc: 'primary' },
-            { id: 1, desc: 'secondary' },
-            { id: 2, desc: 'success' },
-            { id: 3, desc: 'warning' },
-            { id: 4, desc: 'info' }
-        ]
+Vue.createApp({
+    data() {
+        return {
+            message: 'Hello Vue!'
+        }
     }
-})
-
+}).mount('#app')
 ``` 
 
-That's it!  Now see how easy it is to deploy `<btn-style>` anywhere throughout your notes as long as it is inside a `div` block by the id `app`.
+That's it!  Now see how easy it is to deploy a component anywhere throughout your notes as long as it is inside a `div` block by the id `app`.
 
 ```
-<div id="app">
-    <ol>
-        <btn-style v-for="item in buttonStyles" v-bind:theme="item" v-bind:key="item.id"></btn-style>
-    </ol>
-</div>
+<div id="app">{{ message }}</div>
 ```
 
 Note that currently **neutriNote** does not support the import of external components, so not a substitute for any full-scale development architecture.
