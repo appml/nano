@@ -209,8 +209,8 @@ Power users may call `konsole.log()` when debugging script snippets.  Note how t
 ```
 <head>
     <script>
-        let a = [3, 7, 8]
-        let b = [9, 5, 6]
+        const a = [3, 7, 8]
+        const b = [9, 5, 6]
         let c = [...a, ...b].sort()
         konsole.log(c.toString())
     </script>
