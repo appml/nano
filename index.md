@@ -204,12 +204,15 @@ It's easy to customize the style of Markdown with popular inline CSS.  For more 
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 ```
 
-To send debug messages to the console, simply call `konsole.log()` in a snippet such as below:
+Power users may call `konsole.log()` when debugging script snippets.  Note how the call is made in the sample script below:
 
 ```
 <head>
     <script>
-        konsole.log("pi is roughly: " + 22/7);
+        let a = [3, 7, 8]
+        let b = [9, 5, 6]
+        let c = [...a, ...b].sort()
+        konsole.log(c.toString())
     </script>
 </head>
 ```
