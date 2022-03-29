@@ -204,7 +204,7 @@ It's easy to customize the style of Markdown with popular inline CSS.  For more 
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 ```
 
-Power users may call `konsole.log()` to __inspect__ script snippets.  Note how the call is made in the sample script below:
+Power users may call `konsole.log()` to _inspect_ script snippets.  Note how the call is made in the sample script below:
 
 ```
 <head>
