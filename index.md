@@ -217,6 +217,18 @@ Power users may call `konsole.log()` to _inspect_ script snippets.  Note how the
 </head>
 ```
 
+One may also directly tweak the built-in Markdown rendering engine by adding a note with the title `~neutrinote_head.txt`.  Additional styles and script snippets may go in there.  For example, to debug the rendering of Markdown elements, simply add:
+
+```
+<style>
+    * {
+        border: 2px solid red;
+    }
+</style>
+```
+
+Note that this method injects additional steps to the internal Markdown process and could lead to undesirable artifacts, its use should be limited in scope.  To disable, simply delete the note or renamed it to anything other than `~neutrinote_head.txt`.
+
 <a href="#toc">🔝 Back to top</a>
 
 
