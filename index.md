@@ -79,6 +79,17 @@ When incremental backup is enabled, a task to conduct full backup when the devic
 
 Note that only deletions initiated from **neurtiNote** (i.e. **Local Repository**) will be mirrored.  
 
+To migrate **Mirror** onto a new device or to reinstall on an existing device, especially for one that is running Android 13, follow these steps:
+
+1. Make sure you are using v4.2.2 or above.
+1. With the use of a file manager app, temporarily name the `mirror` folder to something else.
+1. Make sure **~neutrinote_settings_data.txt** and **~neutrinote_app_data.txt** are not empty.
+1. Make sure that under **Settings**, **Auto Backup** is off.
+1. Tap **Import Files** under the main menu.  Choose the folder renamed in Step 2.
+1. Wait for the import to complete.
+1. Upon the completion of import, click **Restore App Data** from the side navigation menu.
+1. Restore the name of the `mirror` folder.
+
 <a href="#toc">🔝 Back to top</a>
 
 
