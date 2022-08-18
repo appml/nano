@@ -84,7 +84,7 @@ Note that only deletions initiated from **neurtiNote** (i.e. **Local Repository*
 To reconnect **neutriNote** to an existing **Mirror**, follow these steps:
 
 1. Make sure you have updated **neutriNote** to v4.2.2 or above.
-1. **IMPORTANT** With the use of a file manager app, temporarily rename the `mirror` folder to something other than `mirror`.
+1. **IMPORTANT**: With the use of a file manager app, temporarily rename the `mirror` folder to something other than `mirror`.
 1. Make sure **~neutrinote_settings_data.txt** and **~neutrinote_app_data.txt** are not empty.
 1. Under **Settings**, disable **Auto Backup**.
 1. Tap **Import Files** under the main menu.  Choose the renamed folder in Step 2.
