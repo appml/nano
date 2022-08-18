@@ -70,6 +70,8 @@ If you have already activated **Local Repository**, your notes will be sync seam
 
 When incremental backup is enabled, a task to conduct full backup when the device is idle will also be activated.  A maximum of 10 most recent backups will be maintained.  See [Storage Saver](#storage) section for more suggestions on how to manage backup storage space.
 
+If you are looking for instructions on how to transfer **Mirror** between installations, see the next section.
+
 <a href="#toc">🔝 Back to top</a>
 
 
@@ -79,16 +81,17 @@ When incremental backup is enabled, a task to conduct full backup when the devic
 
 Note that only deletions initiated from **neurtiNote** (i.e. **Local Repository**) will be mirrored.  
 
-To migrate **Mirror** onto a new device or to reinstall on an existing device, especially for one that is running Android 13, follow these steps:
+To reconnect **neutriNote** to an existing **Mirror**, follow these steps:
 
-1. Make sure you are using v4.2.2 or above.
-1. With the use of a file manager app, temporarily name the `mirror` folder to something else.
+1. Make sure you have updated **neutriNote** to v4.2.2 or above.
+1. **IMPORTANT** With the use of a file manager app, temporarily rename the `mirror` folder to something other than `mirror`.
 1. Make sure **~neutrinote_settings_data.txt** and **~neutrinote_app_data.txt** are not empty.
-1. Make sure that under **Settings**, **Auto Backup** is off.
-1. Tap **Import Files** under the main menu.  Choose the folder renamed in Step 2.
+1. Under **Settings**, disable **Auto Backup**.
+1. Tap **Import Files** under the main menu.  Choose the renamed folder in Step 2.
 1. Wait for the import to complete.
-1. Upon the completion of import, click **Restore App Data** from the side navigation menu.
-1. Restore the name of the `mirror` folder.
+1. Upon completion, click **Restore App Data** from the side navigation menu.
+1. Revert the name of the folder back to `mirror`.
+1. Under **Settings**, enable **Auto Backup**. 
 
 <a href="#toc">🔝 Back to top</a>
 
