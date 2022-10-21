@@ -966,7 +966,7 @@ Though outside the scope of note taking, **neutriNote** can be used as a lightwe
     1. At the note picker, scroll all the way to the right and tap **Pick a note**.  
     1. Specify a target note and tap **Paste** to append clipboard content to the target without leaving the current note.
 
-* (Experimental, v3.9.9 or above) Should there be a need for "side-note" like writing during **Markdown Preview**, one may do so by adding a note titled `neutriNote Scrapbook.txt`.  An input box will appear in the notification area and all text entered through it will go directly to the **scrapbook**.
+* (Experimental, v3.9.9 or above) Should there be a need for "side-note" like writing during **Markdown Preview**, one may do so by adding a note titled `neutriNote Scrapbook.txt`.  An input box will appear in the notification area and all text entered through it will go directly to the **scrapbook**.  [Built-in Variables](#builtinvariables) may be used in the input box to ease text entry in limited space. 
 
 * When using the **Working Set** feature as described in [gestures](#gestures) section, long press any of the menu items will reveal the latest changes of the selected item without opening the note.  
 
