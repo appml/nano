@@ -679,6 +679,7 @@ You can tinker with the variables found inside of **~neutrinote_settings_data** 
 | com.appmindlab.nano.pref_low_space_mode           | `true`: turn on [storage space saver](#storage) |   
 | com.appmindlab.nano.pref_margin_list              | Specify custom margin options delimited by semicolons.  Default: `8;16;24` |
 | com.appmindlab.nano.pref_markdown_trigger         | Specify a metadata substring pattern to open notes in Markdown by default                                        |
+| com.appmindlab.nano.pref_max_backup_count         | Specify maximum number of backup copies to retain (pruning to occur during next backup).  Default: 10 |
 | com.appmindlab.nano.pref_max_deleted_copies_age   | Specify maximum number of days deleted copies will be kept (pruning to occur during next backup).  Default: -1 (unlimited)      |
 | com.appmindlab.nano.pref_max_sync_log_file_age    | Specify maximum number of days sync logs will be kept.  Default: 7 (1 week)      |
 | com.appmindlab.nano.pref_max_sync_log_file_size   | Specify maximum size for each sync log file (factor of 200 KB).  Default: 2 (400 KB)      |
