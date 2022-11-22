@@ -606,17 +606,21 @@ The following editor shortcuts are supported when connected to a physical keyboa
 
 | Shortcuts                  | Actions           |
 | -------------------------- |:-----------------:|
-| `Ctrl-S`                   | Save              |
-| `Ctrl-F`                   | Local Find        | 
+| `Ctrl+S`                   | Save              |
+| `Ctrl+F`                   | Local Find        | 
 | `F3`                       | Find Next         | 
-| `Ctrl-H`                   | Replace           | 
-| `Ctrl-D`                   | Dictionary Lookup |
-| `Ctrl-W`                   | Web Search        |
-| `Ctrl-M`                   | Markdown        |
-| `Ctrl-Z`                   | Undo              |  
-| `Ctrl-Shift-Z`             | Redo              | 
-| `Ctrl-]` or `Ctrl-I`       | Indent            |  
-| `Ctrl-[` or `Ctrl-Shift-I` | Un-indent         | 
+| `Ctrl+H`                   | Replace           | 
+| `Ctrl+D`                   | Dictionary Lookup |
+| `Ctrl+W`                   | Web Search        |
+| `Ctrl+M`                   | Markdown          |
+| `Ctrl+Z`                   | Undo              |  
+| `Ctrl+Shift+Z`             | Redo              | 
+| `Ctrl+]` or `Ctrl+I`       | Indent            |  
+| `Ctrl+[` or `Ctrl+Shift+I` | Un-indent         | 
+| `Ctrl+Up`                  | Go to Top         |  
+| `Ctrl+Down`                | Go to Bottom      |  
+| `Ctrl+Space`               | Expand Text       |  
+| `Ctrl+=`                   | Calculate         | 
 
 <a href="#toc">🔝 Back to top</a>
 
