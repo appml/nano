@@ -1629,7 +1629,11 @@ The following editor shortcuts are supported when connected to a physical keyboa
 | `Ctrl-Z`                   | Undo              |  
 | `Ctrl-Shift-Z`             | Redo              | 
 | `Ctrl-]` or `Ctrl-I`       | Indent            |  
-| `Ctrl-[` or `Ctrl-Shift-I` | Un-indent         | 
+| `Ctrl-[` or `Ctrl-Shift-I` | Un-indent   
+| `Ctrl+Up`                  | Go to Top              |  
+| `Ctrl+Down`                | Go to Bottom           |  
+| `Ctrl+Shift+Space`         | Expand Text             |  
+| `Ctrl+=`                   | Calculate        |        | 
 
 <a href="#toc">🔝 Back to top</a>
 
