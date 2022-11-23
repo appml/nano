@@ -619,7 +619,7 @@ The following editor shortcuts are supported when connected to a physical keyboa
 | `Ctrl+[` or `Ctrl+Shift+I` | Un-indent         | 
 | `Ctrl+Up`                  | Go to Top         |  
 | `Ctrl+Down`                | Go to Bottom      |  
-| `Ctrl+Space`               | Expand Text       |  
+| `Ctrl+Shift+Space`               | Expand Text       |  
 | `Ctrl+=`                   | Calculate         | 
 
 <a href="#toc">🔝 Back to top</a>
