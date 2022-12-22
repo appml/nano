@@ -189,11 +189,13 @@ Linking to an image under local repository, simply do:
 Linking to notes from other apps that support hyperlinks, simply prefix note names with `http://neutriNote.io`.  For example:
 
 ```
-http://neutriNote.io/my_diary
+https://neutriNote.io/my_diary
 
-http://neutriNote.io/my_diary?search=first%20headquarter%20visit
+https://neutriNote.io/my_diary?search=first%20headquarter%20visit
 
 ```
+
+(To navigate between note, position your cursor anywhere in the link string then tap the `Web` icon from the toolbar.)
 
 There is a conflict between Markdown italic symbol and LaTeX subscript symbol.  To workaround this problem, either escape the subscript symbols or wrap the expression in script block.  For example, instead of doing this:
 
