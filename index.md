@@ -93,6 +93,14 @@ To reconnect **neutriNote** to an existing **Mirror**, follow these steps:
 1. Revert the name of the folder back to `mirror`.
 1. Under **Settings**, enable **Auto Backup**. 
 
+```
+📂 Backup
+    |__ 📁 mirror
+    |__ 📁 ...
+    |__ 📁 ...
+    |__ 📁 ...
+```
+
 <a href="#toc">🔝 Back to top</a>
 
 
