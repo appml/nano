@@ -81,6 +81,14 @@ If you are looking for instructions on how to transfer **Mirror** between instal
 
 Note that only deletions initiated from **neurtiNote** (i.e. **Local Repository**) will be mirrored.  
 
+```
+📂 Backup
+    |__ 📁 mirror
+    |__ 📁 ...
+    |__ 📁 ...
+    |__ 📁 ...
+```
+
 To reconnect **neutriNote** to an existing **Mirror**, follow these steps:
 
 1. Make sure you have updated **neutriNote** to v4.2.2 or above.
@@ -92,14 +100,6 @@ To reconnect **neutriNote** to an existing **Mirror**, follow these steps:
 1. Upon completion, click **Restore App Data** from the side navigation menu.
 1. Revert the name of the folder back to `mirror`.
 1. Under **Settings**, enable **Auto Backup**. 
-
-```
-📂 Backup
-    |__ 📁 mirror
-    |__ 📁 ...
-    |__ 📁 ...
-    |__ 📁 ...
-```
 
 <a href="#toc">🔝 Back to top</a>
 
