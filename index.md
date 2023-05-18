@@ -205,7 +205,7 @@ https://neutriNote.io/my_diary?search=first%20headquarter%20visit
 
 Note that starting from Android, external linking must be enabled [manually](https://mastodon.social/@neutrinote/109666990309302664). 
 
-(To navigate between note, position your cursor anywhere in the link string then tap the `Web` icon from the toolbar.)
+(To navigate between notes, position your cursor anywhere in the link string then tap the `Web` icon from the toolbar.)
 
 There is a conflict between Markdown italic symbol and LaTeX subscript symbol.  To workaround this problem, either escape the subscript symbols or wrap the expression in script block.  For example, instead of doing this:
 
