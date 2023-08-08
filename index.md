@@ -707,6 +707,7 @@ You can tinker with the variables found inside of **~neutrinote_settings_data** 
 | com.appmindlab.nano.pref_open_in_markdown         | `true`: always open notes in markdown preview                                                                    |
 | com.appmindlab.nano.pref_parse_python             | `true`: enable basic Python code interpretation.  Default: `false`   | 
 | com.appmindlab.nano.pref_parse_mermaid            | `true`: enable Mermaid support.  Default: `false`   | 
+| com.appmindlab.nano.pref_parse_typogram           | `true`: enable ASCII art to SVG support.  Default: `false`   |
 | com.appmindlab.nano.pref_parse_vue                | `true`: enable basic Vue.js components.  Default: `false`   | 
 | com.appmindlab.nano.pref_preview_mode             | `start`: display the beginning of notes in preview, `end`: display the end, `off`: disable preview               |
 | com.appmindlab.nano.pref_process_text_mode        | 0: disabled, 1: allow paste from other apps, 2: allow search from other apps .  Default: 0   | 
@@ -964,6 +965,21 @@ mermaid|<pre class="mermaid"><nano:br>???<nano:br></pre>
 ```
 
 See [here](#textexpansion) for more information on how to get started with using **Text Expansion**.
+
+Alternatively, existing drawings can also be turned into [SVG diagrams](https://github.com/google/typograms/). Firstly, add the following line to **~neutrinote_setting_data** then tap **Restore App Data**.
+
+```
+com.appmindlab.nano.pref_parse_typogram|true
+```
+
+To avoid excessive typings, consider adding this shortcut to your collection.
+```
+# Usage: select "typo your_ascii_drawing" and expand, your_ascii_drawing will be properly wrapped for rendering.
+
+typo|<div style="background:white"><nano:br><script type="text/typogram"><nano:br>???<nano:br></script><nano:br></div>
+```
+
+Now you are ready to apply the shortcut to any ASCII drawings and have their SVG versions rendered in Markdown view.
 
 <a href="#toc">🔝 Back to top</a>
 
