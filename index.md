@@ -681,7 +681,7 @@ You can tinker with the variables found inside of **~neutrinote_settings_data** 
 | com.appmindlab.nano.pref_append_custom_style      | `true`: **Extend** built-in styles with `~neutrinote_styles.txt`,  `false`: **Replace** built-in styles with `~neutrinote_styles.txt`                |
 | com.appmindlab.nano.pref_auto_save_interval       | Specify the interval between auto save in seconds, which is only in effect when **Auto Save** is on.  Default: -1.  Note that periodic auto save will be disabled when the interval is set to be negative. |
 | com.appmindlab.nano.pref_auto_toolbar_tag         | Specify a metadata substring pattern to enable auto show / hide toolbar (hint: tap screen to hide, double tap to re-display)                                         |
-| com.appmindlab.nano.pref_canvas_strokes           | Fixed width symbols supported by sketch tool delimited by semicolons, e.g., `:;\;/;_;-;,;●` (vertical bar and semicolon not allowed) | 
+| com.appmindlab.nano.pref_canvas_strokes           | Fixed width symbols supported by sketch tool delimited by semicolons, e.g., `*;|;-;_;\\;/;:;~;>;^;o;#;v;<;+;.;-` (vertical bar and semicolon not allowed) | 
 | com.appmindlab.nano.pref_custom_date_format       | Override system date stamp format with custom [date format](https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html) |
 | com.appmindlab.nano.pref_custom_time_format       | Override system time stamp format with custom [time format](https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html) |
 | com.appmindlab.nano.pref_eval_built_in_variables  | `true`: evalute [built-in variables](#variables) in search or shortcut definitions            |  
@@ -707,7 +707,7 @@ You can tinker with the variables found inside of **~neutrinote_settings_data** 
 | com.appmindlab.nano.pref_open_in_markdown         | `true`: always open notes in markdown preview                                                                    |
 | com.appmindlab.nano.pref_parse_python             | `true`: enable basic Python code interpretation.  Default: `false`   | 
 | com.appmindlab.nano.pref_parse_mermaid            | `true`: enable Mermaid support.  Default: `false`   | 
-| com.appmindlab.nano.pref_parse_typogram           | `true`: enable ASCII art to SVG support.  Default: `false`   |
+| com.appmindlab.nano.pref_parse_typograms          | `true`: enable ASCII art to SVG support.  Default: `false`   |
 | com.appmindlab.nano.pref_parse_vue                | `true`: enable basic Vue.js components.  Default: `false`   | 
 | com.appmindlab.nano.pref_preview_mode             | `start`: display the beginning of notes in preview, `end`: display the end, `off`: disable preview               |
 | com.appmindlab.nano.pref_process_text_mode        | 0: disabled, 1: allow paste from other apps, 2: allow search from other apps .  Default: 0   | 
@@ -969,7 +969,7 @@ See [here](#textexpansion) for more information on how to get started with using
 Alternatively, existing drawings can also be turned into [SVG diagrams](https://github.com/google/typograms/). Firstly, add the following line to **~neutrinote_setting_data** then tap **Restore App Data**.
 
 ```
-com.appmindlab.nano.pref_parse_typogram|true
+com.appmindlab.nano.pref_parse_typograms|true
 ```
 
 To avoid excessive typings, consider adding this shortcut to your collection.
