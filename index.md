@@ -26,6 +26,7 @@
     * [Storage Saver](#storage)
     * [API](#api)
     * [Python Support](#python)
+    * [In-note JavaScript](#javascript)
     * [Web Components](#components)
     * [Diagrams](#diagrams)
     * [Text Editor](#texteditor)
@@ -902,6 +903,74 @@ A slightly more complex example:
 
 <a href="#toc">🔝 Back to top</a>
 
+### <a name="javascript">In-note JavaScript (Experimental)</a>
+
+**neutriNote**'s JavaScript mode provides a lightweight, renderless, <a href="https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop">REPL</a> environment for executing simple JavaScript in-note. Those who are familiar with Juptyer Notebook's interactive mode should recognize some of the similarities found in this in-note interpreter.  Furthermore, those custom logic can in turn be re-used to extend **neutriNote**'s built-in editor functionalities.  The following examples provide a glimpse of its potential in action.
+
+Firstly, to make one-off JavaScript call, simply create a <a href="#textexpansion">shortcut</a> like this (note: feel free to pick any shortcut name for all examples in this section):
+
+```
+# Usage: select "evaljs js_function_call" and expand.
+evaljs|neutriNote#interactivejs
+```
+
+E.g., to determine the square root of 144, simply type `evaljs Math.sqrt(144)`, select the string just entered, and tap the **Text Expand** button.
+
+For quick prototyping, one may create a shortcut like this:
+
+```
+# Usage: select "protojs js_function_call" and expand.
+protojs|neutriNote#snippetjs
+```
+
+Suppose now you want to try out the following snippet:
+
+```
+function substr(str, start, end)
+{
+    return str.substring(start, end);
+}
+substr("dog, cat, fish", 5, 8)  
+```
+
+For a quick preview of whether the code works as expected, type `protojs` before the code block, select the shortcut name including the entire code block, and tap the **Text Expand** button.  (Notice that the code block ends with a function call after the declaration of the function.)
+
+Frequently used short functions can be included right within shortcut definitions to reduce typings.  For example:
+
+```
+# Usage: select "presetjs extract(my_string, starting_position, ending_position)" and expand.
+presetjs|neutriNote#inlinejs function extract(str, start, end) { return str.substring(start, end); }
+```
+
+To invoke the function with parameters, for example to extract the first three characters from `apple`, simply enter and select `presetjs extract("apple", 0, 2)`, then tap the **Text Expand** button.
+
+One can also build collections of functions and store them in dedicated notes.  Suppose you have a note called `my_toolbox.js` containing a series of function declarations:
+
+```
+function myfunc1(param1, param2) {
+    ...
+}
+
+function myfunc2(param1, param2, param3) {
+    ...
+}
+
+function myfunc2(param1, param2, param3) {
+    ...
+}
+
+```
+
+When you create a shortcut referring to the note `my_toolbox.js` as below, you can invoke any functions defined in the "library" in-note!
+
+```
+# Usage: select "storedjs func(param1, param2, ...)" and expand, assuming func() is defined in the named note.
+storedjs|neutriNote#filejs my_toolbox.js
+```
+
+In this case, you can call upon any function included in `my_toolbox.js`.  For example, to invoke `myfunc1` declared in `my_toolbox.js`, simply by enter in `storedjs myfunc1(...)`, select the string, then tap the **Text Expand** button.
+
+<a href="#toc">🔝 Back to top</a>
 
 ### <a name="components">Web Components</a>
 **neutriNote** supports reusable user defined components through Vue.js.  This is especially useful for including frequently used note elements. 
