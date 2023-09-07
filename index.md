@@ -14,6 +14,7 @@
     * [Examples](#examples) 
     * [Automation](#automation)
     * [Text Expansion](#textexpansion)
+    * [Tag Expansion](#tagexpansion)
     * [Batch Select](#batchselect)
     * [Voice Memo](#voicememo)
     * [External Fonts](#externalfonts)
@@ -561,6 +562,144 @@ You can include basic parameters with the commands, just write them after the co
 
 <a href="#toc">🔝 Back to top</a>
 
+### <a name="tagexpansion">Tag Expansion</a>
+Tag Expansion is a streamlined way to input HTML/XML frictionlessly by cutting down on keystrokes significantly. On the surface, the syntax might resemble a lite version of [Emmet](https://docs.emmet.io/), but underneath the implementation is entirely different.  This feature is intended for better note-taking productivity rather than for application development.
+
+To see it in action, first add the below shortcut to  **~neutrinote_shortcuts** (if you do not see the file, enable hidden files under **Settings**).  Also refer to the section above if you would want to learn more about [Text Expansion](#textexpansion).
+
+```
+# Usage: select "tagex some_tag_series_string".
+
+tagex|neutriNote#tagExpand
+```
+
+Say you want to expand `div#banner>`, simply type: 
+```
+tagex div#banner>
+```
+
+Select the string in its entirety including `tagex` then tap **Text Expand**: 
+
+```
+<div id="banner">
+</div>
+```
+
+Class names are supported as well:
+```
+tagex div#banner.intro>
+```
+
+After expansion: 
+```
+
+<div class="intro" id="banner">
+</div>
+```
+
+Now add some text:
+```
+tagex div#banner.intro{Lorem Ipsum}>
+```
+
+It will in turn be expanded into:
+```
+<div class="intro" id="banner">Lorem Ipsum
+</div>
+```
+
+Now the syntax for adding multiple items with the use of `*`:
+```
+tagex div#banner.intro>ul>li*3>
+```
+
+The expansion:
+```
+<div class="intro" id="banner">
+    <ul>
+        <li>
+        </li>
+        <li>
+        </li>
+        <li>
+        </li>
+    </ul>
+</div>
+```
+
+Counters can be specified using `$`:
+```
+tagex div#banner.intro>ul>li.item$*3>
+```
+
+Output:
+```
+
+<div class="intro" id="banner">
+    <ul>
+        <li class="item1">
+        </li>
+        <li class="item2">
+        </li>
+        <li class="item3">
+        </li>
+    </ul>
+</div>
+```
+
+
+Additional attributes can be specified like so:
+```
+tagex img[src="sky.jpg"][alt="Sunny day"]>
+```
+
+Output:
+```
+<img src="sky.jpg" alt="Sunny day">
+</img>
+```
+
+Sibling tags can be specified using `+`:
+```
+tagex div.family>p.parent>span.sibling+span.sibling>
+```
+
+Output:
+```
+
+<div class="family">
+    <p class="parent">
+        <span class="sibling">
+        </span>
+        <span class="sibling">
+        </span>
+    </p>
+</div>
+```
+
+"Climbing up" can be specified using `^`:
+```
+tagex div.family>p.parent>div>span.younger+span.younger^span.elder>
+```
+
+Output :
+```
+
+<div class="family">
+    <p class="parent">
+        <div>
+            <span class="younger">
+            </span>
+            <span class="younger">
+            </span>
+        <span class="elder">
+        </span>
+        </div>
+    </p>
+</div>
+```
+
+<a href="#toc">🔝 Back to top</a>
 
 ### <a name="batchselect">Batch Select</a>
 Special selection commands are available for better productivity.
@@ -604,6 +743,27 @@ GoudyBookletter1911.ttf
 <link href='https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
 font-family: 'Goudy Bookletter 1911', serif;
 ```        
+
+To skip the loading of a font, simply precede the first line of its entry with a `#`, as below using the example above:
+
+```
+# Goudy Bookletter 1911
+GoudyBookletter1911.ttf
+<link href='https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
+font-family: 'Goudy Bookletter 1911', serif;
+```      
+
+To use your device's default font, just add the below entry.  
+
+```
+System-Default
+-
+-
+-
+```
+
+Please note this will only have effects on **neutriNote**'s editor screen, it has no effect on the app's Markdown rendering.
+
 
 <a href="#toc">🔝 Back to top</a>
 
@@ -682,7 +842,7 @@ You can tinker with the variables found inside of **~neutrinote_settings_data** 
 | com.appmindlab.nano.pref_append_custom_style      | `true`: **Extend** built-in styles with `~neutrinote_styles.txt`,  `false`: **Replace** built-in styles with `~neutrinote_styles.txt`                |
 | com.appmindlab.nano.pref_auto_save_interval       | Specify the interval between auto save in seconds, which is only in effect when **Auto Save** is on.  Default: -1.  Note that periodic auto save will be disabled when the interval is set to be negative. |
 | com.appmindlab.nano.pref_auto_toolbar_tag         | Specify a metadata substring pattern to enable auto show / hide toolbar (hint: tap screen to hide, double tap to re-display)                                         |
-| com.appmindlab.nano.pref_canvas_strokes           | Fixed width symbols supported by sketch tool delimited by semicolons, e.g., `|;-;_;\;/;:;~;>;^;*;o;#;v;<;+;.;` (semicolon not allowed) | 
+| com.appmindlab.nano.pref_canvas_strokes           | Fixed width symbols supported by sketch tool delimited by semicolons, e.g., `:;\;/;_;-;,;●` (vertical bar and semicolon not allowed) | 
 | com.appmindlab.nano.pref_custom_date_format       | Override system date stamp format with custom [date format](https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html) |
 | com.appmindlab.nano.pref_custom_time_format       | Override system time stamp format with custom [time format](https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html) |
 | com.appmindlab.nano.pref_eval_built_in_variables  | `true`: evalute [built-in variables](#variables) in search or shortcut definitions            |  
@@ -708,7 +868,7 @@ You can tinker with the variables found inside of **~neutrinote_settings_data** 
 | com.appmindlab.nano.pref_open_in_markdown         | `true`: always open notes in markdown preview                                                                    |
 | com.appmindlab.nano.pref_parse_python             | `true`: enable basic Python code interpretation.  Default: `false`   | 
 | com.appmindlab.nano.pref_parse_mermaid            | `true`: enable Mermaid support.  Default: `false`   | 
-| com.appmindlab.nano.pref_parse_typograms          | `true`: enable ASCII art to SVG support.  Default: `false`   |
+| com.appmindlab.nano.pref_parse_typograms          | `true`: enable ASCII art to SVG support.  Default: `false`   | 
 | com.appmindlab.nano.pref_parse_vue                | `true`: enable basic Vue.js components.  Default: `false`   | 
 | com.appmindlab.nano.pref_preview_mode             | `start`: display the beginning of notes in preview, `end`: display the end, `off`: disable preview               |
 | com.appmindlab.nano.pref_process_text_mode        | 0: disabled, 1: allow paste from other apps, 2: allow search from other apps .  Default: 0   | 
@@ -1012,7 +1172,7 @@ Some snippets to show how easy it is to specify inline drawings.
 
 ```
 <pre class="mermaid">
-    flowchart TD 
+    flowchart TD 
     A-->B
 </pre>
 
@@ -1049,6 +1209,7 @@ typo|<div style="background:white"><nano:br><script type="text/typogram"><nano:b
 ```
 
 Now you are ready to apply the shortcut to any ASCII drawings and have their SVG versions rendered in Markdown view.
+
 
 <a href="#toc">🔝 Back to top</a>
 
@@ -1779,7 +1940,7 @@ You can tinker with the variables found inside of **~neutrinote_settings_data** 
 | ------------------------------------------------- |:----------------------------------------------------------------------------------------------------------------:|
 | com.appmindlab.nano.pref_append_custom_style      | `true`: **Extend** built-in styles with `~neutrinote_styles.txt`,  `false`: **Replace** built-in styles with `~neutrinote_styles.txt`                |
 | com.appmindlab.nano.pref_auto_toolbar_tag         | Specify a metadata substring pattern to enable auto show / hide toolbar (hint: tap screen to hide, double tap to re-display)                                         |
-| com.appmindlab.nano.pref_canvas_strokes           | Fixed width symbols supported by sketch tool delimited by semicolons, e.g., `:;\;/;_;-;,;●` (vertical bar and semicolon not allowed) | 
+| com.appmindlab.nano.pref_canvas_strokes           | Fixed width symbols supported by sketch tool delimited by semicolons, e.g., `|;-;_;\;/;:;~;>;^;*;o;#;v;<;+;.;` (semicolon not allowed) | 
 | com.appmindlab.nano.pref_custom_date_format       | Override system date stamp format with custom [date format](https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html) |
 | com.appmindlab.nano.pref_custom_time_format       | Override system time stamp format with custom [time format](https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html) |
 | com.appmindlab.nano.pref_eval_built_in_variables  | `true`: evalute [built-in variables](#variables) in search or shortcut definitions            |  
