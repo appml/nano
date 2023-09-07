@@ -614,12 +614,6 @@ Output:
 </div>
 ```
 
-It will in turn be expanded into:
-```
-<div class="intro" id="banner">Lorem Ipsum
-</div>
-```
-
 Now the syntax for adding multiple items with the use of `*`:
 ```
 tagex div#banner.intro>ul>li*3>
