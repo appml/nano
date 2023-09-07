@@ -597,9 +597,21 @@ After expansion:
 </div>
 ```
 
-Now add some text:
+Now add some text, either:
 ```
 tagex div#banner.intro{Lorem Ipsum}>
+```
+
+Or:
+
+```
+tagex div#banner.intro>{Lorem Ipsum}>
+```
+
+Output:
+```
+<div class="intro" id="banner">Lorem Ipsum
+</div>
 ```
 
 It will in turn be expanded into:
