@@ -796,6 +796,8 @@ The following editor shortcuts are supported when connected to a physical keyboa
 | `Ctrl+Shift+Z`             | Redo              | 
 | `Ctrl+]` or `Ctrl+I`       | Indent            |  
 | `Ctrl+[` or `Ctrl+Shift+I` | Un-indent         | 
+| `Ctrl++`                   | Zoom-in           |  
+| `Ctrl+-`                   | Zoom-out          | 
 | `Ctrl+Up`                  | Go to Top         |  
 | `Ctrl+Down`                | Go to Bottom      |  
 | `Ctrl+Tab`                 | Expand Text       |  
