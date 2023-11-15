@@ -391,7 +391,7 @@ To join multiple lines, try using this:
 ```
 # Usage: select "join some_text_string" and expand, some_text_string will be returned with all newline characters replaced by blank spaces.
 
-join|neutriNote#replace \n \s
+join|neutriNote#join
 ```
 
 Or even this:
