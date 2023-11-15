@@ -402,6 +402,14 @@ Or even this:
 concat|neutriNote#remove \n
 ```
 
+To glue multiple lines into one with symbols:
+
+```
+# Usage: select "glue some_text_string" and expand, some_text_string will be returned with all newline characters replaced by a bar between two blank spaces (with `<nano:sp>` denotes the space character). 
+
+glue|neutriNote#join <nano:sp>|<nano:sp>
+```
+
 You can even split a string with the power of regex!  
 
 ```
