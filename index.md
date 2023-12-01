@@ -97,11 +97,13 @@ To reconnect **neutriNote** to an existing **Mirror**, follow these steps:
 1. **IMPORTANT**: With the use of a file manager app, temporarily rename the `mirror` folder to something other than `mirror`.
 1. Make sure **~neutrinote_settings_data.txt** and **~neutrinote_app_data.txt** are not empty.
 1. Under **Settings**, disable **Auto Backup**.
-1. Tap **Import Files** under the main menu.  Choose the renamed folder in Step 2.
+1. Tap **Import Files** under the &vellip; main menu .  Choose the renamed folder in Step 2.
 1. Wait for the import to complete.
 1. Upon completion, click **Restore App Data** from the side navigation menu.
 1. Revert the name of the folder back to `mirror`.
 1. Under **Settings**, enable **Auto Backup**. 
+
+Note: certain devices might be blocking your access to the &vellip; main menu in that **Import Files** would not be accessible when the note list is empty.  As a work around, by adding a note will usually make the menu accessible. 
 
 <a href="#toc">🔝 Back to top</a>
 
