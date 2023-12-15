@@ -117,7 +117,7 @@ Search can also be limited to metadata by using the prefix _meta:_ in the search
 
 To ensure metadata match when conducting multi-term search, one may use the following syntax at the main search bar: `join:term1,term2,term3,...,termN` and so on.  Doing so will ensure at least one of the terms can be found in the metadata for each search hit. Such syntax can be used to simulate search within metadata/tags.  Alternatively, fuzzy search can be conducted on metadata with syntax `related:term1,term2,term3,...,termN` and `similar:term1,term2,term3,...,termN`.
 
-Simple contextual search can be achieved with the use of `in` or `scope` prefixes.  Say the goal is to look up notes containing certain terms only for notes with title containing a certain phrase. Simple do: `in:some_phrase,term1,term2,...`.  Likewise, to look up notes containing certain terms only if their metadata also contain a certain phrase, do `scope:some_phrase,term1,term1,...`.
+Simple contextual search can be achieved with the use of `in` or `scope` prefixes.  Say the goal is to look up notes containing certain terms only for notes with titles containing a certain phrase. Simple do: `in:some_phrase,term1,term2,...`.  Likewise, to look up notes containing certain terms only if their metadata also contain a certain phrase, do `scope:some_phrase,term1,term1,...`.
 
 To search for multiple terms, the easiest way is to use **Advanced Search**.  You can also specify boolean search queries with syntax like `and:term1,term2,term3,...,termN` to find notes containing all the terms (`or:term1,term2,term3,..,termN` to find notes containing one of the terms). 
 
