@@ -6,3 +6,6 @@ theme: jekyll-theme-hacker
 
 gems:
   - jekyll-mentions
+
+github:
+  repository_url: https://github.com/appml/neutrinote
