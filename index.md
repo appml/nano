@@ -209,7 +209,7 @@ https://neutriNote.io/my_diary?search=first%20headquarter%20visit
 
 ```
 
-Note that starting from Android, external linking must be enabled [manually](https://mastodon.social/@neutrinote/109666990309302664). 
+Note that starting from Android 12, external linking must be enabled [manually](https://mastodon.social/@neutrinote/109666990309302664). 
 
 (To navigate between notes, position your cursor anywhere in the link string then tap the `Web` icon from the toolbar.)
 
