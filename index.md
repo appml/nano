@@ -33,7 +33,7 @@
     * [Text Editor](#texteditor)
     * [Editorless Read/Write](#editorless)
     * [Snooze](#snooze)
-    * [Launcher Shortcut](#launchershortcut)
+    * [Launcher Shortcuts](#launchershortcuts)
     * [Misc.](#misc)
 1. [Performance](#performance)
 1. [Log Tool](#log)
@@ -1283,9 +1283,9 @@ To transfer snooze to another device, be sure to tap **Backup/Restore App Data**
 
 <a href="#toc">🔝 Back to top</a>
 
-### <a name="launchershortcut">Launcher Shortcut (Experimental)</a>
+### <a name="launchershortcuts">Launcher Shortcuts (Experimental)</a>
 
-With **Launcher Shortcut**, you can add a launcher icon for any [custom search filter](#search).  
+With **Launcher Shortcuts**, you can add a launcher icon for any [custom search filter](#search).  
 
 Say there is a need to pull up notes with metadata containing the word `news`.  Simply do the followings:
 
