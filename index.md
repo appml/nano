@@ -33,6 +33,7 @@
     * [Text Editor](#texteditor)
     * [Editorless Read/Write](#editorless)
     * [Snooze](#snooze)
+    * [Launcher Shortcut](#launchershortcut)
     * [Misc.](#misc)
 1. [Performance](#performance)
 1. [Log Tool](#log)
@@ -872,6 +873,7 @@ You can tinker with the variables found inside of **~neutrinote_settings_data** 
 | com.appmindlab.nano.pref_indent_char              | Specify the character(s) to use for indentation.  Default: 4 spaces                                              |  
 | com.appmindlab.nano.pref_keep_deleted_copies      | `true`: keep copies of deleted files under `trash_bin` folder                                                        |
 | com.appmindlab.nano.pref_lab_mode                 | `true`: enable experimental features such as OCR, diff-tool                                                                |  
+| com.appmindlab.nano.pref_launcher_tags             | Specify a search pattern for launcher shortcut icon.  Default is blank.  See [Launcher Shortcut](#launchershortcut). |  
 | com.appmindlab.nano.pref_latex_single_dollar      | `true`: use single dollar signs to signify math expressions                                                      |
 | com.appmindlab.nano.pref_linkify_trigger          | Specify a metadata substring pattern to open notes linkified by default                                          |
 | com.appmindlab.nano.pref_local_priority_tag       | Specify a metadata substring pattern to prevent local copy from being overwritten by remote changes.  Note that conflicts may occur if a note is being edited on multiple devices |
@@ -1278,6 +1280,26 @@ Then add special **snooze strings** such as `+1h` ("snooze for an hour") or `+2d
 | `y` for years      | `+10y`: snooze for a decade        |
 
 To transfer snooze to another device, be sure to tap **Backup/Restore App Data**.  Even more useful is that snooze strings are also fully searchable, they work just like regular metadata!
+
+<a href="#toc">🔝 Back to top</a>
+
+### <a name="launchershortcut">Launcher Shortcut (Experimental)</a>
+
+With **Launcher Shortcut**, you can add a launcher icon for any [custom search filter](#search).  
+
+Say there is a need to pull up notes with metadata containing the word `news`.  Simply do the followings:
+
+1. Tap **Backup App Data**.
+1. Add to `~neutrinote_settings_data` this string: `com.appmindlab.nano.pref_launcher_tags|meta:news`.
+1. Tap **Restore App Data**.
+1. Now long press the icon of **neutriNote** on your launcher.  `meta:news` will appear as one of the shortcut options.  Now drag and drop the shortcut over to anywhere in your launcher to create an icon.
+1. Tap the newly created icon to jump directly to the list of notes with metadata matching the search term `news`.
+
+While not recommended as each launcher app imposes its own upper limit on the number of app shortcuts, multiple shortcuts can be defined by joining filter strings with semicolons.  For example, the following represents a one-line declaration of multiple launcher shortcuts.
+
+```
+com.appmindlab.nano.pref_launcher_tags|meta:drawings;titlereg:Python*;org:@today,@tomorrow
+```
 
 <a href="#toc">🔝 Back to top</a>
 
@@ -1991,6 +2013,7 @@ You can tinker with the variables found inside of **~neutrinote_settings_data** 
 | com.appmindlab.nano.pref_safe_mode_tag            | Specify a metadata substring pattern to disable internal Markdown parser                                         |
 | com.appmindlab.nano.pref_show_toolbar             | `true`: always show edit toolbar (hint: tap screen to hide, double tap to re-display)                                                                                 |
 | com.appmindlab.nano.pref_star_at_top              | `true`: place starred notes above other notes in list view.  Default: `false`          |
+| com.appmindlab.nano.pref_sync_mirror_deletion     | `true`: detect and sync deletions originated from mirror.  Highly experimental and for advanced users only.  `com.appmindlab.nano.pref_keep_deleted_copies` is required.  Default: `false` |
 | com.appmindlab.nano.pref_toolbox_mode             | `stateful`: keep editor toolbox scroll position (default), `stateless`: always reset editor toolbox scroll position, `pin_save`: keep save button visible            |
 | com.appmindlab.nano.pref_working_set_size         | Specify size of working set (the set of recently accessed notes).  Default: 6          |
              
