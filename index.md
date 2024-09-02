@@ -1927,15 +1927,16 @@ The following editor shortcuts are supported when connected to a physical keyboa
 | `Ctrl-H`                   | Replace           | 
 | `Ctrl-D`                   | Dictionary Lookup |
 | `Ctrl-W`                   | Web Search        |
-| `Ctrl-M`                   | Markdown        |
+| `Ctrl-M`                   | Markdown          |
 | `Ctrl-Z`                   | Undo              |  
 | `Ctrl-Shift-Z`             | Redo              | 
 | `Ctrl-]` or `Ctrl-I`       | Indent            |  
-| `Ctrl-[` or `Ctrl-Shift-I` | Un-indent   
-| `Ctrl+Up`                  | Go to Top              |  
-| `Ctrl+Down`                | Go to Bottom           |  
-| `Ctrl+Shift+Space`         | Expand Text             |  
-| `Ctrl+=`                   | Calculate        |        | 
+| `Ctrl-[` or `Ctrl-Shift-I` | Un-indent         |
+| `Ctrl+Up`                  | Go to Top         |  
+| `Ctrl+Down`                | Go to Bottom      |  
+| `Ctrl+Left`                | Exit Mode         | 
+| `Ctrl+Shift+Space`         | Expand Text       |  
+| `Ctrl+=`                   | Calculate         | 
 
 <a href="#toc">🔝 Back to top</a>
 
