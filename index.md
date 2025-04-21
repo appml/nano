@@ -930,6 +930,7 @@ Built-in variables may be used in search or shortcut definitions.  For example, 
 | @modified            | Last modified time of the current note. |
 | @accessed            | Last accessed time of the current note. |
 | @clipboard           | Clipboard content.                      |
+| @location            | Current location (experimental).        |
 | @yesterday           | Yesterday's date stamp.                 |
 | @today               | Today's date stamp.                     |
 | @tomorrow            | Tomorrow's date stamp.                  |
