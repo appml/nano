@@ -841,7 +841,7 @@ Various user interface elements support gestures for better productivity:
     * Swipe left on **editor status** to return to saved cursor position.
     * Swipe down **editor status** to launch in-note navigation.  Long press buttons to preview content at locations.
     * Swipe up **editor status** to access recently accessed notes (a.k.a **working set**).
-    * After conducting search, swipe up/down **editor status** to go to previous/next hits.
+    * After conducting search, swipe up/down **editor status** or long press `Top`/`Bottom` buttons to go to previous/next hits. 
     * For Android 6.0 or higher, swipe right on **editor status** will resume in edit screen the last scroll bar position from Markdown preview.
 
 * Markdown preview:
