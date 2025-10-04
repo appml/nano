@@ -104,7 +104,7 @@ To reconnect **neutriNote** to an existing **Mirror**, follow these steps:
 1. Revert the name of the folder back to `mirror`.
 1. Under **Settings**, enable **Auto Backup**. 
 
-Note: depending on devices and the number of files, the import process might be terminated prematurely.  It's safe to tap **Import Files** again and let **neutriNote** pick up where things last left off from the interrupted import process.
+Note: depending on devices and the number of files, the import process might be terminated prematurely.  To resume the discontinued process, simply tap **Import Files** again.
 
 <a href="#toc">🔝 Back to top</a>
 
@@ -1446,5 +1446,6 @@ To further support neutriNote's development, please visit developer's [Ko-fi](ht
              height="64">
     </a>
 </div>
+
 
 
