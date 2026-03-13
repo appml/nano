@@ -850,6 +850,7 @@ Various user interface elements support gestures for better productivity:
     * Swipe left on **editor status** to return to saved cursor position.
     * Swipe down **editor status** to launch in-note search and navigation.
     * Swipe up **editor status** to access recently accessed notes (a.k.a **working set**).
+    * Long tap a link to copy the link.
 
 <a href="#toc">🔝 Back to top</a>
 
